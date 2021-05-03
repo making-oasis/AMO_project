@@ -21,10 +21,8 @@ Set up a MySQL server either locally or any cloud provider.
 
 ### Step 2. Set up environment variables
 
-touch `.env.local`
-
 ```bash
-cp .env.local.example .env.local
+touch `.env.local`
 ```
 
 Set each variable on `.env.local`:
