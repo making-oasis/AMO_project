@@ -10,8 +10,6 @@ const IndexPage = () => {
         <h1 className={styles.title}>
               Welcome to AMOapp
         </h1>
-
-
           <p>ここで初期リロード時のアプリケーションの使用方法を視覚的に見せるアニメーションを</p>
         <p className={styles.description}>
            <ButtonLink href="/top">Start</ButtonLink>

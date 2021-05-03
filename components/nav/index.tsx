@@ -8,7 +8,7 @@ export default function Nav({ title = 'AMO' }) {
     <Container className="py-4">
       <nav>
         <div className="flex justify-between items-center">
-          <Link href="/">
+          <Link href="/top">
             <a><Image src={"/amo.jpeg"} width={100}　height={100}  /></a>
           </Link>
           <div className="flex justify-end items-center">
