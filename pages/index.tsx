@@ -1,14 +1,14 @@
 import styles from '../styles/Home.module.css'
 import ButtonLink from '@/components/button-link'
 
-export default function IndexPage() {
+const IndexPage = () => {
 
     return (
        <>
        <div className={styles.container}>
         <main className={styles.main}>
         <h1 className={styles.title}>
-            Welcome to AMOapp
+              Welcome to AMOapp
         </h1>
 
 
@@ -21,3 +21,5 @@ export default function IndexPage() {
   </>
   )
 }
+
+export default IndexPage

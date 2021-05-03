@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Container from '@/components/container'
 import ButtonLink from '@/components/button-link'
+import Image from 'next/image';
 
 export default function Nav({ title = 'AMO' }) {
   return (
@@ -8,7 +9,7 @@ export default function Nav({ title = 'AMO' }) {
       <nav>
         <div className="flex justify-between items-center">
           <Link href="/">
-            <a className="font-bold text-3xl">{title}</a>
+            <a><Image src={"/amo.jpeg"} width={100}　height={100}  /></a>
           </Link>
           <div className="flex justify-end items-center">
             <div>
