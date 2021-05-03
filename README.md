@@ -5,6 +5,10 @@
 
 ## How to use
 
+## local で必要なもの
+
+- npm or yarn
+
 ### Step 1. Set up a MySQL database
 
 Set up a MySQL server either locally or any cloud provider.
@@ -48,7 +52,9 @@ Your app should be up and running on [http://localhost:3000](http://localhost:30
 
 ## Deploy on Vercel
 
-You can deploy this app to the cloud with [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+```
+git push origin HEAD
+```
 
 #### Deploy Your Local Project
 
