@@ -16,10 +16,18 @@ const db = mysql({
     port: process.env.MYSQL_PORT,
   },
 })
+console.log(db)
+console.log(process.env.MYSQL_HOST)
+console.log(process.env.MYSQL_DATABASE)
+console.log(process.env.MYSQL_USERNAME)
+console.log(process.env.MYSQL_PASSWORD)
+console.log(process.env.MYSQL_PORT)
 
 async function query(q) {
   try {
+    console.log("try")
     const results = await db.query(q)
+    console.log(results)
     await db.end()
     return results
   } catch (e) {
@@ -36,10 +44,10 @@ async function migrate() {
       title TEXT NOT NULL,
       content TEXT NOT NULL,
       created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-      updated_at 
-        TIMESTAMP 
-        NOT NULL 
-        DEFAULT CURRENT_TIMESTAMP 
+      updated_at
+        TIMESTAMP
+        NOT NULL
+        DEFAULT CURRENT_TIMESTAMP
         ON UPDATE CURRENT_TIMESTAMP
     )
     `)
