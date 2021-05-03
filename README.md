@@ -7,7 +7,13 @@
 
 ## local で必要なもの
 
-- npm or yarn
+- npm (v6.14.4)か yarn(v1.22.10)
+- node(v14.1.0)
+
+## 使っている UIUX ライブラリ
+
+- [tailwindCSS](https://tailwindcomponents.com/)
+- [material UI](https://material-ui.com/)
 
 ### Step 1. Set up a MySQL database
 
@@ -15,7 +21,7 @@ Set up a MySQL server either locally or any cloud provider.
 
 ### Step 2. Set up environment variables
 
-Copy the `env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
+touch `.env.local`
 
 ```bash
 cp .env.local.example .env.local
@@ -27,6 +33,7 @@ Set each variable on `.env.local`:
 - `MYSQL_DATABASE` - The name of the MySQL database you want to use.
 - `MYSQL_USERNAME` - The name of the MySQL user with access to database.
 - `MYSQL_PASSWORD` - The passowrd of the MySQL user.
+- `MYSQL_PORT` - xxxx
 
 ### Step 3. Run migration script
 
