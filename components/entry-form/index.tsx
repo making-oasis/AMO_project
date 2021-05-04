@@ -27,6 +27,7 @@ export default function EntryForm() {
       if (!res.ok) throw Error(json.message)
       Router.push('/')
     } catch (e) {
+      console.log(e)
       throw Error(e.message)
     }
   }
@@ -35,20 +36,7 @@ export default function EntryForm() {
     <form onSubmit={submitHandler}>
       <div className="my-4">
         <label htmlFor="title">
-          <h3 className="font-bold">To</h3>
-        </label>
-        <input
-          id="title"
-          className="shadow border rounded w-full"
-          type="text"
-          name="title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-      </div>
-      <div className="my-4">
-        <label htmlFor="from">
-          <h3 className="font-bold">From</h3>
+          <h3 className="font-bold">title</h3>
         </label>
         <input
           id="title"

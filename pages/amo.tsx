@@ -5,9 +5,9 @@ const AmoPage = () => {
   return (
   <>
     <Nav />
-          <Container>
-              <h1>Amo</h1>
-        </Container>
+      <Container>
+        <h1>Amoこんにちわ</h1>
+      </Container>
   </>
   )
 }
