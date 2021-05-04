@@ -5,7 +5,7 @@
 
 ## How to use
 
-## local で必要なもの
+## local で必要なものあいうえお
 
 - npm (v6.14.4)か yarn(v1.22.10)
 - node(v14.1.0)
