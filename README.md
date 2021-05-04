@@ -5,7 +5,7 @@
 
 ## How to use
 
-## local で必要なものあいうえお
+## local で必要なもの
 
 - npm (v6.14.4)か yarn(v1.22.10)
 - node(v14.1.0)
@@ -15,9 +15,17 @@
 - [tailwindCSS](https://tailwindcomponents.com/)
 - [material UI](https://material-ui.com/)
 
-### Step 1. Set up a MySQL database
+# Setup 手順
 
-Set up a MySQL server either locally or any cloud provider.
+### Step 1. install
+
+```
+1, git clone
+2, npm install
+3, npm run dev
+```
+
+で [http://localhost:3002](http://localhost:3002)から確認できます。
 
 ### Step 2. Set up environment variables
 
@@ -25,7 +33,7 @@ Set up a MySQL server either locally or any cloud provider.
 touch `.env.local`
 ```
 
-Set each variable on `.env.local`:
+Set each variable on `.env.local`:(RDS の環境変数は salck にて)
 
 - `MYSQL_HOST` - Your MySQL host URL.
 - `MYSQL_DATABASE` - The name of the MySQL database you want to use.
@@ -44,6 +52,10 @@ yarn migrate
 ```
 
 ### Step 4. Run Next.js in development mode
+
+```
+ctrl + cでサーバーを一旦落として
+```
 
 ```bash
 npm install
