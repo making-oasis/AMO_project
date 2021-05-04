@@ -23,6 +23,7 @@
 1, git clone
 2, npm install
 3, npm run dev
+※ npm install -g npmしとくと良いかも。
 ```
 
 で [http://localhost:3002](http://localhost:3002)から確認できます。

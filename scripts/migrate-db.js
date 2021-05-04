@@ -16,12 +16,6 @@ const db = mysql({
     port: process.env.MYSQL_PORT,
   },
 })
-console.log(db)
-console.log(process.env.MYSQL_HOST)
-console.log(process.env.MYSQL_DATABASE)
-console.log(process.env.MYSQL_USERNAME)
-console.log(process.env.MYSQL_PASSWORD)
-console.log(process.env.MYSQL_PORT)
 
 async function query(q) {
   try {

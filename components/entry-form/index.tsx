@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import Router from 'next/router'
-
 import Button from '@/components/button'
 
 export default function EntryForm() {
-  const [title, setTitle] = useState('')
-  const [content, setContent] = useState('')
+  const [title, setTitle] = useState<string>('')
+  const [content, setContent] = useState<string>('')
   const [submitting, setSubmitting] = useState(false)
 
   async function submitHandler(e) {
@@ -22,12 +20,12 @@ export default function EntryForm() {
           content,
         }),
       })
-      setSubmitting(false)
+      setSubmitting(false);
+      setTitle('');
+      setContent('');
       const json = await res.json()
       if (!res.ok) throw Error(json.message)
-      Router.push('/')
     } catch (e) {
-      console.log(e)
       throw Error(e.message)
     }
   }
