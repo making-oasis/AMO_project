@@ -6,7 +6,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 
 
-export const TransitionsModal = ({ content }: {content:any}) => {
+export const TransitionsModal = () => {
 
   const useStyles = makeStyles((theme) => ({
   　　modal: {
@@ -52,7 +52,7 @@ export const TransitionsModal = ({ content }: {content:any}) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">{ content.to}report</h2>
+            <h2 id="transition-modal-title">report</h2>
             <p id="transition-modal-description">report</p>
           </div>
         </Fade>

@@ -7,6 +7,7 @@ import Entries from '@/components/entries'
 
 export default function NewEntryPage() {
   const { entries, isLoading } = useEntries()
+
   if (isLoading) {
     return (
       <div>
