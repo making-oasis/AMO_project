@@ -2,7 +2,7 @@ import p5 from 'p5'
 
 const circle = (p: p5) => {
     p.setup = () => { //初期設定
-        const canvas = p.createCanvas(640, 660)
+        const canvas = p.createCanvas(2000, 660)
         //createplane();
     }
 
@@ -13,11 +13,11 @@ const circle = (p: p5) => {
     var yspeed = 1.5;
 
     p.draw = () => {　//描画
-        p.background(215, 235, 255);
+        p.background(255, 255, 255);
         x += xspeed;
         y += yspeed;
 
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 10; i++) {
           var xx = x + i * 200;
           var yy = y + (i * 200) / 3;
           p.triangle(xx + 35, yy + 10, xx + 25, yy + 20, xx + 120, yy + 70);
