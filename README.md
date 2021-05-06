@@ -3,8 +3,6 @@
 - [Vercel](https://vercel.com/making-oasis/amo-project)
 - [Link ](https://amo-project.vercel.app/)
 
-## How to use
-
 ## local で必要なもの
 
 - npm (v6.14.4)か yarn(v1.22.10)
@@ -14,6 +12,17 @@
 
 - [tailwindCSS](https://tailwindcomponents.com/)
 - [material UI](https://material-ui.com/)
+
+## ディレクトリ説明
+
+| ディレクトリ | 説明                                                                |
+| ------------ | ------------------------------------------------------------------- |
+| components/  | button 等の細かい部品                                               |
+| lib/         | コンポーネントの集まり。                                            |
+| pages        | 各 page に当たる箇所                                                |
+| pages/api    | api のエンドポイント                                                |
+| scripts      | setup 時に DB に table 等を作るマイグレーションを走らせるスクリプト |
+| styles       | 各コンポーネントで使う css でのデザイン実装が入っている             |
 
 # Setup 手順
 

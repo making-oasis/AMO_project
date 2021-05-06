@@ -23,9 +23,7 @@ export default function IndexPage() {
             <ButtonLink href="/new">e</ButtonLink>
           </div>
           <div>
-
           </div>
-
         </Container>
         <Footer />
       </div>
