@@ -1,12 +1,19 @@
+import * as React from 'react';
 import { useState } from 'react'
 import Button from '@/components/button'
+import TextField from '@material-ui/core/TextField';
 
-export default function EntryForm() {
+type Post = {
+    title: string;
+    content: string;
+};
+
+const EntryForm = () => {
   const [title, setTitle] = useState<string>('')
   const [content, setContent] = useState<string>('')
-  const [submitting, setSubmitting] = useState(false)
+  const [submitting, setSubmitting] = useState<boolean>(false)
 
-  async function submitHandler(e) {
+  const submitHandler = async (e) => {
     setSubmitting(true)
     e.preventDefault()
     try {
@@ -34,32 +41,37 @@ export default function EntryForm() {
     <form onSubmit={submitHandler}>
       <div className="my-4">
         <label htmlFor="title">
-          <h3 className="font-bold">title</h3>
+          <h3 className="font-bold">to</h3>
         </label>
-        <input
-          id="title"
-          className="shadow border rounded w-full"
-          type="text"
+        <TextField
           name="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          label="to"
+          variant="standard"
+          defaultValue="Default Value"
         />
       </div>
       <div className="my-4">
         <label htmlFor="content">
           <h3 className="font-bold">Content</h3>
         </label>
-        <textarea
-          className="shadow border resize-none focus:shadow-outline w-full h-48"
-          id="content"
+        <TextField
           name="content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
+          label="messages"
+          multiline
+          rows={4}
+          defaultValue="Default Value"
+          variant="outlined"
         />
       </div>
       <Button disabled={submitting} type="submit">
-        {submitting ? 'Creating ...' : 'Create'}
+        {submitting ? 'sending ...' : 'send it'}
       </Button>
     </form>
   )
 }
+
+export default EntryForm;

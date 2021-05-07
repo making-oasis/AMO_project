@@ -5,7 +5,13 @@ import { mutate } from 'swr'
 import ButtonLink from '@/components/button-link'
 import Button from '@/components/button'
 
-function Entry({ id, title, content }) {
+type Entry = {
+  id: number;
+  title: string;
+  content: string;
+}
+
+const Entry: React.FC<Entry> = ({ id, title, content }) => {
   const [deleting, setDeleting] = useState(false)
 
   async function deleteEntry() {
