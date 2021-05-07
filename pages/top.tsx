@@ -39,6 +39,7 @@ const TopPage= () => {
     });
   }, []);
 
+  //Planeを飛ばすanimation/jQueryで直接DOM操作
   const PlaneForm = () => {
     return (
       <div>
@@ -74,7 +75,6 @@ const TopPage= () => {
 
   return (
     <div>
-      {/* <Canvas sketch={circle} /> */}
       <Nav />
       <Container>
         <PlaneForm />
