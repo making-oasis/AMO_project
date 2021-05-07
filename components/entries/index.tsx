@@ -1,6 +1,6 @@
 import Entry from './entry'
 
-function Entries({ entries }) {
+const Entries = ({ entries }) => {
   if (entries) {
     return (
       <div>
