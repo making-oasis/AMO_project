@@ -46,7 +46,7 @@ const EntryForm = () => {
         <TextField
           name="title"
           value={title}
-          onChange={(e) => setTt(e.target.value)}
+          onChange={(e) => setTitle(e.target.value)}
           label="to"
           variant="standard"
           defaultValue="Default Value"
