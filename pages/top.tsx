@@ -1,15 +1,15 @@
+import { useEffect } from 'react'
 import Nav from '@/components/nav'
+import Footer from '@/components/footer'
 import Container from '@/components/container'
 import EntryForm from '@/components/entry-form'
-import Footer from '@/components/footer'
 import styles from '../styles/plane.module.css'
-import { useEffect, useState } from 'react'
 import $ from 'jquery';
 
 const TopPage= () => {
 
   useEffect(() => {
-    console.log("============== hello world ==================");
+    console.log("============== start DOM jQuery ==================");
     $("." + styles.send).click( ()=> {
       setTimeout( ()=> {
         $("#" + styles.plate).removeClass(styles.front);
@@ -29,6 +29,8 @@ const TopPage= () => {
                   )
                   .addClass(styles.beginning);
                 $("." + styles.curvable).removeClass(styles.curved);
+                //thank you action
+                console.log("hello");
               }, 3000);
             }, 600);
           }, 2000);
@@ -37,18 +39,9 @@ const TopPage= () => {
     });
   }, []);
 
-  const send = () => {
-    console.log("hello")
-  }
-
-  return (
-    <div>
-      {/* <Canvas sketch={circle} /> */}
-      <Nav />
-      <Container>
-        <div>
-        </div>
-        <div>
+  const PlaneForm = () => {
+    return (
+      <div>
           <div id={styles.plate} className={styles.front}>
             <EntryForm />
             <button className={styles.send} onClick={send}> Send it </button> <br />
@@ -72,6 +65,19 @@ const TopPage= () => {
             </div>
           </div>
         </div>
+    )
+  }
+
+  const send = () => {
+    console.log("hello")
+  }
+
+  return (
+    <div>
+      {/* <Canvas sketch={circle} /> */}
+      <Nav />
+      <Container>
+        <PlaneForm />
       </Container>
       <Footer />
     </div>

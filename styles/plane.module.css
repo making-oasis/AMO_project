@@ -86,7 +86,7 @@
   backface-visibility: hidden;
   position: relative;
   width: 400px;
-  height: 260px;
+  height: 26s0px;
   top: 40px;
   text-align: center;
   display: block;
@@ -95,7 +95,7 @@
 
 #plate {
   z-index: 3;
-  background: hsl(0, 0%, 88%);
+  background: #4169e1;
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   -o-transform: rotateY(-180deg);
@@ -115,7 +115,7 @@
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
   width: 400px;
-  height: 260px;
+  height: 500px;
   top: 300px;
 
   -webkit-transition: all 0.8s ease-in-out;
