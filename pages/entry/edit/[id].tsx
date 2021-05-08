@@ -9,7 +9,6 @@ export default function EditEntryPage() {
       <Nav title="Edit" />
       <Container>
         <h2>ここで削除報告依頼をする</h2>
-        <EditEntryForm />
         <ReportForm />
       </Container>
     </>

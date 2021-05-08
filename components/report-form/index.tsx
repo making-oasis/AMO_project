@@ -4,15 +4,23 @@ import Button from '../button'
 
 const ReportForm = () => {
   const [_report, setReport] = useState<string>('')
+  const [_title, setTitle] = useState<string>('')
+  const [_content, setContent] = useState<string>('')
   const [submitting, setSubmitting] = useState<boolean>(false)
   const router = useRouter()
-  const { id, report } = router.query
+  const { id, title, content, report } = router.query
 
   useEffect(() => {
+    if (typeof title === 'string') {
+      setTitle(title)
+    }
+    if (typeof content === 'string') {
+      setContent(content)
+    }
     if (typeof report === 'string') {
       setReport(report)
     }
-  }, [report])
+  }, [title, content, report])
 
   async function submitHandler(e) {
     e.preventDefault()
@@ -39,6 +47,20 @@ const ReportForm = () => {
 
   return (
     <form onSubmit={submitHandler}>
+       <div className="my-4">
+        <label htmlFor="title">
+          <h3 className="font-bold">Title</h3>
+          {title}
+        </label>
+
+      </div>
+      <div className="my-4">
+        <label htmlFor="content">
+          <h3 className="font-bold">Content</h3>
+          {content}
+        </label>
+
+      </div>
       <div className="my-4">
         <label htmlFor="report">
           <h3 className="font-bold">削除理由を以下に掲載してください。(reasons for delete)</h3>
@@ -53,7 +75,7 @@ const ReportForm = () => {
         />
       </div>
       <Button disabled={submitting} type="submit">
-        {submitting ? 'Saving ...' : 'Save'}
+        {submitting ? 'REPORTING ...' : 'REPORT'}
       </Button>
     </form>
   )

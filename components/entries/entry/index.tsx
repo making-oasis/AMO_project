@@ -35,6 +35,12 @@ const Entry: React.FC<Entry> = ({ id, title, content }) => {
           >
             Report
           </ButtonLink>
+          <ButtonLink
+            href={`/entry/edit/${id}?title=${title}&content=${content}`}
+            className="h-5 py-0 mx-1"
+          >
+            ReportForm
+          </ButtonLink>
           <Button
             disabled={deleting}
             onClick={deleteEntry}
