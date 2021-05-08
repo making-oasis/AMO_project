@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import Router, { useRouter } from 'next/router'
-
 import Button from '../button'
 
 export default function EntryForm() {
-  const [_title, setTitle] = useState('')
-  const [_content, setContent] = useState('')
-  const [submitting, setSubmitting] = useState(false)
+  const [_title, setTitle] = useState<string>('')
+  const [_content, setContent] = useState<string>('')
+  const [_report, setReport] = useState<string>('')
+  const [submitting, setSubmitting] = useState<boolean>(false)
   const router = useRouter()
-  const { id, title, content } = router.query
+  const { id, title, content, report } = router.query
 
   useEffect(() => {
     if (typeof title === 'string') {
@@ -17,7 +17,10 @@ export default function EntryForm() {
     if (typeof content === 'string') {
       setContent(content)
     }
-  }, [title, content])
+    if (typeof report === 'string') {
+      setReport(report)
+    }
+  }, [title, content, report])
 
   async function submitHandler(e) {
     e.preventDefault()
@@ -32,6 +35,7 @@ export default function EntryForm() {
           id,
           title: _title,
           content: _content,
+          report: _report,
         }),
       })
       const json = await res.json()
@@ -68,6 +72,19 @@ export default function EntryForm() {
           name="content"
           value={_content}
           onChange={(e) => setContent(e.target.value)}
+        />
+      </div>
+      <div className="my-4">
+        <label htmlFor="report">
+          <h3 className="font-bold">削除理由を以下に掲載してください。(reasons for delete)</h3>
+        </label>
+        <input
+          id="report"
+          className="shadow border rounded w-full"
+          type="text"
+          name="report"
+          value={_report}
+          onChange={(e) => setReport(e.target.value)}
         />
       </div>
       <Button disabled={submitting} type="submit">

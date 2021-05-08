@@ -37,6 +37,7 @@ async function migrate() {
       id INT AUTO_INCREMENT PRIMARY KEY,
       title TEXT NOT NULL,
       content TEXT NOT NULL,
+      report TEXT NUL,
       created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
       updated_at
         TIMESTAMP

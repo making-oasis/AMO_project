@@ -3,15 +3,13 @@ import { useState } from 'react'
 import Button from '@/components/button'
 import TextField from '@material-ui/core/TextField';
 
-type Post = {
-    title: string;
-    content: string;
-};
-
 const EntryForm = () => {
   const [title, setTitle] = useState<string>('')
   const [content, setContent] = useState<string>('')
   const [submitting, setSubmitting] = useState<boolean>(false)
+  //const [report, setReport] = useState<string>('')
+
+  const report:string = "default"
 
   const submitHandler = async (e) => {
     setSubmitting(true)
@@ -25,14 +23,18 @@ const EntryForm = () => {
         body: JSON.stringify({
           title,
           content,
+          report,
         }),
       })
+
       setSubmitting(false);
       setTitle('');
       setContent('');
       const json = await res.json()
+      console.log(json);
       if (!res.ok) throw Error(json.message)
     } catch (e) {
+      console.log("here");
       throw Error(e.message)
     }
   }

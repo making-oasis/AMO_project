@@ -5,9 +5,10 @@ import { query } from '../../lib/db'
 const filter = new Filter()
 
 const handler: NextApiHandler = async (req, res) => {
-  const { title, content } = req.body
+  const { title, content, report } = req.body
+  console.log(res);
   try {
-    if (!title || !content) {
+    if (!title || !content ) {
       return res
         .status(400)
         .json({ message: '`title` and `content` are both required' })
@@ -15,10 +16,10 @@ const handler: NextApiHandler = async (req, res) => {
 
     const results = await query(
       `
-      INSERT INTO entries (title, content)
-      VALUES (?, ?)
+      INSERT INTO entries (title, content, report)
+      VALUES (?, ?, ?)
       `,
-      [filter.clean(title), filter.clean(content)]
+      [filter.clean(title), filter.clean(content), filter.clean(report)]
     )
 
     return res.json(results)

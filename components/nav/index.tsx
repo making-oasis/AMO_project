@@ -14,7 +14,7 @@ export default function Nav({ title = 'AMO' }) {
           <div className="flex justify-end items-center">
             <div>
             <Link href="/new">
-            <a className="font-bold text-1xl pr-4">ALL</a>
+            <a className="font-bold text-1xl pr-4">All Messages</a>
             </Link>{' '}
             </div>
             <Link href="/about">
