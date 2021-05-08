@@ -5,11 +5,12 @@ import TextField from '@material-ui/core/TextField';
 //import { DEFAULT_REPORT } from './constants'
 import { TransitionsModal } from '@/components/modal'
 
+const report: string = "default" as const;
+
 const EntryForm = () => {
   const [title, setTitle] = useState<string>('')
   const [content, setContent] = useState<string>('')
   const [submitting, setSubmitting] = useState<boolean>(false)
-  const report: string = "default";
 
   const submitHandler = async (e) => {
     setSubmitting(true)

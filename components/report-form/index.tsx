@@ -28,7 +28,7 @@ const ReportForm = () => {
     }
   }, [title, content, report])
 
-  async function submitHandler(e) {
+ const submitHandler = async (e) => {
     e.preventDefault()
     setSubmitting(true)
     try {
