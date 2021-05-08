@@ -14,7 +14,8 @@ const handler: NextApiHandler = async (req, res) => {
       SET report = ?
       WHERE id = ?
       `,
-      [ filter.clean(report), id]
+      //[ filter.clean(report), id]
+      [ (report), id]
     )
 
     return res.json(results)
