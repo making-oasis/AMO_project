@@ -2,14 +2,12 @@ import * as React from 'react';
 import { useState } from 'react'
 import Button from '@/components/button'
 import TextField from '@material-ui/core/TextField';
+import { DEFAULT_REPORT } from './constants'
 
 const EntryForm = () => {
   const [title, setTitle] = useState<string>('')
   const [content, setContent] = useState<string>('')
   const [submitting, setSubmitting] = useState<boolean>(false)
-  //const [report, setReport] = useState<string>('')
-
-  const report:string = "default"
 
   const submitHandler = async (e) => {
     setSubmitting(true)
@@ -23,7 +21,7 @@ const EntryForm = () => {
         body: JSON.stringify({
           title,
           content,
-          report,
+          DEFAULT_REPORT,
         }),
       })
 
