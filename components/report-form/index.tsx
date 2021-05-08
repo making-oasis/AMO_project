@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import Router, { useRouter } from 'next/router'
 import Button from '../button'
 
-export default function EntryForm() {
+const ReportForm = () => {
+  const [_report, setReport] = useState<string>('')
   const [_title, setTitle] = useState<string>('')
   const [_content, setContent] = useState<string>('')
-  const [_report, setReport] = useState<string>('')
   const [submitting, setSubmitting] = useState<boolean>(false)
   const router = useRouter()
   const { id, title, content, report } = router.query
@@ -26,15 +26,13 @@ export default function EntryForm() {
     e.preventDefault()
     setSubmitting(true)
     try {
-      const res = await fetch('/api/edit-entry', {
+      const res = await fetch('/api/report', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           id,
-          title: _title,
-          content: _content,
           report: _report,
         }),
       })
@@ -49,30 +47,19 @@ export default function EntryForm() {
 
   return (
     <form onSubmit={submitHandler}>
-      <div className="my-4">
+       <div className="my-4">
         <label htmlFor="title">
           <h3 className="font-bold">Title</h3>
+          {title}
         </label>
-        <input
-          id="title"
-          className="shadow border rounded w-full"
-          type="text"
-          name="title"
-          value={_title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
+
       </div>
       <div className="my-4">
         <label htmlFor="content">
           <h3 className="font-bold">Content</h3>
+          {content}
         </label>
-        <textarea
-          className="shadow border resize-none focus:shadow-outline w-full h-48"
-          id="content"
-          name="content"
-          value={_content}
-          onChange={(e) => setContent(e.target.value)}
-        />
+
       </div>
       <div className="my-4">
         <label htmlFor="report">
@@ -88,8 +75,10 @@ export default function EntryForm() {
         />
       </div>
       <Button disabled={submitting} type="submit">
-        {submitting ? 'Saving ...' : 'Save'}
+        {submitting ? 'REPORTING ...' : 'REPORT'}
       </Button>
     </form>
   )
 }
+
+export default ReportForm

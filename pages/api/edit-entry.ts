@@ -5,7 +5,7 @@ import { query } from '../../lib/db'
 const filter = new Filter()
 
 const handler: NextApiHandler = async (req, res) => {
-  const { id, title, content } = req.body
+  const { id, title, content, report } = req.body
   try {
     if (!id || !title || !content) {
       return res
@@ -16,10 +16,10 @@ const handler: NextApiHandler = async (req, res) => {
     const results = await query(
       `
       UPDATE entries
-      SET title = ?, content = ?
+      SET title = ?, content = ?, report = ?
       WHERE id = ?
       `,
-      [filter.clean(title), filter.clean(content), id]
+      [filter.clean(title), filter.clean(content), filter.clean(report), id]
     )
 
     return res.json(results)
