@@ -1,12 +1,12 @@
-import { useRouter } from 'next/router'
-import { useEntry } from '@/lib/swr-hooks'
-import Container from '@/components/container'
-import Nav from '@/components/nav'
+import { useRouter } from "next/router";
+import { useEntry } from "@/lib/swr-hooks";
+import Container from "@/components/container";
+import Nav from "@/components/nav";
 
 export default function EditEntryPage() {
-  const router = useRouter()
-  const id = router.query.id?.toString()
-  const { data } = useEntry(id)
+  const router = useRouter();
+  const id = router.query.id?.toString();
+  const { data } = useEntry(id);
 
   if (data) {
     return (
@@ -17,7 +17,7 @@ export default function EditEntryPage() {
           <p>{data.content}</p>
         </Container>
       </>
-    )
+    );
   } else {
     return (
       <>
@@ -27,6 +27,6 @@ export default function EditEntryPage() {
           <p>...</p>
         </Container>
       </>
-    )
+    );
   }
 }
