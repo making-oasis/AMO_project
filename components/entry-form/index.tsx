@@ -28,6 +28,7 @@ const EntryForm = () => {
         }),
       })
 
+      console.log(title);
       setSubmitting(false);
       setTitle('');
       setContent('');
