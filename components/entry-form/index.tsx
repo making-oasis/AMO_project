@@ -2,14 +2,15 @@ import * as React from 'react';
 import { useState } from 'react'
 import Button from '@/components/button'
 import TextField from '@material-ui/core/TextField';
+//import { DEFAULT_REPORT } from './constants'
+import { TransitionsModal } from '@/components/modal'
+
+const report: string = "default" as const;
 
 const EntryForm = () => {
   const [title, setTitle] = useState<string>('')
   const [content, setContent] = useState<string>('')
   const [submitting, setSubmitting] = useState<boolean>(false)
-  //const [report, setReport] = useState<string>('')
-
-  const report:string = "default"
 
   const submitHandler = async (e) => {
     setSubmitting(true)
@@ -27,16 +28,25 @@ const EntryForm = () => {
         }),
       })
 
+      console.log(title);
       setSubmitting(false);
       setTitle('');
       setContent('');
       const json = await res.json()
-      console.log(json);
+      console.log("success");
+      setModal();
       if (!res.ok) throw Error(json.message)
     } catch (e) {
-      console.log("here");
+      console.log("error");
       throw Error(e.message)
     }
+  }
+
+  const setModal = () => {
+    console.log("success");
+    return (
+      <TransitionsModal />
+    );
   }
 
   return (
@@ -51,7 +61,6 @@ const EntryForm = () => {
           onChange={(e) => setTitle(e.target.value)}
           label="to"
           variant="standard"
-          defaultValue="Default Value"
         />
       </div>
       <div className="my-4">
@@ -65,7 +74,6 @@ const EntryForm = () => {
           label="messages"
           multiline
           rows={4}
-          defaultValue="Default Value"
           variant="outlined"
         />
       </div>
