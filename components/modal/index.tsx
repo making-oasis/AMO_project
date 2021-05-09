@@ -58,4 +58,4 @@ const TransitionsModal = (props, ref: React.Ref<unknown>) => {
   );
 };
 
-export const WrappedMyInput = React.forwardRef(TransitionsModal);
+export const TextModal = React.forwardRef(TransitionsModal);
