@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Router, { useRouter } from "next/router";
 import Button from "../button";
 
-export default function EntryForm() {
+export const EntryForm = () => {
   const [_title, setTitle] = useState<string>("");
   const [_content, setContent] = useState<string>("");
   const [_report, setReport] = useState<string>("");
@@ -94,4 +94,4 @@ export default function EntryForm() {
       </Button>
     </form>
   );
-}
+};

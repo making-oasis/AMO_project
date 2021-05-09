@@ -29,7 +29,7 @@ module.exports = {
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".ts", ".tsx"],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
       typescript: {
         config: "tsconfig.json",
@@ -41,12 +41,21 @@ module.exports = {
     },
   },
   rules: {
+    "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"],
     "@typescript-eslint/explicit-module-boundary-types": ["off"],
     "react/prop-types": ["off"],
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["error", { extensions: [".tsx", "mdx"] }],
     "import/order": ["error"],
+    "import/no-unresolved": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        components: ["Link"],
+        specialLink: ["to"],
+      },
+    ],
   },
   overrides: [
     {
