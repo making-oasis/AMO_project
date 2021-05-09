@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from "next/link";
 import Container from "@/components/container";
 import ButtonLink from "@/components/button-link";
 import Image from "next/image";
 
-export default function Nav({ title = "AMO" }) {
+const Nav = () => {
   return (
     <Container className="py-4">
       <nav>
@@ -34,4 +35,6 @@ export default function Nav({ title = "AMO" }) {
       </nav>
     </Container>
   );
-}
+};
+
+export default Nav;

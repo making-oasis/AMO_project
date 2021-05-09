@@ -3,13 +3,10 @@ import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Container from "@/components/container";
 import EntryForm from "@/components/entry-form";
-import styles from "../styles/plane.module.css";
-import { useEntries } from "@/lib/swr-hooks";
 import $ from "jquery";
+import styles from "../styles/plane.module.css";
 
 const TopPage = () => {
-  const { entries, isLoading } = useEntries();
-
   useEffect(() => {
     console.log("============== start DOM jQuery ==================");
     $("." + styles.send).click(() => {

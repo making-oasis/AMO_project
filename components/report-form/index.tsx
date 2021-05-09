@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
@@ -10,19 +10,11 @@ import Button from "../button";
 
 const ReportForm = () => {
   const [_report, setReport] = useState<string>("");
-  const [_title, setTitle] = useState<string>("");
-  const [_content, setContent] = useState<string>("");
   const [submitting, setSubmitting] = useState<boolean>(false);
   const router = useRouter();
   const { id, title, content, report } = router.query;
 
   useEffect(() => {
-    if (typeof title === "string") {
-      setTitle(title);
-    }
-    if (typeof content === "string") {
-      setContent(content);
-    }
     if (typeof report === "string") {
       setReport(report);
     }
