@@ -6,7 +6,7 @@ import ReportForm from "@/components/report-form";
 export default function EditEntryPage() {
   return (
     <>
-      <Nav title="Edit" />
+      <Nav />
       <Container>
         <h2>
           ここでメッセージの削除報告をすることができます。削除理由を記入してください。管理者が削除いたします。
