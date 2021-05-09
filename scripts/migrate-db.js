@@ -1,11 +1,14 @@
-const path = require('path')
-const envPath = path.resolve(process.cwd(), '.env.local')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require("path");
+const envPath = path.resolve(process.cwd(), ".env.local");
 
-console.log({ envPath })
+console.log({ envPath });
 
-require('dotenv').config({ path: envPath })
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require("dotenv").config({ path: envPath });
 
-const mysql = require('serverless-mysql')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const mysql = require("serverless-mysql");
 
 const db = mysql({
   config: {
@@ -15,17 +18,17 @@ const db = mysql({
     password: process.env.MYSQL_PASSWORD,
     port: process.env.MYSQL_PORT,
   },
-})
+});
 
 async function query(q) {
   try {
-    console.log("try")
-    const results = await db.query(q)
-    console.log(results)
-    await db.end()
-    return results
+    console.log("try");
+    const results = await db.query(q);
+    console.log(results);
+    await db.end();
+    return results;
   } catch (e) {
-    throw Error(e.message)
+    throw Error(e.message);
   }
 }
 
@@ -37,7 +40,7 @@ async function migrate() {
       id INT AUTO_INCREMENT PRIMARY KEY,
       title TEXT NOT NULL,
       content TEXT NOT NULL,
-      report TEXT NUL,
+      report TEXT NULL,
       created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
       updated_at
         TIMESTAMP
@@ -45,13 +48,13 @@ async function migrate() {
         DEFAULT CURRENT_TIMESTAMP
         ON UPDATE CURRENT_TIMESTAMP
     )
-    `)
-    console.log('migration ran successfully')
+    `);
+    console.log("migration ran successfully");
   } catch (e) {
-    console.log(e)
-    console.error('could not run migration, double check your credentials.')
-    process.exit(1)
+    console.log(e);
+    console.error("could not run migration, double check your credentials.");
+    process.exit(1);
   }
 }
 
-migrate().then(() => process.exit())
+migrate().then(() => process.exit());
