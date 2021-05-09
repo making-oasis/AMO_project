@@ -1,4 +1,6 @@
-make npm:
+.PHONY: npm run
+
+npm:
 	npm install
-make run:
+run:
 	npm run dev
