@@ -1,35 +1,35 @@
-import { useState, useEffect } from 'react'
-import Router, { useRouter } from 'next/router'
-import Button from '../button'
+import { useState, useEffect } from "react";
+import Router, { useRouter } from "next/router";
+import Button from "../button";
 
-export default function EntryForm() {
-  const [_title, setTitle] = useState<string>('')
-  const [_content, setContent] = useState<string>('')
-  const [_report, setReport] = useState<string>('')
-  const [submitting, setSubmitting] = useState<boolean>(false)
-  const router = useRouter()
-  const { id, title, content, report } = router.query
+export const EntryForm = () => {
+  const [_title, setTitle] = useState<string>("");
+  const [_content, setContent] = useState<string>("");
+  const [_report, setReport] = useState<string>("");
+  const [submitting, setSubmitting] = useState<boolean>(false);
+  const router = useRouter();
+  const { id, title, content, report } = router.query;
 
   useEffect(() => {
-    if (typeof title === 'string') {
-      setTitle(title)
+    if (typeof title === "string") {
+      setTitle(title);
     }
-    if (typeof content === 'string') {
-      setContent(content)
+    if (typeof content === "string") {
+      setContent(content);
     }
-    if (typeof report === 'string') {
-      setReport(report)
+    if (typeof report === "string") {
+      setReport(report);
     }
-  }, [title, content, report])
+  }, [title, content, report]);
 
   async function submitHandler(e) {
-    e.preventDefault()
-    setSubmitting(true)
+    e.preventDefault();
+    setSubmitting(true);
     try {
-      const res = await fetch('/api/edit-entry', {
-        method: 'PATCH',
+      const res = await fetch("/api/edit-entry", {
+        method: "PATCH",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           id,
@@ -37,13 +37,13 @@ export default function EntryForm() {
           content: _content,
           report: _report,
         }),
-      })
-      const json = await res.json()
-      setSubmitting(false)
-      if (!res.ok) throw Error(json.message)
-      Router.push('/')
+      });
+      const json = await res.json();
+      setSubmitting(false);
+      if (!res.ok) throw Error(json.message);
+      Router.push("/");
     } catch (e) {
-      throw Error(e.message)
+      throw Error(e.message);
     }
   }
 
@@ -76,7 +76,9 @@ export default function EntryForm() {
       </div>
       <div className="my-4">
         <label htmlFor="report">
-          <h3 className="font-bold">削除理由を以下に掲載してください。(reasons for delete)</h3>
+          <h3 className="font-bold">
+            削除理由を以下に掲載してください。(reasons for delete)
+          </h3>
         </label>
         <input
           id="report"
@@ -88,8 +90,8 @@ export default function EntryForm() {
         />
       </div>
       <Button disabled={submitting} type="submit">
-        {submitting ? 'Saving ...' : 'Save'}
+        {submitting ? "Saving ..." : "Save"}
       </Button>
     </form>
-  )
-}
+  );
+};

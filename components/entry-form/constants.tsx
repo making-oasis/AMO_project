@@ -1,2 +1,1 @@
-
-export const DEFAULT_REPORT: string = "default"
+export const DEFAULT_REPORT = "default";

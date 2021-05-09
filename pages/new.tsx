@@ -1,12 +1,11 @@
-import Nav from '@/components/nav'
-import Container from '@/components/container'
-import Skeleton from 'react-loading-skeleton'
-import { useEntries } from '@/lib/swr-hooks'
-import Entries from '@/components/entries'
-
+import Nav from "@/components/nav";
+import Container from "@/components/container";
+import Skeleton from "react-loading-skeleton";
+import { useEntries } from "@/lib/swr-hooks";
+import Entries from "@/components/entries";
 
 export default function NewEntryPage() {
-  const { entries, isLoading } = useEntries()
+  const { entries, isLoading } = useEntries();
   if (isLoading) {
     return (
       <div>
@@ -22,15 +21,15 @@ export default function NewEntryPage() {
           <Skeleton height={48} />
         </Container>
       </div>
-    )
+    );
   }
 
   return (
-     <div>
+    <div>
       <Nav />
       <Container>
         <Entries entries={entries} />
       </Container>
     </div>
-  )
+  );
 }
