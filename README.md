@@ -3,8 +3,6 @@
 - [Vercel](https://vercel.com/making-oasis/amo-project)
 - [Link ](https://amo-project.vercel.app/)
 
-## How to use
-
 ## local で必要なもの
 
 - npm (v6.14.4)か yarn(v1.22.10)
