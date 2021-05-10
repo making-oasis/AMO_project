@@ -42,6 +42,7 @@ const EntryForm = () => {
     }
   };
 
+  //親コンポから子コンポのhandleOpenメソッドを実行
   const callerrorModal = () => {
     // eslint-disable-next-line mdx/no-unused-expressions
     ref.current && ref.current.handleOpen();

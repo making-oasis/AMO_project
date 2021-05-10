@@ -1,5 +1,5 @@
-import styles from "../styles/Home.module.css";
 import ButtonLink from "@/components/button-link";
+import styles from "../styles/Home.module.css";
 
 const IndexPage = () => {
   return (
