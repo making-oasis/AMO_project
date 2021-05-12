@@ -68,10 +68,6 @@ const TopPage = () => {
     );
   };
 
-  const send = () => {
-    console.log("hello");
-  };
-
   return (
     <div>
       <Nav />

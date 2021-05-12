@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import $ from "jquery";
 import styles from "../styles/Home.module.css";
 
+//urlクリック時のtopページanimation
 const IndexPage = () => {
   useEffect(() => {
     console.log("============== start DOM jQuery ==================");
@@ -78,7 +79,6 @@ const IndexPage = () => {
             <h2 className={styles.h2}>あああああああああ</h2>
           </div>
           <div className={styles.panel} data-color="red">
-            <h1 className={styles.title}>Welcome to AMOapp</h1>
             <div>
               <p className={styles.description}>
                 <ButtonLink href="/top">Start</ButtonLink>
