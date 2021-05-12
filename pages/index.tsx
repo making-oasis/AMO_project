@@ -1,7 +1,7 @@
 import ButtonLink from "@/components/button-link";
 import { useEffect } from "react";
 import $ from "jquery";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/opening.module.css";
 
 //urlクリック時のtopページanimation
 const IndexPage = () => {

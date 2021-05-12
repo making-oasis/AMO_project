@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .main {
@@ -155,8 +156,8 @@
 /* ----------------------- top page animation----------------------- */
 
 .body {
-  color: rgb(124, 62, 62);
-  background-color: #8f2222;
+  color: white;
+  background-color: white;
   transition: background-color 1s ease;
 }
 
