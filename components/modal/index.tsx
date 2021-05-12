@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useImperativeHandle } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+//import { Button } from "@material-ui/core";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 
-export const TransitionsModal = () => {
+const TransitionsModal = (props, ref: React.Ref<unknown>) => {
   const useStyles = makeStyles((theme) => ({
     modal: {
       display: "flex",
@@ -19,9 +19,12 @@ export const TransitionsModal = () => {
       padding: theme.spacing(2, 4, 3),
     },
   }));
-
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState<boolean>(false);
+
+  useImperativeHandle(ref, () => ({
+    handleOpen,
+  }));
 
   const handleOpen = () => {
     setOpen(true);
@@ -33,14 +36,6 @@ export const TransitionsModal = () => {
 
   return (
     <div>
-      <Button
-        variant="contained"
-        color="secondary"
-        type="button"
-        onClick={handleOpen}
-      >
-        report
-      </Button>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -55,11 +50,12 @@ export const TransitionsModal = () => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">report</h2>
-            <p id="transition-modal-description">report</p>
+            <h2 id="transition-modal-title">{props.text}</h2>
           </div>
         </Fade>
       </Modal>
     </div>
   );
 };
+
+export const TextModal = React.forwardRef(TransitionsModal);

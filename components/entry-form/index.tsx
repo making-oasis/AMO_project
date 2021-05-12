@@ -1,9 +1,9 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Button from "@/components/button";
 import TextField from "@material-ui/core/TextField";
+import { TextModal } from "@/components/modal";
 //import { DEFAULT_REPORT } from './constants'
-import { TransitionsModal } from "@/components/modal";
 
 const report: string = "default" as const;
 
@@ -11,6 +11,7 @@ const EntryForm = () => {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [submitting, setSubmitting] = useState<boolean>(false);
+  const ref = useRef<any>();
 
   const submitHandler = async (e) => {
     setSubmitting(true);
@@ -34,17 +35,17 @@ const EntryForm = () => {
       setContent("");
       const json = await res.json();
       console.log("success");
-      setModal();
       if (!res.ok) throw Error(json.message);
     } catch (e) {
-      console.log("error");
+      callerrorModal();
       throw Error(e.message);
     }
   };
 
-  const setModal = () => {
-    console.log("success");
-    return <TransitionsModal />;
+  //親コンポから子コンポのhandleOpenメソッドを実行
+  const callerrorModal = () => {
+    // eslint-disable-next-line mdx/no-unused-expressions
+    ref.current && ref.current.handleOpen();
   };
 
   return (
@@ -75,6 +76,7 @@ const EntryForm = () => {
           variant="outlined"
         />
       </div>
+      <TextModal ref={ref} text={"すべて入力してください"} />
       <Button disabled={submitting} type="submit">
         {submitting ? "sending ..." : "send it"}
       </Button>

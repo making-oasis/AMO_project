@@ -22,7 +22,7 @@ export const EntryForm = () => {
     }
   }, [title, content, report]);
 
-  async function submitHandler(e) {
+  const submitHandler = async (e) => {
     e.preventDefault();
     setSubmitting(true);
     try {
@@ -45,7 +45,7 @@ export const EntryForm = () => {
     } catch (e) {
       throw Error(e.message);
     }
-  }
+  };
 
   return (
     <form onSubmit={submitHandler}>
