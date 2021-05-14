@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import Container from "@/components/container";
 import EntryForm from "@/components/entry-form";
 import { TextModal } from "@/components/modal";
+import { THANKSMESSAGE } from "@/components/modal/constants";
 import $ from "jquery";
 import styles from "../styles/plane.module.css";
 
@@ -79,7 +80,7 @@ const TopPage = () => {
       <Nav />
       <Container>
         <PlaneForm />
-        <TextModal ref={ref} text={"!!!!!!!thank you!!!!!!!"} />
+        <TextModal ref={ref} text={THANKSMESSAGE} />
       </Container>
       <Footer />
     </div>
