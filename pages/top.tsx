@@ -15,8 +15,6 @@ const TopPage = () => {
 
   useEffect(() => {
     //Planeを飛ばすanimation/jQueryで
-    console.log("============== start DOM jQuery ==================");
-
     $("." + styles.send).click(() => {
       setTimeout(() => {
         $("#" + styles.plate).removeClass(styles.front);
@@ -36,9 +34,7 @@ const TopPage = () => {
                   )
                   .addClass(styles.beginning);
                 $("." + styles.curvable).removeClass(styles.curved);
-                //thank you action
-                console.log("thnaks modal start!");
-                callerrorThanksModal();
+                callThanksModal();
               }, 3000);
             }, 600);
           }, 2000);
@@ -46,7 +42,7 @@ const TopPage = () => {
       }, 200);
     });
   }, []);
-  const callerrorThanksModal = () => {
+  const callThanksModal = () => {
     // eslint-disable-next-line mdx/no-unused-expressions
     ref.current && ref.current.handleOpen();
   };
