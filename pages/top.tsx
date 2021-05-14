@@ -32,7 +32,7 @@ const TopPage = () => {
                 //thank you action
                 console.log("hello");
               }, 3000);
-            }, 600);
+            }, 6000);
           }, 2000);
         }, 2800);
       }, 200);

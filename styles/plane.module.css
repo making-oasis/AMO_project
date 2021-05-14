@@ -53,7 +53,7 @@
   border: none;
   border-top: 240px solid hsla(0, 0%, 0%, 0);
   border-bottom: 0px solid hsla(0, 0%, 0%, 0);
-  border-right: 100px solid hsl(0, 0%, 88%);
+  border-right: 100px solid hsl(202, 79%, 51%);
   width: 0;
   height: 0;
   bottom: 0;
@@ -97,7 +97,7 @@
 
 #plate {
   z-index: 3;
-  background: #4169e1;
+  background: hsl(202, 94%, 48%);
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   -o-transform: rotateY(-180deg);
@@ -208,8 +208,8 @@
   -o-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
-  border-left: 100px solid hsl(0, 0%, 88%);
-  border-right: none;
+  border-left: 100px solid hsl(202, 79%, 51%);
+  border-right: hsl(202, 79%, 51%);
   left: 100px;
 }
 
@@ -225,7 +225,7 @@
   -o-transform-origin: 0% 100%;
   -ms-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
-  border-right: 100px solid hsl(0, 0%, 88%);
+  border-right: 100px solid hsl(202, 79%, 51%);
 }
 
 .wing4 {
@@ -246,7 +246,7 @@
   -ms-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
   border-right: none;
-  border-left: 100px solid hsl(0, 0%, 88%);
+  border-left: 100px solid hsl(202, 79%, 51%);
   left: 100px;
 }
 
@@ -328,15 +328,15 @@
     rotateY(-60deg) skewY(-22.62deg);
   transform: translateY(-38px) translateX(8px) rotateZ(22.62deg) rotateY(-60deg)
     skewY(-22.62deg);
-  border-right: 100px solid hsl(0, 0%, 95%);
+  border-right: 100px solid hsl(202, 94%, 48%);
 }
 
 #container.hover .wing2 {
-  border-left: 100px solid hsl(0, 0%, 85%);
+  border-left: 100px solid hsl(202, 84%, 36%);
 }
 
 #container.hover .wing3 {
-  border-right: 100px solid hsl(0, 0%, 71%);
+  border-right: 100px solid hsl(202, 84%, 36%);
 }
 
 #container.hover .wing4 {
@@ -350,7 +350,7 @@
     rotateY(60deg) skewY(20deg);
   transform: translateY(-38px) translateX(-8px) rotateZ(-22.62deg)
     rotateY(60deg) skewY(20deg);
-  border-left: 100px solid hsl(0, 0%, 95%);
+  border-left: 100px solid hsl(202, 94%, 48%);
 }
 
 #container.hover {
@@ -426,7 +426,7 @@
   -ms-transition: all 10ms ease-in-out;
   transition: all 10ms ease-in-out;
   background-color: hsl(0, 0%, 85%);
-  border: 2px solid hsl(194, 30%, 55%);
+  border: 2px solid hsl(202, 79%, 51%);
 }
 
 .curvable.top_left {
@@ -446,7 +446,7 @@
   top: 0;
   border-right: 202px solid hsla(0, 0%, 0%, 0);
   border-bottom: 202px solid hsla(0, 0%, 0%, 0);
-  border-top: 223px solid hsl(0, 0%, 88%);
+  border-top: 223px solid hsl(202, 79%, 51%);
 }
 
 .curvable {
@@ -470,7 +470,7 @@
   right: 0;
   border-left: 202px solid hsla(0, 0%, 0%, 0);
   border-bottom: 202px solid hsla(0, 0%, 0%, 0);
-  border-top: 224px solid hsl(0, 0%, 88%);
+  border-top: 224px solid hsl(202, 79%, 51%);
 
   -webkit-transform-origin: 96px 112px;
   -moz-transform-origin: 96px 112px;
@@ -499,7 +499,7 @@
   transition-delay: 2100ms;
   width: 109px;
   height: 38px;
-  background: hsl(0, 0%, 88%);
+  background: hsl(202, 79%, 51%);
   bottom: 0;
   left: 0;
 }
@@ -508,8 +508,8 @@
   position: absolute;
   content: "";
   border-right: 92px solid hsla(0, 0%, 0%, 0);
-  border-bottom: 39px solid hsl(0, 0%, 88%);
-  border-top: 37px solid hsla(0, 0%, 0%, 0);
+  border-bottom: 39px solid hsl(202, 79%, 51%);
+  border-top: 37px solid hsla(2, 90%, 42%, 0);
   left: 109px;
   bottom: 0;
 }
@@ -528,7 +528,7 @@
   transition-delay: 2450ms;
   width: 109px;
   height: 38px;
-  background: hsl(0, 0%, 88%);
+  background: hsl(202, 79%, 51%);
   bottom: 0;
   right: 0;
 }
@@ -537,8 +537,8 @@
   position: absolute;
   content: "";
   border-left: 92px solid hsla(0, 0%, 0%, 0);
-  border-bottom: 39px solid hsl(0, 0%, 88%);
-  border-top: 37px solid hsla(0, 0%, 0%, 0);
+  border-bottom: 39px solid hsl(202, 79%, 51%);
+  border-top: 37px solid hsla(0, 86%, 47%, 0);
   left: -92px;
   bottom: 0;
 }
