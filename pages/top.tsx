@@ -1,16 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Container from "@/components/container";
 import EntryForm from "@/components/entry-form";
+import { TextModal } from "@/components/modal";
+import { THANKSMESSAGE } from "@/components/modal/constants";
 import $ from "jquery";
 import styles from "../styles/plane.module.css";
 
 //投稿ページ(top page)
 const TopPage = () => {
-  //Planeを飛ばすanimation/jQueryで
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const ref = useRef<any>();
+
   useEffect(() => {
+    //Planeを飛ばすanimation/jQueryで
     console.log("============== start DOM jQuery ==================");
+
     $("." + styles.send).click(() => {
       setTimeout(() => {
         $("#" + styles.plate).removeClass(styles.front);
@@ -31,7 +37,8 @@ const TopPage = () => {
                   .addClass(styles.beginning);
                 $("." + styles.curvable).removeClass(styles.curved);
                 //thank you action
-                console.log("hello");
+                console.log("thnaks modal start!");
+                callerrorThanksModal();
               }, 3000);
             }, 600);
           }, 2000);
@@ -39,7 +46,10 @@ const TopPage = () => {
       }, 200);
     });
   }, []);
-
+  const callerrorThanksModal = () => {
+    // eslint-disable-next-line mdx/no-unused-expressions
+    ref.current && ref.current.handleOpen();
+  };
   const PlaneForm = () => {
     return (
       <div>
@@ -70,9 +80,11 @@ const TopPage = () => {
       <Nav />
       <Container>
         <PlaneForm />
+        <TextModal ref={ref} text={THANKSMESSAGE} />
       </Container>
       <Footer />
     </div>
   );
 };
+
 export default TopPage;

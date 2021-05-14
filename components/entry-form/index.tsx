@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import Button from "@/components/button";
 import TextField from "@material-ui/core/TextField";
 import { TextModal } from "@/components/modal";
-//import { DEFAULT_REPORT } from './constants'
+import { INPUTERRORMESSAGE } from "../modal/constants";
 
 const report: string = "default" as const;
 
@@ -76,7 +76,7 @@ const EntryForm = () => {
           variant="outlined"
         />
       </div>
-      <TextModal ref={ref} text={"すべて入力してください"} />
+      <TextModal ref={ref} text={INPUTERRORMESSAGE} />
       <Button disabled={submitting} type="submit">
         {submitting ? "sending ..." : "send it"}
       </Button>
