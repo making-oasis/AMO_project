@@ -9,11 +9,7 @@ const Nav = () => {
     <Container className="py-4">
       <nav>
         <div className="flex justify-between items-center">
-          <Link href="/top">
-            <a>
-              <Image src={"/amo.jpeg"} width={100} height={100} />
-            </a>
-          </Link>
+          <Link href="/top">APP Name</Link>
           <div className="flex justify-end items-center">
             <div>
               <Link href="/new">
