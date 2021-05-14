@@ -6,8 +6,9 @@ import EntryForm from "@/components/entry-form";
 import $ from "jquery";
 import styles from "../styles/plane.module.css";
 
+//投稿ページ(top page)
 const TopPage = () => {
-  //Planeを飛ばすanimation/jQueryで直接DOM操作
+  //Planeを飛ばすanimation/jQueryで
   useEffect(() => {
     console.log("============== start DOM jQuery ==================");
     $("." + styles.send).click(() => {

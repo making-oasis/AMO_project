@@ -8,11 +8,11 @@ const AmoPage = () => {
     <>
       <Nav />
       <Container>
-        <h1 className={styles.h1}>What AMO?</h1>
+        <h1 className={styles.h1}>What is AMO?</h1>
         <h2 className={styles.h2}>this is About page</h2>
         <div className={styles.flex}>
           <p>
-            <Image src={"/kirinuki-blue.png"} width={400} height={200} />
+            <Image src={"/sample.jpg"} width={600} height={400} />
           </p>
           <p className={styles.p1}>
             Hiding behind the couch until lured out by a feathery toy instead of
