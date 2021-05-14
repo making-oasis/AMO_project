@@ -7,6 +7,7 @@ import $ from "jquery";
 import styles from "../styles/plane.module.css";
 
 const TopPage = () => {
+  //Planeを飛ばすanimation/jQueryで直接DOM操作
   useEffect(() => {
     console.log("============== start DOM jQuery ==================");
     $("." + styles.send).click(() => {
@@ -38,17 +39,12 @@ const TopPage = () => {
     });
   }, []);
 
-  //Planeを飛ばすanimation/jQueryで直接DOM操作
   const PlaneForm = () => {
     return (
       <div>
         <div id={styles.plate} className={styles.front}>
           <EntryForm />
-          <button className={styles.send} onClick={send}>
-            {" "}
-            Send it{" "}
-          </button>{" "}
-          <br />
+          <button className={styles.send}> Send it </button> <br />
         </div>
         <div id={styles.container} className={styles.beginning}>
           <div id={styles.leftWing}>
@@ -66,10 +62,6 @@ const TopPage = () => {
         </div>
       </div>
     );
-  };
-
-  const send = () => {
-    console.log("hello");
   };
 
   return (

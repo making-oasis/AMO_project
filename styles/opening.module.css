@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .main {
@@ -150,4 +151,57 @@
   position: absolute;
   top: 42%;
   left: 40%;
+}
+
+/* ----------------------- top page animation----------------------- */
+
+.body {
+  color: white;
+  background-color: white;
+  transition: background-color 1s ease;
+}
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+/* colours */
+.color-violet {
+  background-color: #7a4eab;
+}
+.color-indigo {
+  background-color: #4332cf;
+}
+.color-blue {
+  background-color: #2f8fed;
+}
+.color-green {
+  background-color: #4dcf42;
+}
+.color-yellow {
+  background-color: #faeb33;
+}
+.color-orange {
+  background-color: #f19031;
+}
+.color-red {
+  background-color: #f2293a;
+}
+.h1,
+.h2 {
+  font-size: 3em;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+.p {
+  max-width: 30em;
+  margin-bottom: 1.618em;
 }
