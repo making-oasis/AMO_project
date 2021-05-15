@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import TextField from "@material-ui/core/TextField";
 import $ from "jquery";
+import Button from "@/components/button";
 import { TextModal } from "@/components/modal";
 import { INPUTERRORMESSAGE, THANKSMESSAGE } from "../modal/constants";
 import styles from "../../styles/plane.module.css";
@@ -43,7 +44,7 @@ const EntryForm = () => {
       }, 200);
     });
   }, []);
-
+  //登録処理
   const submitHandler = async (e) => {
     setSubmitting(true);
     e.preventDefault();
@@ -114,9 +115,9 @@ const EntryForm = () => {
           </div>
           <TextModal ref={ref} text={INPUTERRORMESSAGE} />
           <TextModal ref={ref} text={THANKSMESSAGE} />
-          <button className={styles.send} disabled={submitting} type="submit">
+          <Button className={styles.send} disabled={submitting} type="submit">
             {submitting ? "sending ..." : "send it"}
-          </button>
+          </Button>
         </form>
       </div>
       <div id={styles.container} className={styles.beginning}>

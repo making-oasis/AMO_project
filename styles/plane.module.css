@@ -117,7 +117,7 @@
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
   width: 400px;
-  height: 500px;
+  height: 450px;
   top: 300px;
 
   -webkit-transition: all 0.8s ease-in-out;
