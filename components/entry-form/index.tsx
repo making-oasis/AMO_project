@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef, VFC } from "react";
 import TextField from "@material-ui/core/TextField";
 import $ from "jquery";
 import Button from "@/components/button";
@@ -8,42 +8,45 @@ import { INPUTERRORMESSAGE, THANKSMESSAGE } from "../modal/constants";
 import styles from "../../styles/plane.module.css";
 
 const report: string = "default" as const;
-
-const EntryForm = () => {
+const wait = async (ms: number) => {
+  return new Promise<void>((resolve) => setTimeout(resolve, ms));
+};
+const EntryForm: VFC = () => {
   const [title, setTitle] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [submitting, setSubmitting] = useState<boolean>(false);
   const ref = useRef<any>();
 
-  useEffect(() => {
-    //Planeを飛ばすanimation/jQueryで
-    $("." + styles.send).click(() => {
-      setTimeout(() => {
-        $("#" + styles.plate).removeClass(styles.front);
-        $("#" + styles.container).removeClass(styles.beginning);
-        $("." + styles.curvable).addClass(styles.curved);
-        setTimeout(() => {
-          $("#" + styles.container).addClass(styles.hover);
-          setTimeout(() => {
-            $("#" + styles.container).addClass(styles.fly_away_first);
-            setTimeout(() => {
-              $("#" + styles.container).addClass(styles.fly_away);
-              setTimeout(() => {
-                $("#" + styles.plate).addClass(styles.front);
-                $("#" + styles.container)
-                  .removeClass(
-                    `${styles.fly_away} ${styles.fly_away_first} hover`
-                  )
-                  .addClass(styles.beginning);
-                $("." + styles.curvable).removeClass(styles.curved);
-                callThanksModal();
-              }, 3000);
-            }, 600);
-          }, 2000);
-        }, 2800);
-      }, 200);
-    });
-  }, []);
+  const handleClick = async () => {
+    const plate = document.getElementById(styles.plate);
+    const container = document.getElementById(styles.container);
+    const curvables = document.querySelectorAll("." + styles.curvable);
+
+    await wait(200);
+    plate.classList.remove(styles.front);
+    container.classList.remove(styles.beginning);
+    curvables.forEach((curvable) => curvable.classList.add(styles.curved));
+
+    await wait(2800);
+    container.classList.add(styles.hover);
+
+    await wait(2000);
+    container.classList.add(styles.fly_away_first);
+
+    await wait(600);
+    container.classList.add(styles.fly_away);
+
+    await wait(3000);
+    plate.classList.add(styles.front);
+    container.classList.add(styles.beginning);
+    container.classList.remove(
+      styles.fly_away,
+      styles.fly_away_first,
+      styles.hover
+    );
+    curvables.forEach((curvable) => curvable.classList.remove(styles.curved));
+  };
+
   //登録処理
   const submitHandler = async (e) => {
     setSubmitting(true);
@@ -78,10 +81,10 @@ const EntryForm = () => {
     // eslint-disable-next-line mdx/no-unused-expressions
     ref.current && ref.current.handleOpen();
   };
-  const callThanksModal = () => {
-    // eslint-disable-next-line mdx/no-unused-expressions
-    ref.current && ref.current.handleOpen();
-  };
+  //const callThanksModal = () => {
+  //  // eslint-disable-next-line mdx/no-unused-expressions
+  //  ref.current && ref.current.handleOpen();
+  //};
 
   return (
     <div>
@@ -115,7 +118,12 @@ const EntryForm = () => {
           </div>
           <TextModal ref={ref} text={INPUTERRORMESSAGE} />
           <TextModal ref={ref} text={THANKSMESSAGE} />
-          <Button className={styles.send} disabled={submitting} type="submit">
+          <Button
+            className={styles.send}
+            disabled={submitting}
+            onClick={handleClick}
+            type="submit"
+          >
             {submitting ? "sending ..." : "send it"}
           </Button>
         </form>
