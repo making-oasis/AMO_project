@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState, useRef, VFC } from "react";
 import TextField from "@material-ui/core/TextField";
-import $ from "jquery";
 import Button from "@/components/button";
 import { TextModal } from "@/components/modal";
 import { INPUTERRORMESSAGE, THANKSMESSAGE } from "../modal/constants";
@@ -17,6 +16,7 @@ const EntryForm: VFC = () => {
   const [submitting, setSubmitting] = useState<boolean>(false);
   const ref = useRef<any>();
 
+  //animation
   const handleClick = async () => {
     const plate = document.getElementById(styles.plate);
     const container = document.getElementById(styles.container);
@@ -37,6 +37,7 @@ const EntryForm: VFC = () => {
     container.classList.add(styles.fly_away);
 
     await wait(3000);
+    callThanksModal();
     plate.classList.add(styles.front);
     container.classList.add(styles.beginning);
     container.classList.remove(
@@ -74,15 +75,16 @@ const EntryForm: VFC = () => {
       throw Error(e.message);
     }
   };
-  //親コンポから子コンポのhandleOpenメソッドを実行
+  //登録失敗成功時のmodal
   const callerrorModal = () => {
     // eslint-disable-next-line mdx/no-unused-expressions
     ref.current && ref.current.handleOpen();
   };
-  //const callThanksModal = () => {
-  //  // eslint-disable-next-line mdx/no-unused-expressions
-  //  reff.current && reff.current.handleOpen();
-  //};
+  const callThanksModal = () => {
+    console.log("hello");
+    // eslint-disable-next-line mdx/no-unused-expressions
+    ref.current && ref.current.handleOpen();
+  };
 
   return (
     <div>
@@ -113,7 +115,6 @@ const EntryForm: VFC = () => {
             variant="outlined"
           />
         </div>
-        <TextModal ref={ref} text={INPUTERRORMESSAGE} />
         <Button
           className={styles.send}
           disabled={submitting}
@@ -122,6 +123,7 @@ const EntryForm: VFC = () => {
         >
           {submitting ? "sending ..." : "send it"}
         </Button>
+        <TextModal ref={ref} text={INPUTERRORMESSAGE} />
       </div>
       <div id={styles.container} className={styles.beginning}>
         <div id={styles.leftWing}>
