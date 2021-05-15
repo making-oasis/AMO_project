@@ -3,7 +3,7 @@ import { useState, useRef, VFC } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@/components/button";
 import { TextModal } from "@/components/modal";
-import { INPUTERRORMESSAGE, THANKSMESSAGE } from "../modal/constants";
+import { INPUTERRORMESSAGE } from "../modal/constants";
 import styles from "../../styles/plane.module.css";
 
 const report: string = "default" as const;
@@ -67,8 +67,8 @@ const EntryForm: VFC = () => {
       setTitle("");
       setContent("");
       const json = await res.json();
-      console.log("success");
       if (!res.ok) throw Error(json.message);
+      console.log("success");
       handleClick();
     } catch (e) {
       callerrorModal();
@@ -77,13 +77,12 @@ const EntryForm: VFC = () => {
   };
   //登録失敗成功時のmodal
   const callerrorModal = () => {
+    console.log("submit error");
     // eslint-disable-next-line mdx/no-unused-expressions
     ref.current && ref.current.handleOpen();
   };
   const callThanksModal = () => {
-    console.log("hello");
-    // eslint-disable-next-line mdx/no-unused-expressions
-    ref.current && ref.current.handleOpen();
+    console.log("submit success");
   };
 
   return (
