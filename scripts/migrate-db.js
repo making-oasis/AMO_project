@@ -49,6 +49,7 @@ async function migrate() {
         ON UPDATE CURRENT_TIMESTAMP
     )
     `);
+
     console.log("migration ran successfully");
   } catch (e) {
     console.log(e);
