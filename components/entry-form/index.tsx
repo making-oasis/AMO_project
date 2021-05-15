@@ -46,7 +46,6 @@ const EntryForm: VFC = () => {
     );
     curvables.forEach((curvable) => curvable.classList.remove(styles.curved));
   };
-
   //登録処理
   const submitHandler = async (e) => {
     setSubmitting(true);
@@ -63,14 +62,13 @@ const EntryForm: VFC = () => {
           report,
         }),
       });
-
-      console.log(title);
       setSubmitting(false);
       setTitle("");
       setContent("");
       const json = await res.json();
       console.log("success");
       if (!res.ok) throw Error(json.message);
+      handleClick();
     } catch (e) {
       callerrorModal();
       throw Error(e.message);
@@ -83,50 +81,47 @@ const EntryForm: VFC = () => {
   };
   //const callThanksModal = () => {
   //  // eslint-disable-next-line mdx/no-unused-expressions
-  //  ref.current && ref.current.handleOpen();
+  //  reff.current && reff.current.handleOpen();
   //};
 
   return (
     <div>
       <div id={styles.plate} className={styles.front}>
-        <form onSubmit={submitHandler}>
-          <div className="my-4">
-            <label htmlFor="title">
-              <h3 className="font-bold">to</h3>
-            </label>
-            <TextField
-              name="title"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              label="to"
-              variant="standard"
-            />
-          </div>
-          <div className="my-4">
-            <label htmlFor="content">
-              <h3 className="font-bold">Content</h3>
-            </label>
-            <TextField
-              name="content"
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-              label="messages"
-              multiline
-              rows={4}
-              variant="outlined"
-            />
-          </div>
-          <TextModal ref={ref} text={INPUTERRORMESSAGE} />
-          <TextModal ref={ref} text={THANKSMESSAGE} />
-          <Button
-            className={styles.send}
-            disabled={submitting}
-            onClick={handleClick}
-            type="submit"
-          >
-            {submitting ? "sending ..." : "send it"}
-          </Button>
-        </form>
+        <div className="my-4">
+          <label htmlFor="title">
+            <h3 className="font-bold">to</h3>
+          </label>
+          <TextField
+            name="title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            label="to"
+            variant="standard"
+          />
+        </div>
+        <div className="my-4">
+          <label htmlFor="content">
+            <h3 className="font-bold">Content</h3>
+          </label>
+          <TextField
+            name="content"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+            label="messages"
+            multiline
+            rows={4}
+            variant="outlined"
+          />
+        </div>
+        <TextModal ref={ref} text={INPUTERRORMESSAGE} />
+        <Button
+          className={styles.send}
+          disabled={submitting}
+          onClick={submitHandler}
+          type="submit"
+        >
+          {submitting ? "sending ..." : "send it"}
+        </Button>
       </div>
       <div id={styles.container} className={styles.beginning}>
         <div id={styles.leftWing}>
