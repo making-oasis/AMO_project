@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Container from "@/components/container";
 import ButtonLink from "@/components/button-link";
-import Image from "next/image";
 
 const Nav = () => {
   return (
