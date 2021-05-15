@@ -36,9 +36,10 @@ async function query(q) {
 async function migrate() {
   try {
     await query(`
-    CREATE TABLE IF NOT EXISTS entries (
+    CREATE TABLE IF NOT EXISTS message (
       id INT AUTO_INCREMENT PRIMARY KEY,
-      title TEXT NOT NULL,
+      toMessage TEXT NOT NULL,
+      fromMessage TEXT NOT NULL,
       content TEXT NOT NULL,
       report TEXT NULL,
       created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
