@@ -5,22 +5,22 @@ import { query } from "../../lib/db";
 const filter = new Filter();
 
 const handler: NextApiHandler = async (req, res) => {
-  const { title, content, report } = req.body;
+  const { toMessage, fromMessage, content, report } = req.body;
   console.log(res);
   try {
-    if (!title || !content) {
+    if (!toMessage || !fromMessage || !content) {
       return res
         .status(400)
-        .json({ message: "`title` and `content` are both required" });
+        .json({ message: "`toMessage` and `fromMessage` and `content` are both required" });
     }
 
     const results = await query(
       `
-      INSERT INTO entries (title, content, report)
-      VALUES (?, ?, ?)
+      INSERT INTO entries (toMessage, fromMessage, content, report)
+      VALUES (?, ?, ?, ?)
       `,
-      //[filter.clean(title), filter.clean(content), filter.clean(report)]
-      [title, content, report]
+      //[filter.clean(toMessage), filter.clean(fromMessage), filter.clean(content), filter.clean(report)]
+      [toMessage, fromMessage, content, report]
     );
 
     return res.json(results);
