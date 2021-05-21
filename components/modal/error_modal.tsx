@@ -57,4 +57,4 @@ const TransitionsModal = (props, ref: React.Ref<unknown>) => {
   );
 };
 
-export const TextModal = React.forwardRef(TransitionsModal);
+export const ErrorModal = React.forwardRef(TransitionsModal);
