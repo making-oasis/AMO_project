@@ -45,38 +45,30 @@ const IndexPage = () => {
     <>
       <div className={styles.panel} data-color="white">
         <div>
-          <h1 className={styles.h1}>ここに説明書くよ</h1>
-          <p className={styles.p}>
-            あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-          </p>
-          <p>
-            あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-          </p>
-          <p>
-            あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-          </p>
+          <h1 className={styles.h1}>landing page</h1>
+          <p className={styles.p}>このWebAppが何であるかを文章ベースで表現</p>
         </div>
       </div>
       <div className={styles.panel} data-color="violet">
-        <h2 className={styles.h2}>あああああああああ</h2>
+        <h2 className={styles.h2}>このWebAppが何であるかを文章ベースで表現</h2>
       </div>
       <div className={styles.panel} data-color="indigo">
-        <h2 className={styles.h2}>あああああああああ</h2>
+        <h2 className={styles.h2}>このWebAppが何であるかを文章ベースで表現</h2>
       </div>
       <div className={styles.panel} data-color="blue">
-        <h2 className={styles.h2}>あああああああああ</h2>
+        <h2 className={styles.h2}>このWebAppが何であるかを文章ベースで表現</h2>
       </div>
       <div className={styles.panel} data-color="green">
-        <h2 className={styles.h2}>あああああああああ</h2>
+        <h2 className={styles.h2}>このWebAppが何であるかを文章ベースで表現</h2>
       </div>
       <div className={styles.panel} data-color="yellow">
-        <h2 className={styles.h2}>あああああああああ</h2>
+        <h2 className={styles.h2}>このWebAppが何であるかを文章ベースで表現</h2>
       </div>
       <div className={styles.panel} data-color="orange">
-        <h2 className={styles.h2}>あああああああああ</h2>
+        <h2 className={styles.h2}>このWebAppが何であるかを文章ベースで表現</h2>
       </div>
       <div className={styles.panel} data-color="red">
-        <h2 className={styles.h2}>あああああああああ</h2>
+        <h2 className={styles.h2}>このWebAppが何であるかを文章ベースで表現</h2>
       </div>
       <div className={styles.panel} data-color="red">
         <div>

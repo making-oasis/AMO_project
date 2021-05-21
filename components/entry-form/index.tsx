@@ -1,8 +1,9 @@
 import * as React from "react";
 import { useState, useRef, VFC } from "react";
+import { ErrorModal } from "@/components/modal/error_modal";
+import { SuccessModal } from "@/components/modal/success_modal";
 import TextField from "@material-ui/core/TextField";
 import Button from "@/components/button";
-import { TextModal } from "@/components/modal";
 import { INPUTERRORMESSAGE, THANKSMESSAGE } from "../modal/constants";
 import styles from "../../styles/plane.module.css";
 
@@ -15,7 +16,11 @@ const EntryForm: VFC = () => {
   const [fromMessage, setFromMessage] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [submitting, setSubmitting] = useState<boolean>(false);
+  //refを使い回すと片方のmodalの関数を実行できないためrefとreff用意。
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const reff = useRef<any>();
 
   //animation
   const handleClick = async () => {
@@ -38,7 +43,8 @@ const EntryForm: VFC = () => {
     container.classList.add(styles.fly_away);
 
     await wait(3000);
-    callThanksModal();
+    //submit成功modal表示
+    callSuccessModal();
     plate.classList.add(styles.front);
     container.classList.add(styles.beginning);
     container.classList.remove(
@@ -70,23 +76,25 @@ const EntryForm: VFC = () => {
       setFromMessage("");
       setContent("");
       const json = await res.json();
-      console.log("success");
       if (!res.ok) throw Error(json.message);
+      console.log("success");
       handleClick();
     } catch (e) {
       callerrorModal();
       throw Error(e.message);
     }
   };
-  //登録失敗成功時のmodal
-  const callerrorModal = () => {
+
+  //登録失敗成功時のmodal呼び出し
+  const callSuccessModal = () => {
+    console.log("submit success");
     // eslint-disable-next-line mdx/no-unused-expressions
-    ref.current && ref.current.handleOpen();
+    ref.current && ref.current.handleOpenSuccess();
   };
-  const callThanksModal = () => {
-    console.log("hello");
+  const callerrorModal = () => {
+    console.log("submit error");
     // eslint-disable-next-line mdx/no-unused-expressions
-    ref.current && ref.current.handleOpen();
+    reff.current && reff.current.handleOpen();
   };
 
   return (
@@ -126,7 +134,8 @@ const EntryForm: VFC = () => {
         >
           {submitting ? "sending ..." : "send it"}
         </Button>
-        <TextModal ref={ref} text={INPUTERRORMESSAGE} />
+        <SuccessModal ref={ref} text={THANKSMESSAGE} />
+        <ErrorModal ref={reff} text={INPUTERRORMESSAGE} />
       </div>
       <div id={styles.container} className={styles.beginning}>
         <div id={styles.leftWing}>
