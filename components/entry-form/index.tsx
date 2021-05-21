@@ -101,13 +101,25 @@ const EntryForm: VFC = () => {
     <div>
       <div id={styles.plate} className={styles.front}>
         <div className="my-4">
-          <label htmlFor="title">
+          <label htmlFor="to">
             <h3 className="font-bold">to</h3>
           </label>
           <TextField
-            name="title"
+            name="to"
             value={toMessage}
             onChange={(e) => setToMessage(e.target.value)}
+            label="to"
+            variant="standard"
+          />
+        </div>
+        <div className="my-4">
+          <label htmlFor="from">
+            <h3 className="font-bold">from</h3>
+          </label>
+          <TextField
+            name="from"
+            value={fromMessage}
+            onChange={(e) => setFromMessage(e.target.value)}
             label="to"
             variant="standard"
           />
