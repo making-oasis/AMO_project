@@ -11,7 +11,8 @@ const wait = async (ms: number) => {
   return new Promise<void>((resolve) => setTimeout(resolve, ms));
 };
 const EntryForm: VFC = () => {
-  const [title, setTitle] = useState<string>("");
+  const [toMessage, setToMessage] = useState<string>("");
+  const [fromMessage, setFromMessage] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [submitting, setSubmitting] = useState<boolean>(false);
   const ref = useRef<any>();
@@ -58,13 +59,15 @@ const EntryForm: VFC = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          title,
+          toMessage,
+          fromMessage,
           content,
           report,
         }),
       });
       setSubmitting(false);
-      setTitle("");
+      setToMessage("");
+      setFromMessage("");
       setContent("");
       const json = await res.json();
       console.log("success");
@@ -95,8 +98,8 @@ const EntryForm: VFC = () => {
           </label>
           <TextField
             name="title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            value={toMessage}
+            onChange={(e) => setToMessage(e.target.value)}
             label="to"
             variant="standard"
           />
