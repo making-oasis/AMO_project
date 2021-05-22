@@ -8,9 +8,9 @@ import styles from "../styles/background.module.css";
 
 //投稿ページ(top page)
 const TopPage = () => {
-  const test = (any: string) => {
-    const ground = document.getElementById("ground");
-    ground.classList.remove(
+  const changeBackgroundImage = (stylenumber: string) => {
+    const main = document.getElementById("main");
+    main.classList.remove(
       styles.back1,
       styles.back2,
       styles.back3,
@@ -18,25 +18,28 @@ const TopPage = () => {
       styles.back5,
       styles.back6
     );
-    ground.classList.add(any);
+    main.classList.add(stylenumber);
   };
 
   const cities = [
-    { name: "Dallas", label: styles.back2 },
-    { name: "Austin", label: styles.back3 },
-    { name: "New York", label: styles.back4 },
-    { name: "San Francisco", label: styles.back5 },
-    { name: "Beijing", label: styles.back6 },
+    { name: "Dallas", className: styles.back2 },
+    { name: "Austin", className: styles.back3 },
+    { name: "New York", className: styles.back4 },
+    { name: "San Francisco", className: styles.back5 },
+    { name: "Beijing", className: styles.back6 },
   ];
 
   return (
-    <div id="ground" className={styles.back1}>
+    <div id="main" className={styles.back1}>
       <span>
         <Nav />
         <Container>
           <EntryForm />
           {cities.map((el) => (
-            <Button key={el.name} onClick={() => test(el.label)}>
+            <Button
+              key={el.name}
+              onClick={() => changeBackgroundImage(el.className)}
+            >
               {el.name}
             </Button>
           ))}
