@@ -8,8 +8,7 @@ import styles from "../styles/background.module.css";
 
 //投稿ページ(top page)
 const TopPage = () => {
-  const test = () => {
-    console.log("test1");
+  const test = (any: string) => {
     const ground = document.getElementById("ground");
     ground.classList.remove(
       styles.back1,
@@ -19,60 +18,16 @@ const TopPage = () => {
       styles.back5,
       styles.back6
     );
-    ground.classList.add(styles.back2);
+    ground.classList.add(any);
   };
-  const test2 = () => {
-    console.log("test2");
-    const ground = document.getElementById("ground");
-    ground.classList.remove(
-      styles.back1,
-      styles.back2,
-      styles.back3,
-      styles.back4,
-      styles.back5,
-      styles.back6
-    );
-    ground.classList.add(styles.back3);
-  };
-  const test3 = () => {
-    console.log("test3");
-    const ground = document.getElementById("ground");
-    ground.classList.remove(
-      styles.back1,
-      styles.back2,
-      styles.back3,
-      styles.back4,
-      styles.back5,
-      styles.back6
-    );
-    ground.classList.add(styles.back4);
-  };
-  const test4 = () => {
-    console.log("test4");
-    const ground = document.getElementById("ground");
-    ground.classList.remove(
-      styles.back1,
-      styles.back2,
-      styles.back3,
-      styles.back4,
-      styles.back5,
-      styles.back6
-    );
-    ground.classList.add(styles.back5);
-  };
-  const test5 = () => {
-    console.log("test5");
-    const ground = document.getElementById("ground");
-    ground.classList.remove(
-      styles.back1,
-      styles.back2,
-      styles.back3,
-      styles.back4,
-      styles.back5,
-      styles.back6
-    );
-    ground.classList.add(styles.back6);
-  };
+
+  const cities = [
+    { name: "Dallas", label: styles.back2 },
+    { name: "Austin", label: styles.back3 },
+    { name: "New York", label: styles.back4 },
+    { name: "San Francisco", label: styles.back5 },
+    { name: "Beijing", label: styles.back6 },
+  ];
 
   return (
     <div id="ground" className={styles.back1}>
@@ -80,11 +35,11 @@ const TopPage = () => {
         <Nav />
         <Container>
           <EntryForm />
-          <Button onClick={test}>1</Button>
-          <Button onClick={test2}>2</Button>
-          <Button onClick={test3}>3</Button>
-          <Button onClick={test4}>4</Button>
-          <Button onClick={test5}>5</Button>
+          {cities.map((el) => (
+            <Button key={el.name} onClick={() => test(el.label)}>
+              {el.name}
+            </Button>
+          ))}
         </Container>
         <Footer />
       </span>
