@@ -3,10 +3,7 @@ import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 import Container from "@/components/container";
 import EntryForm from "@/components/entry-form";
-//import { gsap } from "gsap";
 import Button from "@/components/button";
-//import Image from "next/image";
-
 import styles from "../styles/background.module.css";
 
 //投稿ページ(top page)
@@ -42,7 +39,7 @@ const TopPage = () => {
       styles.back4,
       styles.back5
     );
-    ground.classList.add(styles.back3);
+    ground.classList.add(styles.back4);
   };
   const test4 = () => {
     const ground = document.getElementById("ground");
@@ -53,7 +50,7 @@ const TopPage = () => {
       styles.back4,
       styles.back5
     );
-    ground.classList.add(styles.back3);
+    ground.classList.add(styles.back5);
   };
   const test5 = () => {
     const ground = document.getElementById("ground");
@@ -64,7 +61,7 @@ const TopPage = () => {
       styles.back4,
       styles.back5
     );
-    ground.classList.add(styles.back5);
+    ground.classList.add(styles.back6);
   };
 
   return (
