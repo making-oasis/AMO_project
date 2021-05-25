@@ -3,20 +3,16 @@ import Router, { useRouter } from "next/router";
 import Button from "../button";
 
 export const EntryForm = () => {
-  const [_toMessage, setTomessage] = useState<string>("");
-  const [_fromMessage, setFrommessage] = useState<string>("");
+  const [_title, setTitle] = useState<string>("");
   const [_content, setContent] = useState<string>("");
   const [_report, setReport] = useState<string>("");
   const [submitting, setSubmitting] = useState<boolean>(false);
   const router = useRouter();
-  const { id, toMessage, fromMessage, content, report } = router.query;
+  const { id, title, content, report } = router.query;
 
   useEffect(() => {
-    if (typeof toMessage === "string") {
-      setTomessage(toMessage);
-    }
-    if (typeof fromMessage === "string") {
-      setFrommessage(fromMessage);
+    if (typeof title === "string") {
+      setTitle(title);
     }
     if (typeof content === "string") {
       setContent(content);
@@ -24,7 +20,7 @@ export const EntryForm = () => {
     if (typeof report === "string") {
       setReport(report);
     }
-  }, [toMessage, fromMessage, content, report]);
+  }, [title, content, report]);
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -37,8 +33,7 @@ export const EntryForm = () => {
         },
         body: JSON.stringify({
           id,
-          toMessage: _toMessage,
-          fromMessage: _fromMessage,
+          title: _title,
           content: _content,
           report: _report,
         }),
@@ -55,29 +50,16 @@ export const EntryForm = () => {
   return (
     <form onSubmit={submitHandler}>
       <div className="my-4">
-        <label htmlFor="to">
-          <h3 className="font-bold">To</h3>
+        <label htmlFor="title">
+          <h3 className="font-bold">Title</h3>
         </label>
         <input
-          id="to"
+          id="title"
           className="shadow border rounded w-full"
           type="text"
-          name="to"
-          value={_toMessage}
-          onChange={(e) => setTomessage(e.target.value)}
-        />
-      </div>
-      <div className="my-4">
-        <label htmlFor="from">
-          <h3 className="font-bold">From</h3>
-        </label>
-        <input
-          id="from"
-          className="shadow border rounded w-full"
-          type="text"
-          name="from"
-          value={_fromMessage}
-          onChange={(e) => setFrommessage(e.target.value)}
+          name="title"
+          value={_title}
+          onChange={(e) => setTitle(e.target.value)}
         />
       </div>
       <div className="my-4">
