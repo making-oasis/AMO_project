@@ -12,7 +12,8 @@ const wait = async (ms: number) => {
   return new Promise<void>((resolve) => setTimeout(resolve, ms));
 };
 const EntryForm: VFC = () => {
-  const [title, setTitle] = useState<string>("");
+  const [toMessage, setToMessage] = useState<string>("");
+  const [fromMessage, setFromMessage] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [submitting, setSubmitting] = useState<boolean>(false);
   //refを使い回すと片方のmodalの関数を実行できないためrefとreff用意。
@@ -64,13 +65,15 @@ const EntryForm: VFC = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          title,
+          toMessage,
+          fromMessage,
           content,
           report,
         }),
       });
       setSubmitting(false);
-      setTitle("");
+      setToMessage("");
+      setFromMessage("");
       setContent("");
       const json = await res.json();
       if (!res.ok) throw Error(json.message);
@@ -98,13 +101,25 @@ const EntryForm: VFC = () => {
     <div>
       <div id={styles.plate} className={styles.front}>
         <div className="my-4">
-          <label htmlFor="title">
+          <label htmlFor="to">
             <h3 className="font-bold">to</h3>
           </label>
           <TextField
-            name="title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            name="to"
+            value={toMessage}
+            onChange={(e) => setToMessage(e.target.value)}
+            label="to"
+            variant="standard"
+          />
+        </div>
+        <div className="my-4">
+          <label htmlFor="from">
+            <h3 className="font-bold">from</h3>
+          </label>
+          <TextField
+            name="from"
+            value={fromMessage}
+            onChange={(e) => setFromMessage(e.target.value)}
             label="to"
             variant="standard"
           />
