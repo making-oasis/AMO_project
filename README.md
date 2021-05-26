@@ -1,7 +1,5 @@
 # 青い紙飛行機 app
 
-[![Release][gh-release]][gh-release-url]
-
 - [デプロイ先](https://vercel.com/making-oasis/amo-project)
 - [本番 url](https://amo-project.vercel.app/)
 
@@ -61,7 +59,7 @@ yarn install
 yarn dev
 ```
 
-Your app should be up and running on [http://localhost:3001](http://localhost:3001)!
+Your app should be up and running on [http://localhost:3002](http://localhost:3002)!
 
 # リリース
 
