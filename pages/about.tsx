@@ -45,12 +45,11 @@ const AboutPage = () => {
         <p>
           Meow and walk away meow for food, then when human fills food dish,
           take a few bites of food and continue meowing scream at teh bath and
-          the door is opening! how exciting oh,, meh so brown cats with pink
-          ears hey! you there, with the hands but fight an alligator and win.
-          Use lap as chair howl on top of tall thing be a nyan cat, feel great
-          about it, be annoying 24/7 poop rainbows in litter box all day, chirp
-          at birds leave fur on owners clothes, scratch at the door then walk
-          away.
+          the door is opening! how exciting oh,, meh cats with ears hey! you
+          there, with the hands but fight an alligator and win. Use lap as chair
+          howl on top of tall thing be a nyan cat, feel great about it, be
+          annoying 24/7 poop rainbows in litter box all day, chirp at birds
+          leave fur on owners clothes, scratch at the door then walk away.
         </p>
 
         <p>
