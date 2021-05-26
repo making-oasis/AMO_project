@@ -1,22 +1,16 @@
-## link
+# 青い紙飛行機 app
 
-- [Vercel](https://vercel.com/making-oasis/amo-project)
-- [Link ](https://amo-project.vercel.app/)
+[![Release][gh-release]][gh-release-url]
 
-a
-## How to use
+- [デプロイ先](https://vercel.com/making-oasis/amo-project)
+- [本番 url](https://amo-project.vercel.app/)
 
-## local で必要なもの
+# セットアップ
+
+各種ローカルで用意するもの。
 
 - npm (v6.14.4)か yarn(v1.22.10)
 - node(v14.1.0)
-
-## 使っている UIUX ライブラリ
-
-- [tailwindCSS](https://tailwindcomponents.com/)
-- [material UI](https://material-ui.com/)
-
-# Setup 手順
 
 ### Step 1. install
 
@@ -69,14 +63,6 @@ yarn dev
 
 Your app should be up and running on [http://localhost:3001](http://localhost:3001)!
 
-## Deploy on Vercel
+# リリース
 
-```
-git push origin HEAD
-```
-
-#### Deploy Your Local Project
-
-To deploy your local project to Vercel, push it to GitHub/GitLab/Bitbucket and [import to Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example).
-
-**Important**: When you import your project on Vercel, make sure to click on **Environment Variables** and set them to match your `.env.local` file.
+github に push することで自動的に vercel で preview 環境と production 環境が用意されます。
