@@ -12,8 +12,8 @@ const handler: NextApiHandler = async (req, res) => {
     }
     const results = await query(
       `
-      SELECT id, toMessage, fromMessage, content, report
-      FROM message
+      SELECT id, toMessage, handleName, content, report
+      FROM messages
       WHERE id = ?
     `,
       id
