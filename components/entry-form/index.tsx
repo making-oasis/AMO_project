@@ -7,13 +7,13 @@ import Button from "@/components/button";
 import { INPUTERRORMESSAGE, THANKSMESSAGE } from "../modal/constants";
 import styles from "../../styles/plane.module.css";
 
+const toMessage: string = "default" as const;
 const report: string = "default" as const;
 const wait = async (ms: number) => {
   return new Promise<void>((resolve) => setTimeout(resolve, ms));
 };
 const EntryForm: VFC = () => {
-  const [toMessage, setTomessage] = useState<string>("");
-  const [fromMessage, setFrommessage] = useState<string>("");
+  const [handleName, setHandlename] = useState<string>("");
   const [content, setContent] = useState<string>("");
   const [submitting, setSubmitting] = useState<boolean>(false);
   //refを使い回すと片方のmodalの関数を実行できないためrefとreff用意。
@@ -66,14 +66,13 @@ const EntryForm: VFC = () => {
         },
         body: JSON.stringify({
           toMessage,
-          fromMessage,
+          handleName,
           content,
           report,
         }),
       });
       setSubmitting(false);
-      setTomessage("");
-      setFrommessage("");
+      setHandlename("");
       setContent("");
       const json = await res.json();
       if (!res.ok) throw Error(json.message);
@@ -101,25 +100,13 @@ const EntryForm: VFC = () => {
     <div>
       <div id={styles.plate} className={styles.front}>
         <div className="my-4">
-          <label htmlFor="toMessage">
-            <h3 className="font-bold">To</h3>
+          <label htmlFor="handleName">
+            <h3 className="font-bold">HandleName</h3>
           </label>
           <TextField
-            name="toMessage"
-            value={toMessage}
-            onChange={(e) => setTomessage(e.target.value)}
-            label="to"
-            variant="standard"
-          />
-        </div>
-        <div className="my-4">
-          <label htmlFor="fromMessage">
-            <h3 className="font-bold">From</h3>
-          </label>
-          <TextField
-            name="fromMessage"
-            value={fromMessage}
-            onChange={(e) => setFrommessage(e.target.value)}
+            name="handleName"
+            value={handleName}
+            onChange={(e) => setHandlename(e.target.value)}
             label="to"
             variant="standard"
           />
