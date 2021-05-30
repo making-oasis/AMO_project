@@ -16,7 +16,7 @@ const handler: NextApiHandler = async (req, res) => {
 
     const results = await query(
       `
-      INSERT INTO message (toMessage, handleName, content, report)
+      INSERT INTO messages (toMessage, handleName, content, report)
       VALUES (?, ?, ?, ?)
       `,
       //[filter.clean(toMessage), filter.clean(handleName), filter.clean(content), filter.clean(report)]
