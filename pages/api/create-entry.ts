@@ -5,7 +5,7 @@ import { query } from "../../lib/db";
 const filter = new Filter();
 
 const handler: NextApiHandler = async (req, res) => {
-  const { toMessage, handleName, content, report, created_at } = req.body;
+  const { toMessage, handleName, content, report } = req.body;
   console.log(res);
   try {
     if (!handleName || !content) {
@@ -16,11 +16,11 @@ const handler: NextApiHandler = async (req, res) => {
 
     const results = await query(
       `
-      INSERT INTO messages (toMessage, handleName, content, report, created_at)
-      VALUES (?, ?, ?, ?, ?)
+      INSERT INTO messages (toMessage, handleName, content, report)
+      VALUES (?, ?, ?, ?)
       `,
-      //[filter.clean(toMessage), filter.clean(handleName), filter.clean(content), filter.clean(report), filter.clean(created_at)]
-      [toMessage, handleName, content, report, created_at]
+      //[filter.clean(toMessage), filter.clean(handleName), filter.clean(content), filter.clean(report)]
+      [toMessage, handleName, content, report]
     );
 
     return res.json(results);
