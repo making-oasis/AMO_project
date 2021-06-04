@@ -8,11 +8,12 @@ import Button from "@/components/button";
 
 type Entry = {
   id: number;
-  title: string;
+  handleName: string;
   content: string;
+  created_at: string;
 };
 
-const Entry: React.FC<Entry> = ({ id, title, content }) => {
+const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
   const [deleting, setDeleting] = useState(false);
 
   async function deleteEntry() {
@@ -27,11 +28,11 @@ const Entry: React.FC<Entry> = ({ id, title, content }) => {
     <div>
       <div className="flex items-center">
         <Link href={`/entry/${id}`}>
-          <a className="font-bold py-2">{title}</a>
+          <a className="font-bold py-2">{handleName}</a>
         </Link>
         <div className="flex ml-4">
           <ButtonLink
-            href={`/entry/edit/${id}?title=${title}&content=${content}`}
+            href={`/entry/edit/${id}?handleName=${handleName}&content=${content}`}
             className="h-5 py-0 mx-1"
           >
             Reportする
@@ -43,6 +44,7 @@ const Entry: React.FC<Entry> = ({ id, title, content }) => {
           >
             {deleting ? "Deleting ..." : "Delete"}
           </Button>
+          <p>{created_at}</p>
         </div>
       </div>
       <p>{content}</p>

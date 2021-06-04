@@ -6,7 +6,7 @@ const Entries = ({ entries }) => {
       <div>
         {entries.map((e) => (
           <div key={e.id} className="py-2">
-            <Entry id={e.id} title={e.title} content={e.content} />
+            <Entry id={e.id} handleName={e.handleName} content={e.content} created_at={e.created_at} />
           </div>
         ))}
       </div>
