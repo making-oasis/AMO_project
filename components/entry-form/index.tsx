@@ -107,7 +107,7 @@ const EntryForm: VFC = () => {
             name="handleName"
             value={handleName}
             onChange={(e) => setHandlename(e.target.value)}
-            label="name"
+            label="HandleName"
             variant="standard"
           />
         </div>
@@ -119,7 +119,7 @@ const EntryForm: VFC = () => {
             name="content"
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            label="messages"
+            label="Content"
             multiline
             rows={4}
             variant="outlined"
