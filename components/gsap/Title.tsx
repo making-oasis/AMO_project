@@ -3,10 +3,11 @@ import { gsap } from "gsap";
 import styless from "../../styles/App.module.scss";
 
 const Title = ({ lineContent, lineContent2 }) => {
-  let line1: HTMLDivElement = useRef<HTMLDivElement>(null);
-  let line2: HTMLDivElement = useRef<HTMLDivElement>(null);
+  const line1 = useRef<HTMLDivElement>(null);
+  const line2 = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    gsap.from([line1, line2], 0.8, {
+    gsap.from(".line", {
+      duration: 0.8,
       delay: 0.8,
       ease: "power3.out",
       y: 64,
@@ -18,12 +19,12 @@ const Title = ({ lineContent, lineContent2 }) => {
   return (
     <h1 className="page-title">
       <div className={styless.linewrap}>
-        <div ref={(el) => (line1 = el)} className="line">
+        <div ref={(el) => (line1.current = el)} className="line">
           {lineContent}
         </div>
       </div>
       <div className={styless.linewrap}>
-        <div ref={(el) => (line2 = el)} className="line">
+        <div ref={(el) => (line2.current = el)} className="line">
           {lineContent2}
         </div>
       </div>
