@@ -37,7 +37,7 @@ const IndexPage = () => {
             <div className={styless.page}>
               <div className={styless.inner}>
                 <Title
-                  lineContent="投稿を通して、小さなアクションの経験を"
+                  lineContent="投稿を通して小さなアクションの経験を"
                   lineContent2="Experience small actions through posts"
                 />
               </div>
