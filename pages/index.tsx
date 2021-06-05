@@ -22,19 +22,6 @@ const IndexPage = () => {
       }
     );
   };
-  const onExited = (node: void) => {
-    gsap.to(
-      [node.children[0].firstElementChild, node.children[0].lastElementChild],
-      0.6,
-      {
-        y: -30,
-        ease: "power3.InOut",
-        stagger: {
-          amount: 0.2,
-        },
-      }
-    );
-  };
 
   return (
     <>
@@ -44,7 +31,6 @@ const IndexPage = () => {
             in={true}
             timeout={1200}
             classNames="page"
-            onExit={onExited}
             onEntering={onEnter}
             unmountOnExit
           >
