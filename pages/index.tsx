@@ -1,14 +1,62 @@
 import ButtonLink from "@/components/button-link";
 import Image from "next/image";
+import { gsap } from "gsap";
+import Title from "@/components/gsap/Title";
+import { CSSTransition } from "react-transition-group";
 import styles from "../styles/opening.module.css";
+import styless from "../styles/App.module.scss";
 
 const IndexPage = () => {
+  const onEnter = (node) => {
+    gsap.from(
+      [node.children[0].firstElementChild, node.children[0].lastElementChild],
+      0.6,
+      {
+        y: 30,
+        delay: 0.6,
+        ease: "power3.InOut",
+        opacity: 0,
+        stagger: {
+          amount: 0.6,
+        },
+      }
+    );
+  };
+  const onExit = (node) => {
+    gsap.to(
+      [node.children[0].firstElementChild, node.children[0].lastElementChild],
+      0.6,
+      {
+        y: -30,
+        ease: "power3.InOut",
+        stagger: {
+          amount: 0.2,
+        },
+      }
+    );
+  };
+
   return (
     <>
       <div className={styles.panel}>
-        <div>
-          <h1 className={styles.h1}>投稿を通して、小さなアクションの経験を</h1>
-          <p className={styles.p}>Experience small actions through posts</p>
+        <div className={styless.container}>
+          <CSSTransition
+            in={true}
+            timeout={1200}
+            classNames="page"
+            onExit={onExit}
+            onEntering={onEnter}
+            unmountOnExit
+          >
+            <div className={styless.page}>
+              <div className={styless.inner}>
+                <Title
+                  lineContent="投稿を通して、小さなアクションの経験を"
+                  lineContent2="Experience small actions through posts"
+                />
+              </div>
+            </div>
+          </CSSTransition>
         </div>
       </div>
       <div className={styles.panel}>
