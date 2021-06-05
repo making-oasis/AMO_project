@@ -3,8 +3,8 @@ import { gsap } from "gsap";
 import styless from "../../styles/App.module.scss";
 
 const Title = ({ lineContent, lineContent2 }) => {
-  let line1 = useRef(null);
-  let line2 = useRef(null);
+  let line1: HTMLDivElement = useRef<HTMLDivElement>(null);
+  let line2: HTMLDivElement = useRef<HTMLDivElement>(null);
   useEffect(() => {
     gsap.from([line1, line2], 0.8, {
       delay: 0.8,
