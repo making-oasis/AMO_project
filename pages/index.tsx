@@ -22,7 +22,7 @@ const IndexPage = () => {
       }
     );
   };
-  const onExited = (node) => {
+  const onExited = (node: void) => {
     gsap.to(
       [node.children[0].firstElementChild, node.children[0].lastElementChild],
       0.6,
