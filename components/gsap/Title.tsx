@@ -16,6 +16,7 @@ const Title = ({ lineContent, lineContent2 }) => {
       },
     });
   }, [line1, line2]);
+
   return (
     <h1 className="page-title">
       <div className={styless.linewrap}>
