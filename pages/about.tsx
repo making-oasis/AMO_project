@@ -8,8 +8,10 @@ const AboutPage = () => {
     <>
       <Nav />
       <Container>
-        <h1 className={styles.h1}>About</h1>
-        <h2 className={styles.h2}>this is About page</h2>
+        <h1 className={styles.h1}>About this app</h1>
+        <h2 className={styles.h2}>
+          生き別れた家族との再開を願い、ひとりで練習を続けるエチオピア人の陸上選手、異国の同胞たち、特に子供たちと共に未来を切り開きたいと、東京オリンピックで追加協議に採用された空手に出場することを夢見るシリア人選手。
+        </h2>
         <div className={styles.flex}>
           <p>
             <Image src={"/sample.jpg"} width={600} height={400} />
