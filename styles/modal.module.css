@@ -1,0 +1,17 @@
+.h1 {
+  font-size: 55px;
+  padding: 250px 0;
+  text-align: center;
+}
+.h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.image {
+  width: 1000px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-image: url(../public/backfroundimage.jpeg);
+}
