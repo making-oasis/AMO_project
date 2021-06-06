@@ -53,6 +53,8 @@ const TransitionsModal = (props, ref: React.Ref<unknown>) => {
             <div className={styles.image}>
               <h2 id="transition-modal-title" className={styles.h1}>
                 {props.text}
+                <br />
+                We got your messages!!
               </h2>
             </div>
           </div>
