@@ -3,7 +3,8 @@
 }
 .h2 {
   font-size: 25px;
-  margin: 30px 0px 30px 0px;
+  font-style: oblique;
+  margin: 60px 0px 60px 0px;
 }
 
 .flex {
@@ -18,4 +19,12 @@
 }
 .p2 {
   margin: 30px;
+}
+
+.main {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  line-height: 50px;
+  font-size: large;
+  text-align: center;
 }
