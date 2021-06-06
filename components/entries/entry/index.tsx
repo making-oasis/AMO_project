@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { mutate } from "swr";
+import moment from "moment";
 
 import ButtonLink from "@/components/button-link";
 import Button from "@/components/button";
@@ -15,6 +16,10 @@ type Entry = {
 
 const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
   const [deleting, setDeleting] = useState(false);
+  
+  function date(): string {
+    return moment(created_at).format("YYYY/MM/DD HH:mm:ss")
+  };
 
   async function deleteEntry() {
     setDeleting(true);
@@ -44,7 +49,7 @@ const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
           >
             {deleting ? "Deleting ..." : "Delete"}
           </Button>
-          <p>{created_at}</p>
+          <p>{date()}</p>
         </div>
       </div>
       <p>{content}</p>
