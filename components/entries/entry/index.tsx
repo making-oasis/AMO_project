@@ -17,7 +17,7 @@ type Entry = {
 const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
   const [deleting, setDeleting] = useState(false);
   
-  function date(): string {
+  const date = (): string => {
     return moment(created_at).format("YYYY/MM/DD HH:mm:ss")
   };
 
