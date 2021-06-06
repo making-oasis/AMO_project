@@ -50,10 +50,10 @@ const TransitionsModal = (props, ref: React.Ref<unknown>) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 className={styles.h1} id="transition-modal-title">
+            <h2 className={styles.h2} id="transition-modal-title">
               {props.text}
             </h2>
-            <h2 className={styles.h1} id="transition-modal-title">
+            <h2 className={styles.h2} id="transition-modal-title">
               Please enter all in the input items
             </h2>
           </div>
