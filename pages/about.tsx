@@ -1,5 +1,4 @@
 import Nav from "@/components/nav";
-//import Image from "next/image";
 import Container from "@/components/container";
 import styles from "../styles/about.module.css";
 
