@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
+import styles from "../../styles/modal.module.css";
 
 const TransitionsModal = (props, ref: React.Ref<unknown>) => {
   const useStyles = makeStyles((theme) => ({
@@ -49,7 +50,13 @@ const TransitionsModal = (props, ref: React.Ref<unknown>) => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">{props.text}</h2>
+            <div className={styles.image}>
+              <h2 id="transition-modal-title" className={styles.h1}>
+                {props.text}
+                <br />
+                We got your messages!!
+              </h2>
+            </div>
           </div>
         </Fade>
       </Modal>
