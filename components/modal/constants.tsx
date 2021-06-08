@@ -1,3 +1,3 @@
-export const THANKSMESSAGE = "!!!!!!!thank you!!!!!!!";
+export const THANKSMESSAGE = "Thank you!";
 
-export const INPUTERRORMESSAGE = "すべて入力項目に入力をしてください";
+export const INPUTERRORMESSAGE = "すべて入力項目に入力をしてください。";
