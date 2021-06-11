@@ -3,6 +3,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import Title from "@/components/gsap/Title";
 import { CSSTransition } from "react-transition-group";
+
 import styles from "../styles/opening.module.css";
 import styless from "../styles/App.module.scss";
 
@@ -39,6 +40,7 @@ const IndexPage = () => {
                 <Title
                   lineContent="投稿を通して小さなアクションの経験を"
                   lineContent2="Experience small actions through posts"
+                  lineContent3="test"
                 />
               </div>
             </div>
