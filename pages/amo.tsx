@@ -1,9 +1,15 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
 import Image from "next/image";
+import Button from "@material-ui/core/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import styles from "../styles/tabs/amo.module.css";
 
 const AmoPage = () => {
+  const iconStyle: React.CSSProperties = { padding: 10, fontSize: 50 };
+
   return (
     <>
       <Nav />
@@ -29,6 +35,14 @@ const AmoPage = () => {
           学校の環境では主に手段としてのITを教えられますが、イシューベースで一緒に考えプロジェクトを経験する場を提供することで、社会起点で物事を考えれ、ITを駆使できる人材を少しでも多く生み出せればと思います。
         </p>
       </Container>
+      <Button href="https://making-oasis.com">
+        AMOのHPはこちらから
+        <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
+      </Button>
+      <Button href="https://making-oasis.com">
+        AMOのHPはこちらから
+        <FontAwesomeIcon style={iconStyle} icon={faLink} />
+      </Button>
     </>
   );
 };
