@@ -1,6 +1,6 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
-import styles from "../styles/tabs/about.module.css";
+import styles from "../../styles/tabs/about.module.css";
 import ButtonLink from "@/components/button-link";
 
 const AboutPage = () => {
@@ -11,7 +11,7 @@ const AboutPage = () => {
         <h1 className={styles.h1}>About this app</h1>
         <ButtonLink
             className="h-5 py-0 mx-1"
-            href="/ja/about"
+            href="/about"
           >
             to English page (英語ページへ)
           </ButtonLink>

@@ -1,7 +1,7 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
 //import Image from "next/image";
-import styles from "../styles/tabs/youth.module.css";
+import styles from "../../styles/tabs/youth.module.css";
 import ButtonLink from "@/components/button-link";
 
 const UnhcrPage = () => {
@@ -12,10 +12,11 @@ const UnhcrPage = () => {
         <div className={styles.flex}>
         <ButtonLink
             className="h-5 py-0 mx-1"
-            href="/ja/youth"
+            href="/unhcr"
           >
             to English page (英語ページへ)
           </ButtonLink>
+
           <h1 className={styles.h2}>Youth×UNHCR for Refugeesについて</h1>
           <p>
             日本全国には難民支援に取り組む学生団体がたくさんあります。

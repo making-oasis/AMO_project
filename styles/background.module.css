@@ -1,24 +1,60 @@
 .back1 {
-  height: 980px;
-  background-image: url(../public/tops/beijing.webp);
+  height: 1020px;
+  background-image: url(../public/tops/arena.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
 }
 .back2 {
-  height: 980px;
-  background-image: url(../public/tops/austin.webp);
+  height: 1020px;
+  width: auto;
+  background-image: url(../public/tops/arena.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
 }
 .back3 {
-  height: 980px;
-  background-image: url(../public/tops/beijing.webp);
+  height: 1020px;
+  width: auto;
+  background-image: url(../public/tops/run.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
 }
 .back4 {
-  height: 980px;
-  background-image: url(../public/tops/dallas.webp);
+  height: 1020px;
+  width: auto;
+  background-image: url(../public/tops/world.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
 }
 .back5 {
-  height: 980px;
-  background-image: url(../public/tops/shin.jpeg);
+  height: 1020px;
+  width: auto;
+  background-image: url(../public/tops/night.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
 }
+
 .back6 {
-  height: 980px;
-  background-image: url(../public/tops/newyork.webp);
+  height: 1020px;
+  width: auto;
+  background-image: url(../public/tops/tree.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
 }
