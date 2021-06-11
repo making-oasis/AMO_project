@@ -1,19 +1,31 @@
 .back1 {
   height: 1020px;
   background-image: url(../public/tops/tt.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
 }
 .back2 {
   height: 1020px;
   width: auto;
-  background-image: url(../public/tops/austin.webp);
+  background-image: url(../public/tops/ttt.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
 }
 .back3 {
   height: 1020px;
   width: auto;
-  background-image: url(../public/tops/beijing.webp);
+  background-image: url(../public/tops/world.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
 }
 .back4 {
   height: 1020px;

@@ -22,8 +22,8 @@ const TopPage = () => {
   };
 
   const cities = [
-    { name: "Dallas", className: styles.back2 },
-    { name: "Austin", className: styles.back3 },
+    { name: "Tokyo", className: styles.back2 },
+    { name: "sport", className: styles.back3 },
     { name: "New York", className: styles.back4 },
     { name: "San Francisco", className: styles.back5 },
     { name: "Beijing", className: styles.back6 },
