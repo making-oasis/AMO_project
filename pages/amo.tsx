@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "@material-ui/core/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import styles from "../styles/tabs/amo.module.css";
 
 const AmoPage = () => {
@@ -34,15 +34,30 @@ const AmoPage = () => {
           ただしAMOのメンバーだけでは、見えている世界も、できる範囲にも限界があります。そこで、若い学生の「育成」に軸足を置き、一緒に社会のために行動できるITを駆使できる人材を育てていくことに決めました。
           学校の環境では主に手段としてのITを教えられますが、イシューベースで一緒に考えプロジェクトを経験する場を提供することで、社会起点で物事を考えれ、ITを駆使できる人材を少しでも多く生み出せればと思います。
         </p>
+        <h2 className={styles.h2}>contacts for AMO</h2>
+        <Button
+          size="small"
+          color="primary"
+          href="https://twitter.com/apps_oasis"
+        >
+          <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
+          AMOのtwitterはこちらから
+        </Button>
+        <br />
+        <Button
+          size="small"
+          color="primary"
+          href="https://www.facebook.com/makingoasis2021"
+        >
+          <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
+          AMOのFaceBookはこちらから
+        </Button>
+        <br />
+        <Button size="small" color="primary" href="https://making-oasis.com">
+          <FontAwesomeIcon style={iconStyle} icon={faLink} />
+          AMOのHPはこちらから
+        </Button>
       </Container>
-      <Button href="https://making-oasis.com">
-        AMOのHPはこちらから
-        <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-      </Button>
-      <Button href="https://making-oasis.com">
-        AMOのHPはこちらから
-        <FontAwesomeIcon style={iconStyle} icon={faLink} />
-      </Button>
     </>
   );
 };
