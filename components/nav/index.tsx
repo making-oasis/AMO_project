@@ -19,12 +19,11 @@ const Nav = () => {
               <a className="font-bold text-1xl pr-4">ABOUT</a>
             </Link>{" "}
             <Link href="/unhcr">
-              <a className="font-bold text-1xl pr-3">UNHCRについて</a>
+              <a className="font-bold text-1xl pr-3">Youth×UNHCRについて</a>
             </Link>{" "}
             <Link href="/amo">
               <a className="font-bold text-1xl pr-3">AMOについて</a>
             </Link>{" "}
-            <ButtonLink href="/contact">Contact</ButtonLink>
           </div>
         </div>
       </nav>

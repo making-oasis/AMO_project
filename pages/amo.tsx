@@ -1,14 +1,18 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
-import styles from "../styles/amo.module.css";
+import Image from "next/image";
+import styles from "../styles/tabs/amo.module.css";
 
 const AmoPage = () => {
   return (
     <>
       <Nav />
       <Container>
-        <h1 className={styles.h1}>What is AMO?</h1>
+        <div>
+          <Image src={"/tabs/amo.jpeg"} width={150} height={150} />
+        </div>
         <h2 className={styles.h2}>AMO(Apps for Making Oasis)とは</h2>
+
         <p className={styles.p1}>
           AMOはアプリ開発などを学生と共に行い社会課題解決に必要なITを駆使できる人材の育成をミッションとした学生支援団体です。SDGsなどの社会問題に取り組む団体様と共に、ITに関する技術、知識、ノウハウを持つメンバーが協力して、社会を担う次世代のリーダーを育成します。
         </p>
