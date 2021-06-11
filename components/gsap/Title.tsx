@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { gsap } from 'gsap';
 import styless from "../../styles/App.module.scss";
 
 const Title = ({ lineContent, lineContent2, lineContent3 }) => {

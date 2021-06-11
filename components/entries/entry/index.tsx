@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { mutate } from "swr";
-
 import ButtonLink from "@/components/button-link";
 import Button from "@/components/button";
 
