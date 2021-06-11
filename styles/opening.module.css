@@ -197,11 +197,16 @@
 }
 .h1,
 .h2 {
+  text-align: center;
   font-size: 3em;
   letter-spacing: -0.05em;
   line-height: 1.1;
 }
 .p {
-  max-width: 30em;
-  margin-bottom: 1.618em;
+  text-align: center;
+  margin-top: 1.618em;
+}
+.pp {
+  text-align: center;
+  font-size: 40px;
 }
