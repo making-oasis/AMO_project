@@ -9,6 +9,12 @@ export default function EditEntryPage() {
       <Nav />
       <Container>
         <div>
+          <h2 className={styles.en}>
+            You can report the deletion of the message here.
+            <br />
+            Please enter the reason for deletion. The administrator will delete
+            it.
+          </h2>
           <h2 className={styles.h2}>
             ここでメッセージの削除報告をすることができます。
             <br />

@@ -114,9 +114,13 @@ const ReportForm = () => {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">報告しました！</h2>
+            <h2 id="transition-modal-title">
+              reported!
+              <br />
+              報告しました！
+            </h2>
             <ButtonLink href={`/new`} className="h-5 py-0 mx-1">
-              メッセージ一覧へ
+              To message list
             </ButtonLink>
           </div>
         </Fade>
