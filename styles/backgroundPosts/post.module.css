@@ -1,0 +1,7 @@
+.backgroundimage {
+  background-image: url(../../public/backgroundPosts/world.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
