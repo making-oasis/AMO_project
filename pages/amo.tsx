@@ -5,6 +5,7 @@ import Button from "@material-ui/core/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import ButtonLink from "@/components/button-link";
 import styles from "../styles/tabs/amo.module.css";
 
 const AmoPage = () => {
@@ -14,11 +15,13 @@ const AmoPage = () => {
     <>
       <Nav />
       <Container>
+        <ButtonLink className="h-5 py-0 mx-1" href="/ja/amo">
+          to Japanese page (日本語ページへ)
+        </ButtonLink>
         <div>
           <Image src={"/tabs/amo.jpeg"} width={150} height={150} />
         </div>
         <h2 className={styles.h2}>AMO(Apps for Making Oasis)とは</h2>
-
         <p className={styles.p1}>
           AMOはアプリ開発などを学生と共に行い社会課題解決に必要なITを駆使できる人材の育成をミッションとした学生支援団体です。SDGsなどの社会問題に取り組む団体様と共に、ITに関する技術、知識、ノウハウを持つメンバーが協力して、社会を担う次世代のリーダーを育成します。
         </p>

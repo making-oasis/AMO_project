@@ -8,7 +8,7 @@ const Nav = () => {
     <Container className="py-4">
       <nav>
         <div className="flex justify-between items-center">
-          <Link href="/top">APP Name</Link>
+          <Link href="/top">届け青い紙ひこうき</Link>
           <div className="flex justify-end items-center">
             <div>
               <Link href="/new">

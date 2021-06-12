@@ -1,5 +1,6 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
+import ButtonLink from "@/components/button-link";
 import styles from "../styles/tabs/about.module.css";
 
 const AboutPage = () => {
@@ -7,7 +8,9 @@ const AboutPage = () => {
     <>
       <Nav />
       <Container>
-        <h1 className={styles.h1}>About this app</h1>
+        <ButtonLink className="h-5 py-0 mx-1" href="/ja/about">
+          to English page (英語ページへ)
+        </ButtonLink>
         <h2 className={styles.h2}>
           生き別れた家族との再開を願い、ひとりで練習を続けるエチオピア人の陸上選手、
           <br />
@@ -44,7 +47,7 @@ const AboutPage = () => {
           一歩を踏み出すきっかけに。
         </p>
 
-        <p>
+        <p className={styles.last}>
           そうした人たちが「自分には何かできることはないだろうか」と考える入り口としてA(appの固有名詞)は誕生しました。
           A(appの固有名詞)を使う人たちで一体となり、難民の方を応援しましょう！！！
           また、そのメッセージは難民の方へ届けることができます。

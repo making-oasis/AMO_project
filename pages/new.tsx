@@ -3,12 +3,13 @@ import Container from "@/components/container";
 import Skeleton from "react-loading-skeleton";
 import { useEntries } from "@/lib/swr-hooks";
 import Entries from "@/components/entries";
+import styles from "../styles/backgroundPosts/post.module.css";
 
 export default function NewEntryPage() {
   const { entries, isLoading } = useEntries();
   if (isLoading) {
     return (
-      <div>
+      <div className={styles.backgroundimage}>
         <Nav />
         <Container>
           <Skeleton width={180} height={24} />
@@ -25,7 +26,7 @@ export default function NewEntryPage() {
   }
 
   return (
-    <div>
+    <div className={styles.backgroundimage}>
       <Nav />
       <Container>
         <Entries entries={entries} />
