@@ -1,15 +1,12 @@
 import { NextApiHandler } from "next";
-import Filter from "bad-words";
 import { query } from "../../lib/db";
-
-const filter = new Filter();
 
 const handler: NextApiHandler = async (req, res) => {
   const { id, report } = req.body;
   try {
     const results = await query(
       `
-      UPDATE entries
+      UPDATE messages
       SET report = ?
       WHERE id = ?
       `,

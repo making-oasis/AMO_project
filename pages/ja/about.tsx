@@ -1,20 +1,16 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
-import styles from "../../styles/tabs/about.module.css";
 import ButtonLink from "@/components/button-link";
+import styles from "../../styles/tabs/about.module.css";
 
 const AboutPage = () => {
   return (
     <>
       <Nav />
       <Container>
-        <h1 className={styles.h1}>About this app</h1>
-        <ButtonLink
-            className="h-5 py-0 mx-1"
-            href="/about"
-          >
-            to English page (英語ページへ)
-          </ButtonLink>
+        <ButtonLink className="h-5 py-0 mx-1" href="/about">
+          to English page (英語ページへ)
+        </ButtonLink>
         <h2 className={styles.h2}>
           生き別れた家族との再開を願い、ひとりで練習を続けるエチオピア人の陸上選手、
           <br />

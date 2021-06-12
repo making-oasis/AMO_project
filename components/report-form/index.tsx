@@ -12,13 +12,13 @@ const ReportForm = () => {
   const [_report, setReport] = useState<string>("");
   const [submitting, setSubmitting] = useState<boolean>(false);
   const router = useRouter();
-  const { id, title, content, report } = router.query;
+  const { id, handleName, content, report } = router.query;
 
   useEffect(() => {
     if (typeof report === "string") {
       setReport(report);
     }
-  }, [title, content, report]);
+  }, [handleName, content, report]);
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -72,8 +72,8 @@ const ReportForm = () => {
     <form onSubmit={submitHandler}>
       <div className="my-4">
         <label htmlFor="title">
-          <h3 className="font-bold">Title</h3>
-          {title}
+          <h3 className="font-bold">HandleName</h3>
+          {handleName}
         </label>
       </div>
       <div className="my-4">
