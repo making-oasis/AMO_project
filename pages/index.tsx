@@ -3,8 +3,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import Title from "@/components/gsap/Title";
 import { CSSTransition } from "react-transition-group";
-
-import styles from "../styles/opening.module.css";
+import styles from "../styles/landing/opening.module.css";
 import styless from "../styles/App.module.scss";
 
 const IndexPage = () => {
@@ -47,6 +46,7 @@ const IndexPage = () => {
           </CSSTransition>
         </div>
       </div>
+
       <div className={styles.panel}>
         <div>
           <p className={styles.p}>
@@ -55,8 +55,9 @@ const IndexPage = () => {
             <br />{" "}
             「メッセージを送る」という小さなアクションは難民支援に繋がります。
           </p>
+
           <p>
-            <Image src={"/landing/top.png"} width={500} height={400} />
+            <Image src={"/landing/bule.png"} width={500} height={400} />
           </p>
         </div>
       </div>
@@ -78,6 +79,7 @@ const IndexPage = () => {
           </p>
         </div>
       </div>
+
       <div className={styles.panel} data-color="red">
         <div>
           <p className={styles.description}>
@@ -89,6 +91,17 @@ const IndexPage = () => {
             <br />
             <ButtonLink href="/top">Start</ButtonLink>
           </p>
+        </div>
+      </div>
+      <div className={styles.bodyy}>
+        <div className={styles.panel} data-color="red">
+          <div>
+            <p className={styles.description}>
+              メッセージを送ることで難民選手団を応援しましょう！
+              <br />
+              <ButtonLink href="/top">Start</ButtonLink>
+            </p>
+          </div>
         </div>
       </div>
     </>
