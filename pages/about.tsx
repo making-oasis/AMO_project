@@ -11,7 +11,6 @@ const AboutPage = () => {
         <ButtonLink className="h-5 py-0 mx-1" href="/ja/about">
           to English page (英語ページへ)
         </ButtonLink>
-        <h1 className={styles.h1}>About this app</h1>
         <h2 className={styles.h2}>
           生き別れた家族との再開を願い、ひとりで練習を続けるエチオピア人の陸上選手、
           <br />

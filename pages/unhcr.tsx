@@ -1,6 +1,5 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
-//import Image from "next/image";
 import ButtonLink from "@/components/button-link";
 import Image from "next/image";
 import Button from "@material-ui/core/Button";
