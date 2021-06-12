@@ -19,9 +19,14 @@
   line-height: 50px;
   text-align: center;
   font-weight: bold;
+  font-size: 25px;
   color: blue;
 }
 .image {
   text-align: center;
   padding-bottom: 20px;
+}
+.tt {
+  display: inline-block;
+  vertical-align: top;
 }
