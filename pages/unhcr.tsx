@@ -1,22 +1,23 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
 //import Image from "next/image";
-import styles from "../styles/tabs/youth.module.css";
 import ButtonLink from "@/components/button-link";
+import Image from "next/image";
+import styles from "../styles/tabs/youth.module.css";
 
 const UnhcrPage = () => {
   return (
     <>
       <Nav />
       <Container>
+        <ButtonLink className="h-5 py-0 mx-1" href="/ja/youth">
+          to English page (英語ページへ)
+        </ButtonLink>
         <div className={styles.flex}>
-        <ButtonLink
-            className="h-5 py-0 mx-1"
-            href="/ja/youth"
-          >
-            to English page (英語ページへ)
-          </ButtonLink>
           <h1 className={styles.h2}>Youth×UNHCR for Refugeesについて</h1>
+          <div className={styles.image}>
+            <Image src={"/tabs/image.png"} width={900} height={350} />
+          </div>
           <p>
             日本全国には難民支援に取り組む学生団体がたくさんあります。
             若者の力で難民支援の輪をさらに広げるため、プラットフォームとして2020年の「世界難民の日」をきっかけに、『Youth×UNHCR

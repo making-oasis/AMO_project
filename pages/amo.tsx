@@ -5,8 +5,8 @@ import Button from "@material-ui/core/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
-import styles from "../styles/tabs/amo.module.css";
 import ButtonLink from "@/components/button-link";
+import styles from "../styles/tabs/amo.module.css";
 
 const AmoPage = () => {
   const iconStyle: React.CSSProperties = { padding: 10, fontSize: 50 };
@@ -15,14 +15,11 @@ const AmoPage = () => {
     <>
       <Nav />
       <Container>
+        <ButtonLink className="h-5 py-0 mx-1" href="/ja/amo">
+          to Japanese page (日本語ページへ)
+        </ButtonLink>
         <div>
           <Image src={"/tabs/amo.jpeg"} width={150} height={150} />
-          <ButtonLink
-            className="h-5 py-0 mx-1"
-            href="/ja/amo"
-          >
-            to Japanese page (日本語ページへ)
-          </ButtonLink>
         </div>
         <h2 className={styles.h2}>AMO(Apps for Making Oasis)とは</h2>
         <p className={styles.p1}>
