@@ -9,7 +9,7 @@ const AboutPage = () => {
       <Nav />
       <Container>
         <ButtonLink className="h-5 py-0 mx-1" href="/ja/about">
-          to English page (英語ページへ)
+          to Japanese page (日本語ページへ)
         </ButtonLink>
         <h2 className={styles.h2}>
           生き別れた家族との再開を願い、ひとりで練習を続けるエチオピア人の陸上選手、

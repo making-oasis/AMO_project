@@ -34,15 +34,17 @@ const TopPage = () => {
       <span>
         <Nav />
         <Container>
+          <div className={styles.buttons}>
+            {cities.map((el) => (
+              <Button
+                key={el.name}
+                onClick={() => changeBackgroundImage(el.className)}
+              >
+                {el.name}
+              </Button>
+            ))}
+          </div>
           <EntryForm />
-          {cities.map((el) => (
-            <Button
-              key={el.name}
-              onClick={() => changeBackgroundImage(el.className)}
-            >
-              {el.name}
-            </Button>
-          ))}
         </Container>
         <Footer />
       </span>
