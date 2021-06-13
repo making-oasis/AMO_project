@@ -1,14 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from "next/link";
 import Container from "@/components/container";
-import ButtonLink from "@/components/button-link";
 
 const Nav = () => {
   return (
     <Container className="py-4">
       <nav>
         <div className="flex justify-between items-center">
-          <Link href="/top">届け青い紙ひこうき</Link>
+          <Link href="/top">
+            <a className="font-bold text-3xl">Fly your message</a>
+          </Link>
           <div className="flex justify-end items-center">
             <div>
               <Link href="/new">

@@ -16,7 +16,7 @@ const AmoPage = () => {
       <Nav />
       <Container>
         <ButtonLink className="h-5 py-0 mx-1" href="/amo">
-          to Japanese page (日本語ページへ)
+          to English page (英語ページへ)
         </ButtonLink>
         <div>
           <Image src={"/tabs/amo.jpeg"} width={150} height={150} />
