@@ -44,7 +44,7 @@ const AmoPage = () => {
           href="https://twitter.com/apps_oasis"
         >
           <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-          AMOのtwitterはこちらから
+          <p className={styles.fontp}>AMOのtwitterはこちらから</p>
         </Button>
         <br />
         <Button
@@ -53,12 +53,12 @@ const AmoPage = () => {
           href="https://www.facebook.com/makingoasis2021"
         >
           <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-          AMOのFaceBookはこちらから
+           <p className={styles.fontp}>AMOのFacebookはこちらから</p>
         </Button>
         <br />
         <Button size="small" color="primary" href="https://making-oasis.com">
           <FontAwesomeIcon style={iconStyle} icon={faLink} />
-          AMOのHPはこちらから
+           <p className={styles.fontp}>AMOのHPはこちらから</p>
         </Button>
       </Container>
     </>
