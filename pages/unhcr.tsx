@@ -8,6 +8,7 @@ import {
   faTwitter,
   faInstagram,
   faYoutube,
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/tabs/youth.module.css";
@@ -76,7 +77,7 @@ const UnhcrPage = () => {
                 href="https://twitter.com/yu4refugees"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-                <p className={styles.fontp}>twitterはこちらから</p>
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
               </Button>
               <br />
               <Button
@@ -85,16 +86,16 @@ const UnhcrPage = () => {
                 href="https://www.instagram.com/yu4refugees/?hl=ja"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faInstagram} />
-                <p className={styles.fontp}>instagramはこちらから</p>
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
               </Button>
               <br />
               <Button
                 size="small"
                 color="primary"
-                href="https://twitter.com/yu4refugees"
+                href="https://www.youtube.com/channel/UCuDDgBQ4rpHJzEfYNsTZrJA"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faYoutube} />
-                <p className={styles.fontp}>youtubeはこちらから</p>
+                <p className={styles.fontp}> Youth × UNHCR for Refugees</p>
               </Button>
               <br />
               <Button
@@ -105,7 +106,6 @@ const UnhcrPage = () => {
                 <FontAwesomeIcon style={iconStyle} icon={faLink} />
                 <p className={styles.fontp}>HPはこちらから</p>
               </Button>
-              <br />
               <Button
                 size="small"
                 color="primary"
@@ -123,12 +123,71 @@ const UnhcrPage = () => {
               <Button
                 size="small"
                 color="primary"
+                href="https://twitter.com/refugees"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
+                <p className={styles.fontp}>UNHCR, the UN Refugee Agency</p>
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://twitter.com/japanforunhcr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
+                <p className={styles.fontp}>国連UNHCR協会</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.instagram.com/refugees/?hl=ja"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faInstagram} />
+                <p className={styles.fontp}>UNHCR, the UN Refugee Agency</p>
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.instagram.com/japanforunhcr/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faInstagram} />
+                <p className={styles.fontp}>国連UNHCR協会</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.facebook.com/yu4refugees/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.facebook.com/japanforunhcr/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
+                <p className={styles.fontp}>国連UNHCR協会</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.facebook.com/unhcrorjp/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
+                <p className={styles.fontp}>UNHCR Japan 国連難民高等弁務官駐日事務所</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
                 href="https://www.unhcr.org/jp/"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faLink} />
                 <p className={styles.fontp}>HPはこちらから</p>
               </Button>
-              <br />
               <Button
                 size="small"
                 color="primary"
