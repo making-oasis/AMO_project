@@ -19,7 +19,7 @@ const UnhcrPage = () => {
       <Nav />
       <Container>
         <ButtonLink className="h-5 py-0 mx-1" href="/ja/youth">
-          to English page (英語ページへ)
+          to Japanese page (日本語ページへ)
         </ButtonLink>
         <div className={styles.flex}>
           <h1 className={styles.h2}>Youth×UNHCR for Refugeesについて</h1>
