@@ -5,7 +5,7 @@ import { mutate } from "swr";
 import moment from "moment";
 
 import ButtonLink from "@/components/button-link";
-import Button from "@/components/button";
+// import Button from "@/components/button";
 
 type Entry = {
   id: number;
@@ -21,20 +21,18 @@ const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
     return moment(created_at).format("YYYY/MM/DD HH:mm:ss")
   };
 
-  async function deleteEntry() {
-    setDeleting(true);
-    const res = await fetch(`/api/delete-entry?id=${id}`, { method: "DELETE" });
-    const json = await res.json();
-    if (!res.ok) throw Error(json.message);
-    mutate("/api/get-entries");
-    setDeleting(false);
-  }
+  // async function deleteEntry() {
+  //   setDeleting(true);
+  //   const res = await fetch(`/api/delete-entry?id=${id}`, { method: "DELETE" });
+  //   const json = await res.json();
+  //   if (!res.ok) throw Error(json.message);
+  //   mutate("/api/get-entries");
+  //   setDeleting(false);
+  // }
   return (
     <div>
       <div className="flex items-center">
-        <Link href={`/entry/${id}`}>
-          <a className="font-bold py-2">{handleName}</a>
-        </Link>
+          <p className="font-bold py-2">HandleName : {handleName}</p>
         <div className="flex ml-4">
           <ButtonLink
             href={`/entry/edit/${id}?handleName=${handleName}&content=${content}`}
@@ -42,14 +40,14 @@ const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
           >
             Reportする
           </ButtonLink>
-          <Button
+          {/* <Button
             disabled={deleting}
             onClick={deleteEntry}
             className="h-5 py-0 mx-1"
           >
             {deleting ? "Deleting ..." : "Delete"}
-          </Button>
-          <p>{date()}</p>
+          </Button> */}
+          <p className="flex ml-1">Posted Date :{date()}</p>
         </div>
       </div>
       <p>{content}</p>
