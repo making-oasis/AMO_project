@@ -16,7 +16,9 @@ const TopPage = () => {
       styles.back3,
       styles.back4,
       styles.back5,
-      styles.back6
+      styles.back6,
+      styles.back7,
+      styles.back8
     );
     main.classList.add(stylenumber);
   };
