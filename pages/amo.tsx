@@ -18,8 +18,8 @@ const AmoPage = () => {
         <ButtonLink className="h-5 py-0 mx-1" href="/ja/amo">
           to Japanese page (日本語ページへ)
         </ButtonLink>
-        <div>
-          <Image src={"/tabs/amo.jpeg"} width={150} height={150} />
+        <div className={styles.image}>
+          <Image src={"/tabs/amo.jpeg"} width={350} height={350} />
         </div>
         <h2 className={styles.h2}>AMO(Apps for Making Oasis)とは</h2>
         <p className={styles.p1}>
@@ -44,7 +44,7 @@ const AmoPage = () => {
           href="https://twitter.com/apps_oasis"
         >
           <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-          AMOのtwitterはこちらから
+          <p className={styles.fontp}>AMOのtwitterはこちらから</p>
         </Button>
         <br />
         <Button
@@ -53,12 +53,12 @@ const AmoPage = () => {
           href="https://www.facebook.com/makingoasis2021"
         >
           <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-          AMOのFaceBookはこちらから
+           <p className={styles.fontp}>AMOのFacebookはこちらから</p>
         </Button>
         <br />
         <Button size="small" color="primary" href="https://making-oasis.com">
           <FontAwesomeIcon style={iconStyle} icon={faLink} />
-          AMOのHPはこちらから
+           <p className={styles.fontp}>AMOのHPはこちらから</p>
         </Button>
       </Container>
     </>
