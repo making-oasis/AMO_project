@@ -40,7 +40,7 @@ const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
             className={styles.button}
             // "h-5 py-0 mx-1"
           >
-            Reportする
+            Report
           </ButtonLink>
           {/* <Button
             disabled={deleting}
