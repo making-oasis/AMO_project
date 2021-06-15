@@ -1,11 +1,12 @@
 import Entry from "./entry";
+import styles from "../../styles/tabs/entries.module.css";
 
 const Entries = ({ entries }) => {
   if (entries) {
     return (
       <div>
         {entries.map((e) => (
-          <div key={e.id} className="py-2">
+          <div key={e.id} className={styles.div}>
             <Entry
               id={e.id}
               handleName={e.handleName}

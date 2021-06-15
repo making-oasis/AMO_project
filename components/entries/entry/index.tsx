@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from "react";
-import Link from "next/link";
-import { mutate } from "swr";
+// import { useState } from "react";
+// import Link from "next/link";
+// import { mutate } from "swr";
 import moment from "moment";
 
 import ButtonLink from "@/components/button-link";
 // import Button from "@/components/button";
+import styles from "../../../styles/tabs/entries.module.css";
 
 type Entry = {
   id: number;
@@ -15,7 +16,7 @@ type Entry = {
 };
 
 const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
-  const [deleting, setDeleting] = useState(false);
+  // const [deleting, setDeleting] = useState(false);
   
   const date = (): string => {
     return moment(created_at).format("YYYY/MM/DD HH:mm:ss")
@@ -32,11 +33,12 @@ const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
   return (
     <div>
       <div className="flex items-center">
-          <p className="font-bold py-2">HandleName : {handleName}</p>
+          <p className={styles.p}>HandleName : {handleName}</p>
         <div className="flex ml-4">
           <ButtonLink
             href={`/entry/edit/${id}?handleName=${handleName}&content=${content}`}
-            className="h-5 py-0 mx-1"
+            className={styles.button}
+            // "h-5 py-0 mx-1"
           >
             Reportする
           </ButtonLink>
@@ -47,7 +49,7 @@ const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
           >
             {deleting ? "Deleting ..." : "Delete"}
           </Button> */}
-          <p className="flex ml-1">Posted Date :{date()}</p>
+          <p className={styles.p1}>Posted Date :{date()}</p>
         </div>
       </div>
       <p>{content}</p>
