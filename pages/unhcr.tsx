@@ -117,8 +117,58 @@ const UnhcrPage = () => {
             </div>
             <div className={styles.contact}>
               <h2 className={styles.h3}>
+                contact for
+                <br />
+                国連 UNHCR協会
+              </h2>
+              <Button
+                size="small"
+                color="primary"
+                href="https://twitter.com/yu4refugees"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.instagram.com/yu4refugees/?hl=ja"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faInstagram} />
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.youtube.com/channel/UCuDDgBQ4rpHJzEfYNsTZrJA"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faYoutube} />
+                <p className={styles.fontp}> Youth × UNHCR for Refugees</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.unhcr.org/jp/youthxunhcr-for-refugees"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faLink} />
+                <p className={styles.fontp}>HPはこちらから</p>
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.unhcr.org/jp/36315-wrd2021-youth-unhcr-for-refugees.html"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faLink} />
+                <p className={styles.fontp}>HPはこちらから</p>
+              </Button>
+            </div>
+            <div className={styles.contact}>
+              <h2 className={styles.h3}>
                 contacts for
-                <br /> UNHCR
+                <br /> UNHCR駐日事務所
               </h2>
               <Button
                 size="small"
@@ -177,7 +227,9 @@ const UnhcrPage = () => {
                 href="https://www.facebook.com/unhcrorjp/"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-                <p className={styles.fontp}>UNHCR Japan 国連難民高等弁務官駐日事務所</p>
+                <p className={styles.fontp}>
+                  UNHCR Japan 国連難民高等弁務官駐日事務所
+                </p>
               </Button>
               <br />
               <Button
