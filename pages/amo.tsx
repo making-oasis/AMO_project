@@ -58,7 +58,7 @@ const AmoPage = () => {
           href="https://twitter.com/apps_oasis"
         >
           <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-          <p className={styles.fontp}>Click here for AMO's TWITTE</p>
+          <p className={styles.fontp}>Click here for AMO's TWITTER</p>
         </Button>
         <br />
         <Button

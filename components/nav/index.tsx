@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from "next/link";
 import Container from "@/components/container";
+import styles from "../../styles/nav.module.css";
 
 const Nav = () => {
   return (
@@ -8,7 +9,9 @@ const Nav = () => {
       <nav>
         <div className="flex justify-between items-center">
           <Link href="/top">
-            <a className="font-bold text-3xl">Fly your message</a>
+            <a className="font-bold text-3xl">
+              <p className={styles.p}>Fly your message</p>
+            </a>
           </Link>
           <div className="flex justify-end items-center">
             <div>
