@@ -21,19 +21,24 @@ const AboutPage = () => {
         <p>Do you know “Refugee athletes”？</p>
 
         <p className={styles.p2}>
-          難民選手団は他の参加国とは違い、複数の国の選手団で結成されたチームです。国同士で競うオリンピックの中で、難民選手団は特定の国の代表選手で結成されているわけではありません。そのため、着ているユニフォームも選手ごとに異なります。
+          Refugee athletes is a team composed of athletes from diverse
+          countries, different from national teams in the Olympics representing
+          their own countries.
         </p>
 
         <p>
           Experience sending messages.
           <br />
-          小さなアクションから、関心、そして、より大きなアクションへ
+          We would like to raise attentions through small actions , leading to
+          bigger actions.
         </p>
 
         <p className={styles.p2}>
-          私たちは、この「メッセージを送る」というアクションを通して、より多くの人に難民問題に関心をもってもらえることを願っています。
-          この願いはwebアプリケーションだからこそ実現できると考えました。
-          コロナウイルスという状況下で対面での接触ができない中でも、より多くの人が簡単にweb上から場所を問わず応援することができます。
+          We hope that more people have an attention to refugee issues by
+          “sending a message”. We thought that this hope will come true by Fly
+          your message. Many people can take an action on the web, even if
+          people are restricted to meet others (in) face to face because of
+          COVID-19.
         </p>
 
         <p className={styles.main}>
