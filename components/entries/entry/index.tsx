@@ -17,9 +17,9 @@ type Entry = {
 
 const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
   // const [deleting, setDeleting] = useState(false);
-  
+
   const date = (): string => {
-    return moment(created_at).format("YYYY/MM/DD HH:mm:ss")
+    return moment(created_at).format("YYYY/MM/DD HH:mm:ss");
   };
 
   // async function deleteEntry() {
@@ -33,7 +33,7 @@ const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
   return (
     <div>
       <div className="flex items-center">
-          <p className={styles.p}>HandleName : {handleName}</p>
+        <p className={styles.p}>HandleName : {handleName}</p>
         <div className="flex ml-4">
           <ButtonLink
             href={`/entry/edit/${id}?handleName=${handleName}&content=${content}`}
