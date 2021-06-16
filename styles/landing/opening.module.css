@@ -1,7 +1,9 @@
 .bodyy {
-  background-image: url(../../public/landing/landing.jpeg);
+  background-image: url(../../public/landing/team.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-blend-mode: lighten;
   background-color: rgba(140, 135, 135, 0.8);
 }
