@@ -55,9 +55,9 @@ const IndexPage = () => {
             <br />
             「メッセージを送る」という小さなアクションは難民支援に繋がります。
           </p>
-          <p className={styles.p}>
+          <div className={styles.p}>
             <Image src={"/landing/bule.png"} width={500} height={400} />
-          </p>
+          </div>
           <p className={styles.p}>
             Fly your message is an application that allows you to send a support
             message to the refugee team.
@@ -78,9 +78,9 @@ const IndexPage = () => {
           <h1 className={styles.h1}>
             small actions , leading to bigger actions.
           </h1>
-          <p className={styles.p}>
+          <div className={styles.p}>
             <Image src={"/landing/top2.png"} width={500} height={400} />
-          </p>
+          </div>
           <p className={styles.ppp}>
             その積み重ねが大きな変化を生み出します。
             <br />
