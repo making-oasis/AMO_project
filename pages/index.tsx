@@ -81,7 +81,7 @@ const IndexPage = () => {
           <p className={styles.p}>
             <Image src={"/landing/top2.png"} width={500} height={400} />
           </p>
-          <p className={styles.p}>
+          <p className={styles.ppp}>
             その積み重ねが大きな変化を生み出します。
             <br />
             そしてそのメッセージは実際に難民選手団へ届きます。

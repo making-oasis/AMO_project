@@ -218,9 +218,13 @@
 }
 .p {
   text-align: center;
-  margin-top: 1.618em;
+  margin-top: 1.6em;
 }
 .pp {
   text-align: center;
   font-size: 30px;
+}
+.ppp {
+  text-align: center;
+  margin-top: 1.6em;
 }
