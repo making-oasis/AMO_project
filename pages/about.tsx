@@ -55,7 +55,7 @@ const AboutPage = () => {
 
         <p className={styles.last}>
           Fly your message was created to support your small action. Let’s cheer
-          for refugees all over the world by using Fly your message!our message
+          for refugees all over the world by using Fly your message! our message
           will be sent to refugees. We believe that these messages will touch
           them to the heart.
         </p>

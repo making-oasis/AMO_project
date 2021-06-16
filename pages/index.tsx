@@ -37,9 +37,9 @@ const IndexPage = () => {
             <div className={styless.page}>
               <div className={styless.inner}>
                 <Title
-                  lineContent="投稿を通して小さなアクションの経験を"
-                  lineContent2="Experience small actions through posts"
-                  lineContent3="test"
+                  lineContent="Fly your message"
+                  lineContent2="投稿を通して小さなアクションの経験を"
+                  lineContent3="Experience small actions through posts"
                 />
               </div>
             </div>
@@ -50,14 +50,20 @@ const IndexPage = () => {
       <div className={styles.panel}>
         <div>
           <p className={styles.p}>
-            {" "}
-            Aは難民選手団へ応援メッセージを送ることができるアプリです。
-            <br />{" "}
+            Fly your
+            messageは難民選手団へ応援メッセージを送ることができるアプリです。
+            <br />
             「メッセージを送る」という小さなアクションは難民支援に繋がります。
           </p>
-
-          <p>
+          <p className={styles.p}>
             <Image src={"/landing/bule.png"} width={500} height={400} />
+          </p>
+          <p className={styles.p}>
+            Fly your message is an application that allows you to send a support
+            message to the refugee team.
+          </p>
+          <p className={styles.p}>
+            The small action of "sending a message" leads to refugee assistance.
           </p>
         </div>
       </div>
@@ -69,13 +75,21 @@ const IndexPage = () => {
             <p className={styles.pp}>そして</p>
             より大きなアクションへ
           </h1>
-          <p>
+          <h1 className={styles.h1}>
+            small actions , leading to bigger actions.
+          </h1>
+          <p className={styles.p}>
             <Image src={"/landing/top2.png"} width={500} height={400} />
           </p>
           <p className={styles.p}>
-            {" "}
             その積み重ねが大きな変化を生み出します。
-            <br /> そしてそのメッセージは実際に難民選手団へ届きます。
+            <br />
+            そしてそのメッセージは実際に難民選手団へ届きます。
+          </p>
+          <p className={styles.p}>
+            The accumulation makes a big change.
+            <br />
+            Your message will be sent to refugees.
           </p>
         </div>
       </div>
@@ -88,17 +102,20 @@ const IndexPage = () => {
             より多くの人に難民問題に関心をもってもらえることを願っています。
             <br />
             メッセージを送ることで難民選手団を応援しましょう！
+          </p>
+          <p className={styles.description}>
+            We hope that more people have an attention to refugee issues by
+            “sending a message”.
             <br />
-            <ButtonLink href="/top">Start</ButtonLink>
+            Let’s cheer for refugees all over the world by using Fly your
+            message!
           </p>
         </div>
       </div>
       <div className={styles.bodyy}>
         <div className={styles.panel} data-color="red">
           <div>
-            <p className={styles.description}>
-              メッセージを送ることで難民選手団を応援しましょう！
-              <br />
+            <p className={styles.button}>
               <ButtonLink href="/top">Start</ButtonLink>
             </p>
           </div>

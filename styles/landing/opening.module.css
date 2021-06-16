@@ -70,6 +70,10 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  margin: 40px;
+}
+.button {
+  size: 10ch;
 }
 
 .code {
@@ -207,9 +211,10 @@
 .h1,
 .h2 {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.6em;
   letter-spacing: -0.05em;
   line-height: 1.1;
+  padding: 20px;
 }
 .p {
   text-align: center;
@@ -217,5 +222,5 @@
 }
 .pp {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
