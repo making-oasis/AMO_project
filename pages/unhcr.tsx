@@ -121,6 +121,15 @@ const UnhcrPage = () => {
               <Button
                 size="small"
                 color="primary"
+                href="https://www.facebook.com/yu4refugees/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
                 href="https://www.youtube.com/channel/UCuDDgBQ4rpHJzEfYNsTZrJA"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faYoutube} />
@@ -191,16 +200,6 @@ const UnhcrPage = () => {
                 contacts for
                 <br /> UNHCR駐日事務所
               </h2>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.facebook.com/yu4refugees/"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
-              </Button>
-              <br />
               <Button
                 size="small"
                 color="primary"

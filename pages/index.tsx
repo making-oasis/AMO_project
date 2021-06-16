@@ -38,12 +38,18 @@ const IndexPage = () => {
               <div className={styless.inner}>
                 <Title
                   lineContent="Fly your message"
-                  lineContent2="投稿を通して小さなアクションの経験を"
-                  lineContent3="Experience small actions through posts"
+                  lineContent2=""
+                  lineContent3=""
                 />
               </div>
             </div>
           </CSSTransition>
+        </div>
+      </div>
+      <div className={styles.panel}>
+        <div>
+          <p className={styles.h1}>投稿を通して小さなアクションの経験を</p>
+          <p className={styles.h1}>Experience small actions through posts</p>
         </div>
       </div>
 
