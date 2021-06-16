@@ -1,7 +1,7 @@
 # 青い紙飛行機 app
 
 - [デプロイ先](https://vercel.com/making-oasis/amo-project)
-- [本番 url](https://amo-project.vercel.app/)
+- [本番 url](https://fly-your-message.making-oasis.com)
 
 # セットアップ
 
