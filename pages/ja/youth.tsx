@@ -4,7 +4,13 @@ import ButtonLink from "@/components/button-link";
 import Image from "next/image";
 import Button from "@material-ui/core/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import {
+  faTwitter,
+  faInstagram,
+  faYoutube,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/tabs/youth.module.css";
 
 const UnhcrPage = () => {
@@ -20,7 +26,7 @@ const UnhcrPage = () => {
           <h1 className={styles.h2}>Youth×UNHCR for Refugeesについて</h1>
 
           <div className={styles.image}>
-            <Image src={"/tabs/image.png"} width={900} height={350} />
+            <Image src={"/tabs/youth2.png"} width={400} height={400} />
           </div>
           <p>
             日本全国には難民支援に取り組む学生団体がたくさんあります。
@@ -46,6 +52,23 @@ const UnhcrPage = () => {
           <p className={styles.main}>
             ”Fly your message ― 届け！ 想いをのせた青い紙ひこうき”{" "}
           </p>
+          <p className={styles.p1}>➢目的</p>
+          <p className={styles.p1}>
+            Youth×UNHCR for Refugeesの象徴でもある紙ひこうきを用いて協力
+            と連帯の意思を発信し、難民問題についての理解を広げ、難民支援の
+            ムーブメントを創る。
+          </p>
+          <p className={styles.p1}>➢趣旨・背景</p>
+          <p className={styles.p1}>
+            新型コロナウイルスの影響で世界中で大変な状況が続き、人道的な危
+            機も深刻化している。今こそ日本にいる若者の力によって、難民問題
+            についての理解を深め、連帯の意志を力を合わせて示す必要があると
+            考えた。
+            また、東京で開催予定のオリンピックパラリンピックでは難民選手団
+            も結成されるが、UNHCRも「難民の若者のためのスポーツと福祉プ
+            ログラム」を掲げている。世界難民の日からオリンピックパラリンピ
+            ックの時期に行うことに特に意義があると考えている。
+          </p>
         </div>
         <h1 className={styles.h2}>UNHCRについて</h1>
         <p className={styles.p2}>
@@ -57,33 +80,137 @@ const UnhcrPage = () => {
           <br />
           難民問題の拡大、複雑化に対応するため、UNHCRは、世界各地の政府、民間から支援を受けています。
         </p>
-        <h2 className={styles.h2}>
-          contacts for Youth×UNHCR for Refugees / UNHCR
-        </h2>
-        <Button
-          size="small"
-          color="primary"
-          href="https://twitter.com/apps_oasis"
-        >
-          <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-          Youthのtwitterはこちらから
-        </Button>
-        <br />
-        <Button
-          size="small"
-          color="primary"
-          href="https://www.facebook.com/makingoasis2021"
-        >
-          <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-          YouthのFaceBookはこちらから
-        </Button>
-        <br />
-        <Button size="small" color="primary" href="https://making-oasis.com">
-          <p>
-            <Image src={"/tabs/youth.png"} width={50} height={50} />
-          </p>
-          YouthのHPはこちらから
-        </Button>
+        <div className={styles.back}>
+          <div className={styles.boxContainer}>
+            <div className={styles.contact}>
+              <h2 className={styles.h3}>
+                contacts for
+                <br />
+                Youth×UNHCR for Refugees
+              </h2>
+              <Button
+                size="small"
+                color="primary"
+                href="https://twitter.com/yu4refugees"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.instagram.com/yu4refugees/?hl=ja"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faInstagram} />
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.youtube.com/channel/UCuDDgBQ4rpHJzEfYNsTZrJA"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faYoutube} />
+                <p className={styles.fontp}> Youth × UNHCR for Refugees</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.unhcr.org/jp/youthxunhcr-for-refugees"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faLink} />
+                <p className={styles.fontp}>HPはこちらから</p>
+              </Button>
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.unhcr.org/jp/36315-wrd2021-youth-unhcr-for-refugees.html"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faLink} />
+                <p className={styles.fontp}>HPはこちらから</p>
+              </Button>
+            </div>
+            <div className={styles.contact}>
+              <h2 className={styles.h3}>
+                contact for
+                <br />
+                国連 UNHCR協会
+              </h2>
+              <Button
+                size="small"
+                color="primary"
+                href="https://twitter.com/japanforunhcr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
+                <p className={styles.fontp}>国連UNHCR協会</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.instagram.com/japanforunhcr/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faInstagram} />
+                <p className={styles.fontp}>国連UNHCR協会</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.facebook.com/japanforunhcr/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
+                <p className={styles.fontp}>国連UNHCR協会</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.japanforunhcr.org/lp/children?utm_source=google&utm_medium=cpc&utm_campaign=JA_JA_UNHCR_Brand_children_b&gclid=CjwKCAjwtpGGBhBJEiwAyRZX2qSzZaL9FRDRAn4NiHH-FIpJI0TpIziREaddW_tJ8rrIz0-aTL4LsBoC1lYQAvD_BwE"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faLink} />
+                <p className={styles.fontp}>HPはこちらから</p>
+              </Button>
+            </div>
+            <div className={styles.contact}>
+              <h2 className={styles.h3}>
+                contacts for
+                <br /> UNHCR駐日事務所
+              </h2>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.facebook.com/yu4refugees/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.facebook.com/unhcrorjp/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
+                <p className={styles.fontp}>
+                  UNHCR Japan 国連難民高等弁務官駐日事務所
+                </p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.unhcr.org/jp/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faLink} />
+                <p className={styles.fontp}>HPはこちらから</p>
+              </Button>
+            </div>
+          </div>
+        </div>
       </Container>
     </>
   );

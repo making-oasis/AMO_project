@@ -1,9 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from "react";
-import Link from "next/link";
-import { mutate } from "swr";
+// import { useState } from "react";
+// import Link from "next/link";
+// import { mutate } from "swr";
+import moment from "moment";
+
 import ButtonLink from "@/components/button-link";
-import Button from "@/components/button";
+// import Button from "@/components/button";
+import styles from "../../../styles/tabs/entries.module.css";
 
 type Entry = {
   id: number;
@@ -13,37 +16,40 @@ type Entry = {
 };
 
 const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
-  const [deleting, setDeleting] = useState(false);
+  // const [deleting, setDeleting] = useState(false);
 
-  async function deleteEntry() {
-    setDeleting(true);
-    const res = await fetch(`/api/delete-entry?id=${id}`, { method: "DELETE" });
-    const json = await res.json();
-    if (!res.ok) throw Error(json.message);
-    mutate("/api/get-entries");
-    setDeleting(false);
-  }
+  const date = (): string => {
+    return moment(created_at).format("YYYY/MM/DD HH:mm:ss");
+  };
+
+  // async function deleteEntry() {
+  //   setDeleting(true);
+  //   const res = await fetch(`/api/delete-entry?id=${id}`, { method: "DELETE" });
+  //   const json = await res.json();
+  //   if (!res.ok) throw Error(json.message);
+  //   mutate("/api/get-entries");
+  //   setDeleting(false);
+  // }
   return (
     <div>
       <div className="flex items-center">
-        <Link href={`/entry/${id}`}>
-          <a className="font-bold py-2">{handleName}</a>
-        </Link>
+        <p className={styles.p}>HandleName : {handleName}</p>
         <div className="flex ml-4">
           <ButtonLink
             href={`/entry/edit/${id}?handleName=${handleName}&content=${content}`}
-            className="h-5 py-0 mx-1"
+            className={styles.button}
+            // "h-5 py-0 mx-1"
           >
-            Reportする
+            Report
           </ButtonLink>
-          <Button
+          {/* <Button
             disabled={deleting}
             onClick={deleteEntry}
             className="h-5 py-0 mx-1"
           >
             {deleting ? "Deleting ..." : "Delete"}
-          </Button>
-          <p>{created_at}</p>
+          </Button> */}
+          <p className={styles.p1}>Posted Date :{date()}</p>
         </div>
       </div>
       <p>{content}</p>

@@ -12,46 +12,47 @@ const AboutPage = () => {
           to Japanese page (日本語ページへ)
         </ButtonLink>
         <h2 className={styles.h2}>
-          生き別れた家族との再開を願い、ひとりで練習を続けるエチオピア人の陸上選手、
-          <br />
-          異国の同胞たち、特に子供たちと共に未来を切り開きたいと、
-          <br />
-          東京オリンピックで追加協議に採用された空手に出場することを夢見るシリア人選手。
+          An Ethiopian track and field athlete training alone, hoping to meet
+          his meeting family. <br />A Syrian athlete dreaming to play karate in
+          the Oympics to build the future <br />
+          with his countrymen from other countries, especially children.
         </h2>
 
-        <p>皆さんは「難民選手団」を知っていますか？</p>
+        <p>Do you know “Refugee athletes”？</p>
 
         <p className={styles.p2}>
           難民選手団は他の参加国とは違い、複数の国の選手団で結成されたチームです。国同士で競うオリンピックの中で、難民選手団は特定の国の代表選手で結成されているわけではありません。そのため、着ているユニフォームも選手ごとに異なります。
         </p>
 
         <p>
-          投稿を通して、小さなアクションの経験を
+          Experience sending messages.
           <br />
           小さなアクションから、関心、そして、より大きなアクションへ
         </p>
 
         <p className={styles.p2}>
-          私たち（この「私たち」はAPPにかかわっている私たち）は、この「メッセージを送る」というアクションを通して、より多くの人に難民問題に関心をもってもらえることを願っています。
+          私たちは、この「メッセージを送る」というアクションを通して、より多くの人に難民問題に関心をもってもらえることを願っています。
           この願いはwebアプリケーションだからこそ実現できると考えました。
           コロナウイルスという状況下で対面での接触ができない中でも、より多くの人が簡単にweb上から場所を問わず応援することができます。
         </p>
 
         <p className={styles.main}>
-          難民問題のことを何もしらない人は知識として。
+          Those who don’t know anything about refugee issues, Please start to
+          know the issue.
           <br />
-          難民問題について忘れていた人は、再度問題意識を取り返すために。
+          Those who forgot refugee issues. Please be aware the issue.
           <br />
-          難民問題に興味はあるが、何をしたら良いかがわからない人は、
+          Those who are interested in refugee issues but don’t know what to do,
           <br />
-          一歩を踏み出すきっかけに。
+          Please use this web application as an opportunity to take your first
+          step
         </p>
 
         <p className={styles.last}>
-          そうした人たちが「自分には何かできることはないだろうか」と考える入り口としてA(appの固有名詞)は誕生しました。
-          A(appの固有名詞)を使う人たちで一体となり、難民の方を応援しましょう！！！
-          また、そのメッセージは難民の方へ届けることができます。
-          A(appの固有名詞)を通して、個人が関心を持ち書いたメッセージが難民の方の力の源になることを信じています。
+          Fly your message was created to support your small action. Let’s cheer
+          for refugees all over the world by using Fly your message!our message
+          will be sent to refugees. We believe that these messages will touch
+          them to the heart.
         </p>
       </Container>
     </>
