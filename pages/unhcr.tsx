@@ -124,77 +124,12 @@ const UnhcrPage = () => {
               <Button
                 size="small"
                 color="primary"
-                href="https://twitter.com/yu4refugees"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
-              </Button>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.instagram.com/yu4refugees/?hl=ja"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faInstagram} />
-                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
-              </Button>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.youtube.com/channel/UCuDDgBQ4rpHJzEfYNsTZrJA"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faYoutube} />
-                <p className={styles.fontp}> Youth × UNHCR for Refugees</p>
-              </Button>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.unhcr.org/jp/youthxunhcr-for-refugees"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faLink} />
-                <p className={styles.fontp}>HPはこちらから</p>
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.unhcr.org/jp/36315-wrd2021-youth-unhcr-for-refugees.html"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faLink} />
-                <p className={styles.fontp}>HPはこちらから</p>
-              </Button>
-            </div>
-            <div className={styles.contact}>
-              <h2 className={styles.h3}>
-                contacts for
-                <br /> UNHCR駐日事務所
-              </h2>
-              <Button
-                size="small"
-                color="primary"
-                href="https://twitter.com/refugees"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-                <p className={styles.fontp}>UNHCR, the UN Refugee Agency</p>
-              </Button>
-              <Button
-                size="small"
-                color="primary"
                 href="https://twitter.com/japanforunhcr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
                 <p className={styles.fontp}>国連UNHCR協会</p>
               </Button>
               <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.instagram.com/refugees/?hl=ja"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faInstagram} />
-                <p className={styles.fontp}>UNHCR, the UN Refugee Agency</p>
-              </Button>
               <Button
                 size="small"
                 color="primary"
@@ -207,18 +142,34 @@ const UnhcrPage = () => {
               <Button
                 size="small"
                 color="primary"
-                href="https://www.facebook.com/yu4refugees/"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
-              </Button>
-              <Button
-                size="small"
-                color="primary"
                 href="https://www.facebook.com/japanforunhcr/"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
                 <p className={styles.fontp}>国連UNHCR協会</p>
+              </Button>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.japanforunhcr.org/lp/children?utm_source=google&utm_medium=cpc&utm_campaign=JA_JA_UNHCR_Brand_children_b&gclid=CjwKCAjwtpGGBhBJEiwAyRZX2qSzZaL9FRDRAn4NiHH-FIpJI0TpIziREaddW_tJ8rrIz0-aTL4LsBoC1lYQAvD_BwE"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faLink} />
+                <p className={styles.fontp}>HPはこちらから</p>
+              </Button>
+            </div>
+            <div className={styles.contact}>
+              <h2 className={styles.h3}>
+                contacts for
+                <br /> UNHCR駐日事務所
+              </h2>
+              <br />
+              <Button
+                size="small"
+                color="primary"
+                href="https://www.facebook.com/yu4refugees/"
+              >
+                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
+                <p className={styles.fontp}>Youth×UNHCR for Refugees</p>
               </Button>
               <br />
               <Button
@@ -236,14 +187,6 @@ const UnhcrPage = () => {
                 size="small"
                 color="primary"
                 href="https://www.unhcr.org/jp/"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faLink} />
-                <p className={styles.fontp}>HPはこちらから</p>
-              </Button>
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.japanforunhcr.org/lp/children?utm_source=google&utm_medium=cpc&utm_campaign=JA_JA_UNHCR_Brand_children_b&gclid=CjwKCAjwtpGGBhBJEiwAyRZX2qSzZaL9FRDRAn4NiHH-FIpJI0TpIziREaddW_tJ8rrIz0-aTL4LsBoC1lYQAvD_BwE"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faLink} />
                 <p className={styles.fontp}>HPはこちらから</p>
