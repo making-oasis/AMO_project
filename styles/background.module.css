@@ -54,27 +54,7 @@
 .back6 {
   height: 1020px;
   width: auto;
-  background-image: url(../public/tops/tree.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #464646;
-}
-.back7 {
-  height: 1020px;
-  width: auto;
-  background-image: url(../public/tops/refugees.jpeg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #464646;
-}
-.back8 {
-  height: 1020px;
-  width: auto;
-  background-image: url(../public/tops/refugees2.jpeg);
+  background-image: url(../public/tops/4250634_s.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
