@@ -53,7 +53,6 @@ const AboutPage = () => {
         <p className={styles.last}>
           「自分にも何かできることはないだろうか」
           そんな気持ちを後押しするために、Fly your messageは誕生しました。
-          <br />
           メッセージは、難民の人々へ届けられます。
           <br />
           Fly your

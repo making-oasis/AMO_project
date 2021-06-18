@@ -215,16 +215,20 @@
   letter-spacing: -0.05em;
   line-height: 1.1;
   padding: 20px;
+  font-weight: bold;
 }
 .action {
   text-align: center;
   font-size: 45px;
   font-weight: bold;
   font-style: oblique;
+  margin-top: 15px;
 }
 .p {
   text-align: center;
   margin-top: 1.6em;
+  font-size: 20px;
+  font-family: "MSゴシック";
 }
 .pp {
   text-align: center;
@@ -233,4 +237,5 @@
 .ppp {
   text-align: center;
   margin-top: 1.6em;
+  font-size: 20px;
 }

@@ -74,7 +74,7 @@ const IndexPage = () => {
       <div className={styles.panel}>
         <div>
           <h1 className={styles.action}>
-            小さなアクションから関心
+            小さなアクションから関心を高め
             <br />
             <p className={styles.pp}>そして</p>
             より大きなアクションへ
@@ -88,7 +88,7 @@ const IndexPage = () => {
           <p className={styles.ppp}>
             始めの一歩は小さくても
             <br />
-            その積み重ねがやがて大きな変化を生み出します
+            その積み重ねがやがて大きな変化を生み出します。
             <br />
             The small first step is going to make a huge difference.
           </p>
