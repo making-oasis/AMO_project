@@ -13,51 +13,48 @@ const AboutPage = () => {
         </ButtonLink>
         <h2 className={styles.h2}>
           An Ethiopian track and field athlete training alone, hoping to meet
-          his meeting family. <br />A Syrian athlete dreaming to play karate in
-          the Oympics to build the future <br />
-          with his countrymen from other countries, especially children.
+          his separated family. <br />A Syrian athlete dreaming to play karate
+          in Tokyo 2020 to rebuild the future <br />
+          with like-situated athletes with different origins, especially for
+          children.
         </h2>
 
         <p>Do you know “Refugee athletes”？</p>
 
         <p className={styles.p2}>
-          Refugee athletes is a team composed of athletes from diverse
-          countries, different from national teams in the Olympics representing
-          their own countries.
+          The Refugee Olympic Team is composed of athletes from various
+          countries, which is different from national Olympic teams representing
+          their own countries. So, you can see them wearing different jerseys.
         </p>
 
         <p>
-          Experience sending messages.
-          <br />
-          We would like to raise attentions through small actions , leading to
-          bigger actions.
+          To send messages is a small but huge first step.
+          <br /> Your small actions are going to make a huge difference.
         </p>
 
         <p className={styles.p2}>
-          We hope that more people have an attention to refugee issues by
-          “sending a message”. We thought that this hope will come true by Fly
-          your message. Many people can take an action on the web, even if
-          people are restricted to meet others (in) face to face because of
-          COVID-19.
+          We hope that more and more people have interest in refugee issues by
+          taking a small action. Despite the Covid-19, Fly your message can
+          connect people online and inspire them to take further actions for
+          refugees.
+        </p>
+
+        <p className={styles.isolate}>
+          Don’t know anything about refugee issues?{" "}
         </p>
 
         <p className={styles.main}>
-          Those who don’t know anything about refugee issues, Please start to
-          know the issue.
+          You can start from knowing.
           <br />
-          Those who forgot refugee issues. Please be aware the issue.
+          Forgot to think about it? Come back and get involved again.
           <br />
-          Those who are interested in refugee issues but don’t know what to do,
-          <br />
-          Please use this web application as an opportunity to take your first
-          step
+          Don’t know how to get involved? Take this chance as the first step.
         </p>
 
         <p className={styles.last}>
-          Fly your message was created to support your small action. Let’s cheer
-          for refugees all over the world by using Fly your message! our message
-          will be sent to refugees. We believe that these messages will touch
-          them to the heart.
+          “Fly your message” always supports your small actions. Fly your
+          message and cheer for refugee athletes! Delivered all the way from
+          Japan, your messages will become more powerful and encourage them.
         </p>
       </Container>
     </>

@@ -57,45 +57,45 @@ const IndexPage = () => {
         <div>
           <p className={styles.p}>
             Fly your
-            messageは難民アスリートへ応援メッセージを送ることができるアプリです。
+            messageは、難民アスリートへ応援メッセージを送るためのアプリです。
             <br />
-            「メッセージを送る」という小さなアクションは難民支援に繋がります。
+            「メッセージを送る」という小さなアクションは難民支援につながります。
           </p>
           <div className={styles.p}>
             <Image src={"/landing/bule.png"} width={500} height={400} />
           </div>
           <p className={styles.p}>
-            Fly your message is an application that allows you to send a support
-            message to the Refugee Athlete.
+            “Fly your message” is an application that allows you to send a
+            supportive message to refugee athletes.
           </p>
-          <p className={styles.p}>
-            The small action of "sending a message" leads to refugee assistance.
-          </p>
+          <p className={styles.p}>The small action leads to refugee support.</p>
         </div>
       </div>
       <div className={styles.panel}>
         <div>
-          <h1 className={styles.h1}>
+          <h1 className={styles.action}>
             小さなアクションから関心
             <br />
             <p className={styles.pp}>そして</p>
             より大きなアクションへ
           </h1>
-          <h1 className={styles.h1}>
+          <h1 className={styles.action}>
             small actions , leading to bigger actions.
           </h1>
           <div className={styles.p}>
             <Image src={"/landing/top2.png"} width={500} height={400} />
           </div>
           <p className={styles.ppp}>
-            その積み重ねが大きな変化を生み出します。
+            始めの一歩は小さくても
             <br />
-            そしてそのメッセージはきっと難民アスリートへ届きます。
+            その積み重ねがやがて大きな変化を生み出します
+            <br />
+            The small first step is going to make a huge difference.
           </p>
           <p className={styles.p}>
-            The accumulation makes a big change.
+            メッセージは実際に難民アスリートのもとに届けられます。
             <br />
-            Your message will be sent to Refugee Athlete.
+            Your message will be delivered to refugee athletes.
           </p>
         </div>
       </div>
@@ -103,18 +103,15 @@ const IndexPage = () => {
       <div className={styles.panel} data-color="red">
         <div>
           <p className={styles.description}>
-            私たちは、この「メッセージを送る」というアクションを通して
+            小さなアクションを通して、より多くの人に難民問題に関心を持ってほしい。私たちはそう願っています
             <br />
-            より多くの人に難民問題に関心をもってもらえることを願っています。
-            <br />
-            メッセージを送ることで難民アスリートを応援しましょう！
+            メッセージを送り、難民アスリートを応援しましょう！
           </p>
           <p className={styles.description}>
-            We hope that more people have an attention to Refugee Athlete issues
-            by “sending a message”.
+            We hope that more and more people have interest in refugee issues by
+            taking a small action.
             <br />
-            Let’s cheer for refugees all over the world by using Fly your
-            message!
+            Fly your message and cheer for refugee athletes!
           </p>
         </div>
       </div>
