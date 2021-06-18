@@ -95,11 +95,7 @@ const UnhcrPage = () => {
         <div className={styles.back}>
           <div className={styles.boxContainer}>
             <div className={styles.contact}>
-              <h2 className={styles.h3}>
-                contacts for
-                <br />
-                Youth×UNHCR for Refugees
-              </h2>
+              <h2 className={styles.h3}>Youth×UNHCR for Refugees</h2>
               <Button
                 size="small"
                 color="primary"
@@ -154,11 +150,7 @@ const UnhcrPage = () => {
               </Button>
             </div>
             <div className={styles.contact}>
-              <h2 className={styles.h3}>
-                contact for
-                <br />
-                国連 UNHCR協会
-              </h2>
+              <h2 className={styles.h3}>国連 UNHCR協会</h2>
               <Button
                 size="small"
                 color="primary"
@@ -196,10 +188,7 @@ const UnhcrPage = () => {
               </Button>
             </div>
             <div className={styles.contact}>
-              <h2 className={styles.h3}>
-                contacts for
-                <br /> UNHCR駐日事務所
-              </h2>
+              <h2 className={styles.h3}>UNHCR駐日事務所</h2>
               <Button
                 size="small"
                 color="primary"

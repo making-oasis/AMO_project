@@ -90,12 +90,12 @@ const IndexPage = () => {
           <p className={styles.ppp}>
             その積み重ねが大きな変化を生み出します。
             <br />
-            そしてそのメッセージは実際に難民選手団へ届きます。
+            そしてそのメッセージはきっと難民アスリートへ届きます。
           </p>
           <p className={styles.p}>
             The accumulation makes a big change.
             <br />
-            Your message will be sent to refugees.
+            Your message will be sent to Refugee Athlete.
           </p>
         </div>
       </div>
@@ -107,11 +107,11 @@ const IndexPage = () => {
             <br />
             より多くの人に難民問題に関心をもってもらえることを願っています。
             <br />
-            メッセージを送ることで難民選手団を応援しましょう！
+            メッセージを送ることで難民アスリートを応援しましょう！
           </p>
           <p className={styles.description}>
-            We hope that more people have an attention to refugee issues by
-            “sending a message”.
+            We hope that more people have an attention to Refugee Athlete issues
+            by “sending a message”.
             <br />
             Let’s cheer for refugees all over the world by using Fly your
             message!

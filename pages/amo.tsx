@@ -51,7 +51,7 @@ const AmoPage = () => {
           a project where students can train their ability to think based on
           social issues.
         </p>
-        <h2 className={styles.h2}>contacts for AMO</h2>
+        <h2 className={styles.h2}>AMO</h2>
         <Button
           size="small"
           color="primary"
