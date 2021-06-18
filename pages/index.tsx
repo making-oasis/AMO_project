@@ -103,7 +103,7 @@ const IndexPage = () => {
       <div className={styles.panel} data-color="red">
         <div>
           <p className={styles.description}>
-            小さなアクションを通して、より多くの人に難民問題に関心を持ってほしい。私たちはそう願っています
+            小さなアクションを通して、より多くの人に難民問題に関心を持ってほしい。私たちはそう願っています。
             <br />
             メッセージを送り、難民アスリートを応援しましょう！
           </p>
