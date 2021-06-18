@@ -1,5 +1,5 @@
-import Entry from "./entry";
 import styles from "../../styles/tabs/entries.module.css";
+import Entry from "./entry";
 
 const Entries = ({ entries }) => {
   if (entries) {

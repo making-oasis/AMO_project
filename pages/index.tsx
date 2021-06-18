@@ -57,7 +57,7 @@ const IndexPage = () => {
         <div>
           <p className={styles.p}>
             Fly your
-            messageは難民選手団へ応援メッセージを送ることができるアプリです。
+            messageは難民アスリートへ応援メッセージを送ることができるアプリです。
             <br />
             「メッセージを送る」という小さなアクションは難民支援に繋がります。
           </p>
@@ -66,7 +66,7 @@ const IndexPage = () => {
           </div>
           <p className={styles.p}>
             Fly your message is an application that allows you to send a support
-            message to the refugee team.
+            message to the Refugee Athlete.
           </p>
           <p className={styles.p}>
             The small action of "sending a message" leads to refugee assistance.

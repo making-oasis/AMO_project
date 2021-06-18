@@ -101,25 +101,25 @@ const EntryForm: VFC = () => {
       <div id={styles.plate} className={styles.front}>
         <div className="my-4">
           <label htmlFor="handleName">
-            <h3 className="font-bold">HandleName</h3>
+            <h3 className="font-bold">Name</h3>
           </label>
           <TextField
-            name="handleName"
+            name="Name"
             value={handleName}
             onChange={(e) => setHandlename(e.target.value)}
-            label="HandleName"
+            label="Name"
             variant="standard"
           />
         </div>
         <div className="my-4">
           <label htmlFor="content">
-            <h3 className="font-bold">Content</h3>
+            <h3 className="font-bold">Message</h3>
           </label>
           <TextField
             name="content"
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            label="Content"
+            label="message"
             multiline
             rows={4}
             variant="outlined"
@@ -131,7 +131,7 @@ const EntryForm: VFC = () => {
           onClick={submitHandler}
           type="submit"
         >
-          {submitting ? "sending ..." : "send it"}
+          {submitting ? "sending ..." : "send"}
         </Button>
         <SuccessModal ref={ref} text={THANKSMESSAGE} />
         <ErrorModal ref={reff} text={INPUTERRORMESSAGE} />

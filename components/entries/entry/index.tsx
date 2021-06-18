@@ -33,7 +33,7 @@ const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
   return (
     <div>
       <div className="flex items-center">
-        <p className={styles.p}>HandleName : {handleName}</p>
+        <p className={styles.p}>Name : {handleName}</p>
         <div className="flex ml-4">
           <ButtonLink
             href={`/entry/edit/${id}?handleName=${handleName}&content=${content}`}
