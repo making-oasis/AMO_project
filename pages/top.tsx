@@ -22,7 +22,7 @@ const TopPage = () => {
   };
 
   const cities = [
-    { name: "Arena", className: styles.back2 },
+    { name: "TOWN", className: styles.back2 },
     { name: "run", className: styles.back3 },
     { name: "World", className: styles.back4 },
     { name: "Night view", className: styles.back5 },
