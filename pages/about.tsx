@@ -19,7 +19,7 @@ const AboutPage = () => {
           children.
         </h2>
 
-        <p>Do you know “Refugee athletes”？</p>
+        <p>Do you know “Refugee Olympic Team”？</p>
 
         <p className={styles.p2}>
           The Refugee Olympic Team is composed of athletes from various

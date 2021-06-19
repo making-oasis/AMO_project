@@ -25,8 +25,6 @@ const TopPage = () => {
     { name: "TOWN", className: styles.back2 },
     { name: "run", className: styles.back3 },
     { name: "World", className: styles.back4 },
-    { name: "Night view", className: styles.back5 },
-    { name: "city", className: styles.back6 },
   ];
 
   return (

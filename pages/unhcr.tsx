@@ -23,7 +23,7 @@ const UnhcrPage = () => {
           to Japanese page (日本語ページへ)
         </ButtonLink>
         <div className={styles.flex}>
-          <h1 className={styles.h2}>About Youth × UNHCR</h1>
+          <h1 className={styles.h2}>About Youth × UNHCR for Refugees</h1>
 
           <div className={styles.image}>
             <Image src={"/tabs/youth2.png"} width={400} height={400} />
