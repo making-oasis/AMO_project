@@ -1,3 +1,16 @@
-.p {
-  font-style: italic;
+@media screen and (max-width: 1080px) {
+  .p {
+    font-style: italic;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .p {
+    font-style: italic;
+    text-align: center;
+    padding: 30px;
+  }
+  .links {
+    font-size: 15px;
+  }
 }
