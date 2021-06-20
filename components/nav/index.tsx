@@ -10,7 +10,7 @@ const Nav = () => {
         <div className="flex-auto justify-between items-center">
           <Link href="/top">
             <a className="font-bold text-3xl">
-              <p className={styles.p}>Fly your message</p>
+              <p className={styles.logo}>Fly your message</p>
             </a>
           </Link>
           <div className="flex justify-end items-center">
