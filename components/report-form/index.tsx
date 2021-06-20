@@ -119,7 +119,7 @@ const ReportForm = () => {
               <br />
               報告しました！
             </h2>
-            <ButtonLink href={`/new`} className="h-5 py-0 mx-1">
+            <ButtonLink href={`/messages`} className="h-5 py-0 mx-1">
               To message list
             </ButtonLink>
           </div>

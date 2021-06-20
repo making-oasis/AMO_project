@@ -15,7 +15,7 @@ const Nav = () => {
           </Link>
           <div className="flex justify-end items-center">
             <div>
-              <Link href="/new">
+              <Link href="/messages">
                 <a className="font-bold text-1xl pr-4">All Messages</a>
               </Link>{" "}
             </div>
