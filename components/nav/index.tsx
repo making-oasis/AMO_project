@@ -7,29 +7,29 @@ const Nav = () => {
   return (
     <Container className="py-4">
       <nav>
-        <div className="flex justify-between items-center">
+        <div className="flex-auto justify-between items-center">
           <Link href="/top">
             <a className="font-bold text-3xl">
               <p className={styles.p}>Fly your message</p>
             </a>
           </Link>
           <div className="flex justify-end items-center">
-            <div>
+            <div className={styles.links}>
               <Link href="/messages">
                 <a className="font-bold text-1xl pr-4">All Messages</a>
               </Link>{" "}
+              <Link href="/about">
+                <a className="font-bold text-1xl pr-4">ABOUT</a>
+              </Link>{" "}
+              <Link href="/unhcr">
+                <a className="font-bold text-1xl pr-3">
+                  Youth×UNHCR for Refugees
+                </a>
+              </Link>{" "}
+              <Link href="/amo">
+                <a className="font-bold text-1xl pr-3">AMO</a>
+              </Link>{" "}
             </div>
-            <Link href="/about">
-              <a className="font-bold text-1xl pr-4">ABOUT</a>
-            </Link>{" "}
-            <Link href="/unhcr">
-              <a className="font-bold text-1xl pr-3">
-                Youth×UNHCR for Refugees
-              </a>
-            </Link>{" "}
-            <Link href="/amo">
-              <a className="font-bold text-1xl pr-3">AMO</a>
-            </Link>{" "}
           </div>
         </div>
       </nav>
