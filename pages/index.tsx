@@ -25,7 +25,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <div className={styles.panel}>
+      <div className={styles.startPanel}>
         <div className={styless.container}>
           <CSSTransition
             in={true}
