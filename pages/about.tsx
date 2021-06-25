@@ -8,7 +8,7 @@ const AboutPage = () => {
     <>
       <Nav />
       <Container>
-        <ButtonLink className="h-5 py-0 mx-1" href="/ja/about">
+        <ButtonLink className="h-5 py-0 mx-1" href="/en/about">
           to Japanese page (日本語ページへ)
         </ButtonLink>
         <h2 className={styles.h2}>
