@@ -176,14 +176,25 @@
 
 /* panel styles */
 .panel {
-  /* min height incase content is higher than window height */
   min-height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: sans-serif;
-  /* outline: 10px solid hotpink; */
-  /* turn above on to see the edge of panels */
+}
+.startPanel {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  background-image: url(../../public/landing/landingTop.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  background-color: rgba(140, 135, 135, 0.8);
 }
 
 /* colours */
