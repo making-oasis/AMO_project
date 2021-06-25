@@ -16,35 +16,49 @@ const AmoPage = () => {
       <Nav />
       <Container>
         <ButtonLink className="h-5 py-0 mx-1" href="/amo">
-          to English page (英語ページへ)
+          to Japanese page (日本語ページへ)
         </ButtonLink>
         <div className={styles.image}>
           <Image src={"/tabs/amo.jpeg"} width={350} height={350} />
         </div>
-        <h2 className={styles.h2}>AMO(Apps for Making Oasis)とは</h2>
+        <h2 className={styles.h2}>What is AMO (Apps for Making Oasis)?</h2>
         <p className={styles.p1}>
-          AMOはアプリ開発などを学生と共に行い社会課題解決に必要なITを駆使できる人材の育成をミッションとした学生支援団体です。SDGsなどの社会問題に取り組む団体様と共に、ITに関する技術、知識、ノウハウを持つメンバーが協力して、社会を担う次世代のリーダーを育成します。
+          AMO was founded to nurture one’s ability to utilize IT when tackling
+          world wide issues. AMO members that are familiar with IT skills,
+          knowledge and expertise corporate with organizations that work on
+          world wide issues like SDGs to nurture the next generation leaders.
         </p>
-        <h2 className={styles.h2}>AMOのコンセプト</h2>
+        <h2 className={styles.h2}>The concept of AMO</h2>
         <p className={styles.p1}>
-          誰一人として取りこぼすことのない愛（イタリア語で”amo”）に満ちた社会になってほしい。また人材育成を通して、索漠とした砂漠のように先が見えない社会課題の現状に、少しでも希望を与えるオアシスのような役割がしたい。そのような思いを込めてAMO（Apps
-          for Making Oasis）と名付けました。
+          -To make a society full of love (in Italian “amo”) that embraces all.
+          -To be an oasis that gives hope to a world full of issues, where the
+          future is as uncertain as a desert by nurturing leaders. With these in
+          mind, we named the organization AMO.
         </p>
-        <h2 className={styles.h2}>なぜ「IT」？</h2>
+        <h2 className={styles.h2}>Why IT ? </h2>
         <p className={styles.p1}>
-          私たちが注目しているのは、IT技術の「情報を伝える力、人と人をつなげる力」です。
-          このIT技術を基盤として、WEBサービス、SNSなど、人と人が繋がり情報が授受されるプラットフォームが形成されています。ITの力だけで社会課題が解決されるわけではないですが、解決のための貴重な力である人の関心を集めることで、助けを求めている人々に対して力になれるのではと考えました。
-          ただしAMOのメンバーだけでは、見えている世界も、できる範囲にも限界があります。そこで、若い学生の「育成」に軸足を置き、一緒に社会のために行動できるITを駆使できる人材を育てていくことに決めました。
-          学校の環境では主に手段としてのITを教えられますが、イシューベースで一緒に考えプロジェクトを経験する場を提供することで、社会起点で物事を考えれ、ITを駆使できる人材を少しでも多く生み出せればと思います。
+          We focus on the aspect that IT has ,the ability to convey information
+          and connect people. Through IT, platforms like Web services and SNS
+          ,where people get connected and where information is delivered, are
+          created. Although IT itself can not solve world wide issues ,we
+          believe that we can support those who need help by drawing peoples’
+          attention. However, the extent AMO members can reach and the extent
+          AMO members can see is very limited. This is why we chose to focus on
+          educating young students and nurturing people who can utilize IT to
+          make the world a better place together. In educational institutions,
+          IT is taught as a means. To nurture leaders that can think in a social
+          perspective and utilize IT, we provide opportunities to participate in
+          a project where students can train their ability to think based on
+          social issues.
         </p>
-        <h2 className={styles.h2}>contacts for AMO</h2>
+        <h2 className={styles.h2}>AMO</h2>
         <Button
           size="small"
           color="primary"
           href="https://twitter.com/apps_oasis"
         >
           <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-          AMOのtwitterはこちらから
+          <p className={styles.fontp}>Click here for AMO's TWITTER</p>
         </Button>
         <br />
         <Button
@@ -53,12 +67,12 @@ const AmoPage = () => {
           href="https://www.facebook.com/makingoasis2021"
         >
           <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-          AMOのFaceBookはこちらから
+          <p className={styles.fontp}>Click here for AMO's Facebook</p>
         </Button>
         <br />
         <Button size="small" color="primary" href="https://making-oasis.com">
           <FontAwesomeIcon style={iconStyle} icon={faLink} />
-          AMOのHPはこちらから
+          <p className={styles.fontp}>Click here for AMO's HP</p>
         </Button>
       </Container>
     </>
