@@ -72,8 +72,18 @@
   font-size: 1.5rem;
   margin: 40px;
 }
+.navip {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 1.8rem;
+  padding-top: 60px;
+}
+
 .button {
   size: 10ch;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .code {
@@ -173,7 +183,6 @@
   background-color: white;
   transition: background-color 1s ease;
 }
-
 /* panel styles */
 .panel {
   min-height: 100vh;
