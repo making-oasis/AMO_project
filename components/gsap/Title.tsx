@@ -1,11 +1,19 @@
 import { useEffect, useRef } from "react";
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
 import styless from "../../styles/App.module.scss";
 
-const Title = ({ lineContent, lineContent2, lineContent3 }) => {
+const Title = ({
+  lineContent,
+  lineContent2,
+  lineContent3,
+  lineContent4,
+  lineContent5,
+}) => {
   const line1 = useRef<HTMLDivElement>(null);
   const line2 = useRef<HTMLDivElement>(null);
   const line3 = useRef<HTMLDivElement>(null);
+  const line4 = useRef<HTMLDivElement>(null);
+  const line5 = useRef<HTMLDivElement>(null);
   useEffect(() => {
     gsap.from(".line", {
       duration: 0.8,
@@ -33,6 +41,16 @@ const Title = ({ lineContent, lineContent2, lineContent3 }) => {
       <div className={styless.linewrap}>
         <div ref={(el) => (line3.current = el)} className="line">
           {lineContent3}
+        </div>
+      </div>
+      <div className={styless.linewrap}>
+        <div ref={(el) => (line4.current = el)} className="line">
+          {lineContent4}
+        </div>
+      </div>
+      <div className={styless.linewrap}>
+        <div ref={(el) => (line5.current = el)} className="line">
+          {lineContent5}
         </div>
       </div>
     </h1>
