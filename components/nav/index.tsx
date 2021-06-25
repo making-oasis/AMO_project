@@ -16,18 +16,18 @@ const Nav = () => {
           <div className="flex justify-end items-center">
             <div className={styles.links}>
               <Link href="/messages">
-                <a className="font-bold text-1xl pr-4">All Messages</a>
+                <a className="font-bold text-1xl pr-10">All Messages</a>
               </Link>{" "}
               <Link href="/about">
-                <a className="font-bold text-1xl pr-4">ABOUT</a>
+                <a className="font-bold text-1xl pr-10">ABOUT</a>
               </Link>{" "}
               <Link href="/unhcr">
-                <a className="font-bold text-1xl pr-3">
+                <a className="font-bold text-1xl pr-10">
                   Youth×UNHCR for Refugees
                 </a>
               </Link>{" "}
               <Link href="/amo">
-                <a className="font-bold text-1xl pr-3">AMO</a>
+                <a className="font-bold text-1xl pr-5">AMO</a>
               </Link>{" "}
             </div>
           </div>
