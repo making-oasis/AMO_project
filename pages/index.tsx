@@ -25,7 +25,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <div className={styles.panel}>
+      <div className={styles.startPanel}>
         <div className={styless.container}>
           <CSSTransition
             in={true}
@@ -40,6 +40,8 @@ const IndexPage = () => {
                   lineContent="Fly your message"
                   lineContent2=""
                   lineContent3=""
+                  lineContent4="scroll"
+                  lineContent5="↓↓↓"
                 />
               </div>
             </div>
@@ -118,6 +120,9 @@ const IndexPage = () => {
       <div className={styles.bodyy}>
         <div className={styles.panel} data-color="red">
           <div>
+            <div>
+              <p className={styles.navip}>Let's Fly Your Message!!</p>
+            </div>
             <p className={styles.button}>
               <ButtonLink href="/top">Start</ButtonLink>
             </p>

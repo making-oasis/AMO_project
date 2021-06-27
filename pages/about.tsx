@@ -8,53 +8,55 @@ const AboutPage = () => {
     <>
       <Nav />
       <Container>
-        <ButtonLink className="h-5 py-0 mx-1" href="/ja/about">
-          to Japanese page (日本語ページへ)
+        <ButtonLink className="h-5 py-0 mx-1" href="en/about">
+          to English page (英語ページへ)
         </ButtonLink>
         <h2 className={styles.h2}>
-          An Ethiopian track and field athlete training alone, hoping to meet
-          his separated family. <br />A Syrian athlete dreaming to play karate
-          in Tokyo 2020 to rebuild the future <br />
-          with like-situated athletes with different origins, especially for
-          children.
+          生き別れた家族との再会を願い、ひとりで練習に励むエチオピア人の陸上選手。
+          <br />
+          異国の同胞たち、そして子どもたちと共に未来を切り拓きたいと、
+          <br />
+          東京オリンピック空手競技への出場を夢見るシリア人選手。
         </h2>
 
-        <p>Do you know “Refugee Olympic Team”？</p>
+        <p>皆さんは「難民選手団」を知っていますか？</p>
 
         <p className={styles.p2}>
-          The Refugee Olympic Team is composed of athletes from various
-          countries, which is different from national Olympic teams representing
-          their own countries. So, you can see them wearing different jerseys.
+          難民選手団は、出身国の異なるアスリートで結成されたチーム。一国を代表して競うオリンピックの中で、難民選手団だけは、特定の国の代表ではありません。そのため、着ているユニフォームも選手ごとに異なります。
         </p>
 
         <p>
-          To send messages is a small but huge first step.
-          <br /> Your small actions are going to make a huge difference.
+          投稿を通して、小さなアクションの経験を。
+          <br />
+          小さなアクションから関心を高め、より大きなアクションへ
         </p>
 
         <p className={styles.p2}>
-          We hope that more and more people have interest in refugee issues by
-          taking a small action. Despite the Covid-19, Fly your message can
-          connect people online and inspire them to take further actions for
-          refugees.
+          「メッセージを送る」という小さなアクションを通して、より多くの人に難民問題に関心を持ってほしい。私たちはそう願っています。
+          <br />
+          そしてこの願いは、Fly your message
+          によってかなえられると考えました。コロナ禍では接触の機会が限られますが、Fly
+          your
+          messageによって、だれでもどこからでも、応援メッセージを送ることができるからです。
         </p>
 
-        <p className={styles.isolate}>
-          Don’t know anything about refugee issues?{" "}
-        </p>
+        <p className={styles.isolate}>難民問題について</p>
 
         <p className={styles.main}>
-          You can start from knowing.
+          知らなかった人は、知ることから。
           <br />
-          Forgot to think about it? Come back and get involved again.
+          忘れていた人は、改めて。
           <br />
-          Don’t know how to get involved? Take this chance as the first step.
+          何かしたかった人は、はじめの一歩に。
         </p>
 
         <p className={styles.last}>
-          “Fly your message” always supports your small actions. Fly your
-          message and cheer for refugee athletes! Delivered all the way from
-          Japan, your messages will become more powerful and encourage them.
+          「自分にも何かできることはないだろうか」
+          そんな気持ちを後押しするために、Fly your messageは誕生しました。
+          メッセージは、難民の人々へ届けられます。
+          <br />
+          Fly your
+          messageを通して、難民アスリートのみなさんをともに応援しましょう！！
         </p>
       </Container>
     </>
