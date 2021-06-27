@@ -46,9 +46,9 @@
   text-align: center;
 }
 @media screen and ( min-width: 550px) {
-  .boxContainer {display: flex;}
-  .contact{width: 500px;
-           height: 500px;}
+  .boxContainer { display: flex; }
+  .contact{ width: 500px;
+            height: 500px; }
 }
 .back {
   background-image: url(../../public/tabs/image.png);
