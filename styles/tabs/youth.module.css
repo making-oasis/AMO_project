@@ -38,15 +38,17 @@
   vertical-align: top;
 }
 .boxContainer {
-  display: flex;
   justify-content: space-around;
   padding: 5px;
 }
 .contact {
   vertical-align: middle;
   text-align: center;
-  width: 500px;
-  height: 500px;
+}
+@media screen and ( min-width: 550px) {
+  .boxContainer {display: flex;}
+  .contact{width: 500px;
+           height: 500px;}
 }
 .back {
   background-image: url(../../public/tabs/image.png);
