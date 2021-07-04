@@ -7,6 +7,7 @@ import styles from "../styles/backgroundPosts/post.module.css";
 
 export default function NewEntryPage() {
   const { entries, isLoading } = useEntries();
+
   if (isLoading) {
     return (
       <div className={styles.backgroundimage}>
@@ -29,6 +30,9 @@ export default function NewEntryPage() {
     <div className={styles.backgroundimage}>
       <Nav />
       <Container>
+        <h1 className={styles.h1}>
+          Total message {Object.keys(entries).length}
+        </h1>
         <Entries entries={entries} />
       </Container>
     </div>
