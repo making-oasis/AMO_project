@@ -32,25 +32,23 @@ const Entry: React.FC<Entry> = ({ id, handleName, content, created_at }) => {
   // }
   return (
     <div>
-      <div className="flex items-center">
-        <p className={styles.p}>Name : {handleName}</p>
-        <div className="flex ml-4">
-          <ButtonLink
-            href={`/entry/edit/${id}?handleName=${handleName}&content=${content}`}
-            className={styles.button}
-            // "h-5 py-0 mx-1"
-          >
-            Report
-          </ButtonLink>
-          {/* <Button
-            disabled={deleting}
-            onClick={deleteEntry}
-            className="h-5 py-0 mx-1"
-          >
-            {deleting ? "Deleting ..." : "Delete"}
-          </Button> */}
-          <p className={styles.p1}>Posted Date :{date()}</p>
-        </div>
+      <div className={styles.div1}>
+        <div className={styles.p}>Name : {handleName}</div>
+        <ButtonLink
+          href={`/entry/edit/${id}?handleName=${handleName}&content=${content}`}
+          className={styles.button}
+          // "h-5 py-0 mx-1"
+        >
+          Report
+        </ButtonLink>
+        {/* <Button
+          disabled={deleting}
+          onClick={deleteEntry}
+          className="h-5 py-0 mx-1"
+        >
+          {deleting ? "Deleting ..." : "Delete"}
+        </Button> */}
+        <p className={styles.p1}>Posted Date :{date()}</p>
       </div>
       <p>{content}</p>
     </div>
