@@ -6,6 +6,12 @@
   max-width: 500px;
 }
 
+.div1 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .p {
   font-weight: bold;
   padding-top: 0.5rem;
@@ -23,7 +29,7 @@
   height:25px;
   line-height:25px;
   padding-top: 0rem;
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
   margin-right: 1rem;
   white-space: nowrap;
   text-align:center;
