@@ -13,11 +13,13 @@ const AboutPage = () => {
           to Japanese page (日本語ページへ)
         </ButtonLink>
 
-        <p>
-          UNHCR制作の動画「The
-          Journey（ザ・ジャーニー）」。オリンピック・パラリンピックを目指す難民アスリートの姿を描いた短編動画です。
-        </p>
-        <YouTube videoId="PH9uZZhdZMk" />
+        <div className={styles.youtube}>
+          <YouTube videoId="PH9uZZhdZMk" />
+          <p>
+            The video "The Journey" produced by UNHCR. This is a short video
+            depicting a refugee athlete aiming for the Olympics and Paralympics.
+          </p>
+        </div>
         <h2 className={styles.h2}>
           An Ethiopian track and field athlete training alone, hoping to meet
           his separated family. <br />A Syrian athlete dreaming to play karate

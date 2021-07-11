@@ -1,6 +1,7 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
 import ButtonLink from "@/components/button-link";
+import YouTube from "react-youtube";
 import styles from "../styles/tabs/about.module.css";
 
 const AboutPage = () => {
@@ -11,6 +12,15 @@ const AboutPage = () => {
         <ButtonLink className="h-5 py-0 mx-1" href="en/about">
           to English page (英語ページへ)
         </ButtonLink>
+
+        <div className={styles.youtube}>
+          <YouTube videoId="PH9uZZhdZMk" />
+          <p>
+            UNHCR制作の動画「The
+            Journey（ザ・ジャーニー）」。オリンピック・パラリンピックを目指す難民アスリートの姿を描いた短編動画です。
+          </p>
+        </div>
+
         <h2 className={styles.h2}>
           生き別れた家族との再会を願い、ひとりで練習に励むエチオピア人の陸上選手。
           <br />
