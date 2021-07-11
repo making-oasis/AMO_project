@@ -26,6 +26,8 @@ const TopPage = () => {
     { name: "run", className: styles.back3 },
     { name: "World", className: styles.back4 },
     { name: "national", className: styles.back5 },
+    { name: "national", className: styles.back6 },
+    { name: "national", className: styles.back7 },
   ];
 
   return (
