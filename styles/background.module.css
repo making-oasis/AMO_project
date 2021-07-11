@@ -40,3 +40,13 @@
   background-attachment: fixed;
   background-color: #464646;
 }
+.back5 {
+  height: 1020px;
+  width: auto;
+  background-image: url(../public/tops/flags.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
+}
