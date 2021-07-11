@@ -1,6 +1,7 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
 import ButtonLink from "@/components/button-link";
+import Image from "next/image";
 import styles from "../styles/tabs/about.module.css";
 
 const AboutPage = () => {
@@ -18,6 +19,10 @@ const AboutPage = () => {
           <br />
           東京オリンピック空手競技への出場を夢見るシリア人選手。
         </h2>
+
+        <div className={styles.image}>
+          <Image src={"/tabs/amo.jpeg"} width={350} height={350} />
+        </div>
 
         <p>皆さんは「難民選手団」を知っていますか？</p>
 
