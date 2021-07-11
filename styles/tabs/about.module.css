@@ -8,7 +8,18 @@
   margin: 60px 0px 60px 0px;
 }
 .youtube {
-  padding-left: 300px;
+  padding: 80px;
+}
+
+.youtubemovie {
+  margin: auto;
+  text-align: center;
+}
+
+.youtubep {
+  padding: 30px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .flex {

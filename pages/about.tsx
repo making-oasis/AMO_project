@@ -14,8 +14,8 @@ const AboutPage = () => {
         </ButtonLink>
 
         <div className={styles.youtube}>
-          <YouTube videoId="PH9uZZhdZMk" />
-          <p>
+          <YouTube className={styles.youtubemovie} videoId="PH9uZZhdZMk" />
+          <p className={styles.youtubep}>
             UNHCR制作の動画「The
             Journey（ザ・ジャーニー）」。オリンピック・パラリンピックを目指す難民アスリートの姿を描いた短編動画です。
           </p>

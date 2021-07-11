@@ -14,12 +14,13 @@ const AboutPage = () => {
         </ButtonLink>
 
         <div className={styles.youtube}>
-          <YouTube videoId="PH9uZZhdZMk" />
-          <p>
+          <YouTube className={styles.youtubemovie} videoId="PH9uZZhdZMk" />
+          <p className={styles.youtubep}>
             The video "The Journey" produced by UNHCR. This is a short video
             depicting a refugee athlete aiming for the Olympics and Paralympics.
           </p>
         </div>
+
         <h2 className={styles.h2}>
           An Ethiopian track and field athlete training alone, hoping to meet
           his separated family. <br />A Syrian athlete dreaming to play karate
