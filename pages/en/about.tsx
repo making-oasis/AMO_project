@@ -1,6 +1,7 @@
 import Nav from "@/components/nav";
 import Container from "@/components/container";
 import ButtonLink from "@/components/button-link";
+import YouTube from "react-youtube";
 import styles from "../../styles/tabs/about.module.css";
 
 const AboutPage = () => {
@@ -11,6 +12,15 @@ const AboutPage = () => {
         <ButtonLink className="h-5 py-0 mx-1" href="/about">
           to Japanese page (日本語ページへ)
         </ButtonLink>
+
+        <div className={styles.youtube}>
+          <YouTube className={styles.youtubemovie} videoId="PH9uZZhdZMk" />
+          <p className={styles.youtubep}>
+            The video "The Journey" produced by UNHCR. This is a short video
+            depicting a refugee athlete aiming for the Olympics and Paralympics.
+          </p>
+        </div>
+
         <h2 className={styles.h2}>
           An Ethiopian track and field athlete training alone, hoping to meet
           his separated family. <br />A Syrian athlete dreaming to play karate
@@ -18,7 +28,6 @@ const AboutPage = () => {
           with like-situated athletes with different origins, especially for
           children.
         </h2>
-
         <p>Do you know “Refugee Olympic Team”？</p>
 
         <p className={styles.p2}>
