@@ -120,12 +120,18 @@ const IndexPage = () => {
       <div className={styles.bodyy}>
         <div className={styles.panel} data-color="red">
           <div>
-            <div>
+            <div className={styles.startButton}>
               <p className={styles.navip}>Let's Fly Your Message!!</p>
+              <Image
+                className={styles.navipic}
+                src={"/landing/whiteplane.png"}
+                width={350}
+                height={250}
+              />
+              <p className={styles.button}>
+                <ButtonLink href="/top">Start</ButtonLink>
+              </p>
             </div>
-            <p className={styles.button}>
-              <ButtonLink href="/top">Start</ButtonLink>
-            </p>
           </div>
         </div>
       </div>
