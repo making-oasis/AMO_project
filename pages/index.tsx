@@ -3,6 +3,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import Title from "@/components/gsap/Title";
 import { CSSTransition } from "react-transition-group";
+import CommonMeta from "@/components/commonmeta";
 import styles from "../styles/landing/opening.module.css";
 import styless from "../styles/App.module.scss";
 
@@ -27,6 +28,7 @@ const IndexPage = () => {
     <>
       <div className={styles.startPanel}>
         <div className={styless.container}>
+          <CommonMeta title="About" description="This is About page." />
           <CSSTransition
             in={true}
             timeout={1200}

@@ -4,7 +4,7 @@ import ButtonLink from "@/components/button-link";
 import YouTube from "react-youtube";
 import styles from "../styles/tabs/about.module.css";
 
-const AboutPage = () => {
+const AboutPage  () => {
   return (
     <>
       <Nav />
