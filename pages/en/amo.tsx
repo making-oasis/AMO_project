@@ -51,6 +51,9 @@ const AmoPage = () => {
           a project where students can train their ability to think based on
           social issues.
         </p>
+        <ButtonLink className={styles.fixbutton} href="/top">
+          To Post page
+        </ButtonLink>
         <h2 className={styles.h2}>AMO</h2>
         <Button
           size="small"

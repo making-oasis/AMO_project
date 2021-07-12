@@ -92,6 +92,9 @@ const UnhcrPage = () => {
           respond to the growing and complex refugee problem, UNHCR receives
           support from governments and private sectors around the world.
         </p>
+        <ButtonLink className={styles.fixbutton} href="/top">
+          To Post page
+        </ButtonLink>
         <div className={styles.back}>
           <div className={styles.boxContainer}>
             <div className={styles.contact}>

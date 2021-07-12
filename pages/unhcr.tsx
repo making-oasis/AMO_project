@@ -74,6 +74,9 @@ const UnhcrPage = () => {
           <br />
           難民問題の拡大、複雑化に対応するため、UNHCRは、世界各地の政府、民間から支援を受けています。
         </p>
+        <ButtonLink className={styles.fixbutton} href="/top">
+          投稿ページへ
+        </ButtonLink>
         <div className={styles.back}>
           <div className={styles.boxContainer}>
             <div className={styles.contact}>

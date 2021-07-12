@@ -37,6 +37,9 @@ const AmoPage = () => {
           ただしAMOのメンバーだけでは、見えている世界も、できる範囲にも限界があります。そこで、若い学生の「育成」に軸足を置き、一緒に社会のために行動できるITを駆使できる人材を育てていくことに決めました。
           学校の環境では主に手段としてのITを教えられますが、イシューベースで一緒に考えプロジェクトを経験する場を提供することで、社会起点で物事を考えれ、ITを駆使できる人材を少しでも多く生み出せればと思います。
         </p>
+        <ButtonLink className={styles.fixbutton} href="/top">
+          投稿ページへ
+        </ButtonLink>
         <h2 className={styles.h2}>contacts for AMO</h2>
         <Button
           size="small"
