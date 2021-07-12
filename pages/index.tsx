@@ -3,6 +3,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import Title from "@/components/gsap/Title";
 import { CSSTransition } from "react-transition-group";
+import CommonMeta from "@/components/commonmeta";
 import styles from "../styles/landing/opening.module.css";
 import styless from "../styles/App.module.scss";
 
@@ -27,6 +28,11 @@ const IndexPage = () => {
     <>
       <div className={styles.startPanel}>
         <div className={styless.container}>
+          <CommonMeta
+            title="fly-your-message"
+            description="このWebアプリは、難民の方々に応援メッセージを届けることが出来るアプリです。
+難民の方にメッセージをを届けることが出来るWebアプリを作りました。"
+          />
           <CSSTransition
             in={true}
             timeout={1200}
