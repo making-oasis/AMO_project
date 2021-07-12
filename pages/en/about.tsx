@@ -65,6 +65,9 @@ const AboutPage = () => {
           message and cheer for refugee athletes! Delivered all the way from
           Japan, your messages will become more powerful and encourage them.
         </p>
+        <ButtonLink className={styles.fixbutton} href="/top">
+          To Post page
+        </ButtonLink>
       </Container>
     </>
   );

@@ -14,8 +14,14 @@
   text-align: center;
   padding-bottom: 20px;
 }
-.fontp{
-  font-weight:bold;
+.fontp {
+  font-weight: bold;
   color: black;
-  font-size:16px;
+  font-size: 16px;
+}
+.fixbutton {
+  position: fixed;
+  bottom: 200px;
+  right: 100px;
+  padding: 6px 20px;
 }

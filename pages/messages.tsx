@@ -3,6 +3,7 @@ import Container from "@/components/container";
 import Skeleton from "react-loading-skeleton";
 import { useEntries } from "@/lib/swr-hooks";
 import Entries from "@/components/entries";
+import ButtonLink from "@/components/button-link";
 import styles from "../styles/backgroundPosts/post.module.css";
 
 export default function NewEntryPage() {
@@ -33,6 +34,9 @@ export default function NewEntryPage() {
         <h1 className={styles.h1}>
           Total message {Object.keys(entries).length}
         </h1>
+        <ButtonLink className={styles.fixbutton} href="/top">
+          投稿ページ(Post page)へ
+        </ButtonLink>
         <Entries entries={entries} />
       </Container>
     </div>

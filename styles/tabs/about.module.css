@@ -53,3 +53,9 @@
 .last {
   margin-bottom: 100px;
 }
+.fixbutton {
+  position: fixed;
+  bottom: 200px;
+  right: 100px;
+  padding: 6px 20px;
+}

@@ -26,3 +26,9 @@
   font-weight: 100;
   text-align: center;
 }
+.fixbutton {
+  position: fixed;
+  bottom: 200px;
+  left: 100px;
+  padding: 6px 20px;
+}

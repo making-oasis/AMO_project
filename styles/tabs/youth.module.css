@@ -8,7 +8,7 @@
   margin: 60px 0px 20px 0px;
 }
 .h3 {
-  color:white;
+  color: white;
   font-size: 25px;
   font-style: oblique;
   font-weight: bold;
@@ -45,10 +45,14 @@
   vertical-align: middle;
   text-align: center;
 }
-@media screen and ( min-width: 550px) {
-  .boxContainer { display: flex; }
-  .contact{ width: 500px;
-            height: 500px; }
+@media screen and (min-width: 550px) {
+  .boxContainer {
+    display: flex;
+  }
+  .contact {
+    width: 500px;
+    height: 500px;
+  }
 }
 .back {
   background-image: url(../../public/tabs/image.png);
@@ -60,6 +64,12 @@
 }
 .fontp {
   font-weight: bold;
-  font-size:14px;
-  color:white;
+  font-size: 14px;
+  color: white;
+}
+.fixbutton {
+  position: fixed;
+  bottom: 200px;
+  right: 100px;
+  padding: 6px 20px;
 }
