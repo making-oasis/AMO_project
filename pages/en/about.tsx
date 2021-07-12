@@ -2,9 +2,13 @@ import Nav from "@/components/nav";
 import Container from "@/components/container";
 import ButtonLink from "@/components/button-link";
 import YouTube from "react-youtube";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import Button from "@material-ui/core/Button";
 import styles from "../../styles/tabs/about.module.css";
 
 const AboutPage = () => {
+  const iconStyle: React.CSSProperties = { padding: 10, fontSize: 50 };
   return (
     <>
       <Nav />
@@ -64,6 +68,16 @@ const AboutPage = () => {
           “Fly your message” always supports your small actions. Fly your
           message and cheer for refugee athletes! Delivered all the way from
           Japan, your messages will become more powerful and encourage them.
+        </p>
+        <p className={styles.info}>
+          <Button
+            size="small"
+            color="primary"
+            href="https://www.unhcr.org/jp/tokyo-2020-the-refugee-olympic-and-paralympic-teams"
+          >
+            <FontAwesomeIcon style={iconStyle} icon={faLink} />
+            Click here for more information
+          </Button>
         </p>
         <ButtonLink className={styles.fixbutton} href="/top">
           To Post page
