@@ -15,8 +15,7 @@ const TopPage = () => {
       styles.back2,
       styles.back3,
       styles.back4,
-      styles.back6,
-      styles.back7
+      styles.back6
     );
     main.classList.add(stylenumber);
   };
@@ -26,7 +25,6 @@ const TopPage = () => {
     { name: "run", className: styles.back3 },
     { name: "World", className: styles.back4 },
     { name: "nature", className: styles.back6 },
-    { name: "nature", className: styles.back7 },
   ];
 
   return (
