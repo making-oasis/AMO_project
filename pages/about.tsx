@@ -68,6 +68,7 @@ const AboutPage = () => {
           Fly your
           messageを通して、難民アスリートのみなさんをともに応援しましょう！！
         </p>
+        <p className={styles.info}>より詳しい情報はこちら</p>
         <ButtonLink className={styles.fixbutton} href="/top">
           投稿ページへ
         </ButtonLink>
