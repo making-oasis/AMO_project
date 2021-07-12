@@ -7,7 +7,7 @@ type Props = {
 
 const CommonMeta: React.FunctionComponent<Props> = ({ title, description }) => {
   const url = "https://fly-your-message.com/";
-  const imgUrl = "../public/tops/meta.jpg";
+  const imgUrl = "../../public/tops/meta.jpg";
   const imgWidth = 300;
   const imgHeight = 300;
 
