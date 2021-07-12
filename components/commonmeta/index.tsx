@@ -22,6 +22,7 @@ const CommonMeta: React.FunctionComponent<Props> = ({ title, description }) => {
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={imgUrl} />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:image:width" content={String(imgWidth)} />
       <meta property="og:image:height" content={String(imgHeight)} />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
