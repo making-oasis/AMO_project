@@ -28,7 +28,11 @@ const IndexPage = () => {
     <>
       <div className={styles.startPanel}>
         <div className={styless.container}>
-          <CommonMeta title="About" description="This is About page." />
+          <CommonMeta
+            title="fly-your-message"
+            description="このWebアプリは、難民の方々に応援メッセージを届けることが出来るアプリです。
+難民の方にメッセージをを届けることが出来るWebアプリを作りました。"
+          />
           <CSSTransition
             in={true}
             timeout={1200}
