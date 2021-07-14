@@ -76,7 +76,7 @@ const UnhcrPage = () => {
             becoming more serious. Now is the time for young people in Japan to
             deepen their understanding of the refugee issue and show their
             solidarity together. We believe in power of sports, and sports
-            empower refugee people.
+            empower refugee peopl.
           </p>
         </div>
         <h1 className={styles.h2}>About UNHCR</h1>
