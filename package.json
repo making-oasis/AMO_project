@@ -20,13 +20,11 @@
     "clsx": "^1.1.1",
     "dotenv": "^8.2.0",
     "gsap": "^3.0.1",
-    "jquery": "^3.6.0",
     "moment": "^2.29.1",
     "next": "^11.0.1",
     "postcss": "^8.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-hook-form": "^7.4.2",
     "react-loading-skeleton": "^2.1.1",
     "react-syntax-highlighter": "^15.4.3",
     "react-transition-group": "^4.3.0",
@@ -34,7 +32,7 @@
     "remark-parse": "^9.0.0",
     "sass": "1.29.0",
     "serverless-mysql": "^1.5.4",
-    "swr": "^0.5.6"
+    "swr": "^0.3.9"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.5",
