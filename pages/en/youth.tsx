@@ -75,11 +75,8 @@ const UnhcrPage = () => {
             humanitarian crises around the world.The humanitarian crisis is
             becoming more serious. Now is the time for young people in Japan to
             deepen their understanding of the refugee issue and show their
-            solidarity together. A refugee team will be formed for the Olympic
-            and Paralympic Games to be held in Tokyo. UNHCR also has a "Sport
-            and Welfare Program for young people". We believe it is particularly
-            significant to do this during the period from World Refugee Day to
-            the Olympic and Paralympic Games.
+            solidarity together. We believe in power of sports, and sports
+            empower refugee people.
           </p>
         </div>
         <h1 className={styles.h2}>About UNHCR</h1>
