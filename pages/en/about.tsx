@@ -28,7 +28,7 @@ const AboutPage = () => {
         <h2 className={styles.h2}>
           An Ethiopian track and field athlete training alone, hoping to meet
           his separated family. <br />A Syrian athlete dreaming to play karate
-          in Tokyo 2020 to rebuild the future <br />
+          to rebuild the future <br />
           with like-situated athletes with different origins, especially for
           children.
         </h2>
