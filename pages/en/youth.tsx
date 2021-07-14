@@ -75,11 +75,8 @@ const UnhcrPage = () => {
             humanitarian crises around the world.The humanitarian crisis is
             becoming more serious. Now is the time for young people in Japan to
             deepen their understanding of the refugee issue and show their
-            solidarity together. A refugee team will be formed for the Olympic
-            and Paralympic Games to be held in Tokyo. UNHCR also has a "Sport
-            and Welfare Program for young people". We believe it is particularly
-            significant to do this during the period from World Refugee Day to
-            the Olympic and Paralympic Games.
+            solidarity together. We believe in power of sports, and sports
+            empower refugee people.
           </p>
         </div>
         <h1 className={styles.h2}>About UNHCR</h1>
@@ -132,7 +129,7 @@ const UnhcrPage = () => {
                 href="https://www.youtube.com/channel/UCuDDgBQ4rpHJzEfYNsTZrJA"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faYoutube} />
-                <p className={styles.fontp}> Youth × UNHCR for Refugees</p>
+                <p className={styles.fontp}> Youth×UNHCR for Refugees</p>
               </Button>
               <br />
               <Button
@@ -147,98 +144,6 @@ const UnhcrPage = () => {
                 size="small"
                 color="primary"
                 href="https://www.unhcr.org/jp/36315-wrd2021-youth-unhcr-for-refugees.html"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faLink} />
-                <p className={styles.fontp}>Click here for WEB</p>
-              </Button>
-            </div>
-            <div className={styles.contact}>
-              <h2 className={styles.h3}>国連 UNHCR協会</h2>
-              <Button
-                size="small"
-                color="primary"
-                href="https://twitter.com/japanforunhcr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-                <p className={styles.fontp}>国連UNHCR協会</p>
-              </Button>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.instagram.com/japanforunhcr/"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faInstagram} />
-                <p className={styles.fontp}>国連UNHCR協会</p>
-              </Button>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.facebook.com/japanforunhcr/"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-                <p className={styles.fontp}>国連UNHCR協会</p>
-              </Button>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.youtube.com/user/JapanforUNHCR"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faYoutube} />
-                <p className={styles.fontp}>国連UNHCR協会</p>
-              </Button>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.japanforunhcr.org/"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faLink} />
-                <p className={styles.fontp}>Click here for WEB</p>
-              </Button>
-            </div>
-            <div className={styles.contact}>
-              <h2 className={styles.h3}>UNHCR駐日事務所</h2>
-              <Button
-                size="small"
-                color="primary"
-                href="https://twitter.com/UNHCR_Tokyo"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faTwitter} />
-                <p className={styles.fontp}>
-                  UNHCR Japan 国連難民高等弁務官駐日事務所
-                </p>
-              </Button>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.facebook.com/unhcrorjp/"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-                <p className={styles.fontp}>
-                  UNHCR Japan 国連難民高等弁務官駐日事務所
-                </p>
-              </Button>
-              <br />
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.youtube.com/channel/UCiG4dK6TaS_5-nao6YCd7ZA"
-              >
-                <FontAwesomeIcon style={iconStyle} icon={faYoutube} />
-                <p className={styles.fontp}>
-                  UNHCR Japan 国連難民高等弁務官駐日事務所
-                </p>
-              </Button>
-              <br />
-
-              <Button
-                size="small"
-                color="primary"
-                href="https://www.unhcr.org/jp/"
               >
                 <FontAwesomeIcon style={iconStyle} icon={faLink} />
                 <p className={styles.fontp}>Click here for WEB</p>

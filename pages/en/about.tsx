@@ -28,7 +28,7 @@ const AboutPage = () => {
         <h2 className={styles.h2}>
           An Ethiopian track and field athlete training alone, hoping to meet
           his separated family. <br />A Syrian athlete dreaming to play karate
-          in Tokyo 2020 to rebuild the future <br />
+          to rebuild the future <br />
           with like-situated athletes with different origins, especially for
           children.
         </h2>
@@ -36,8 +36,8 @@ const AboutPage = () => {
 
         <p className={styles.p2}>
           The Refugee Olympic Team is composed of athletes from various
-          countries, which is different from national Olympic teams representing
-          their own countries. So, you can see them wearing different jerseys.
+          countries, which is representing their own countries. So, you can see
+          them wearing different jerseys.
         </p>
 
         <p>
