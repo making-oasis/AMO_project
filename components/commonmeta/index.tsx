@@ -20,6 +20,8 @@ const CommonMeta: React.FunctionComponent<Props> = ({ title, description }) => {
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={imgUrl} />
+      <meta property="og:image:width" content={String(1200)} />
+      <meta property="og:image:height" content={String(630)} />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );
