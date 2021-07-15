@@ -36,8 +36,8 @@ const AboutPage = () => {
 
         <p className={styles.p2}>
           The Refugee Olympic Team is composed of athletes from various
-          countries, which is representing their own countries. So, you can see
-          them wearing different jerseys.
+          countries, which is not representing their own countries. So, you can
+          see them wearing different jerseys.
         </p>
 
         <p>
