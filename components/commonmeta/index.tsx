@@ -7,7 +7,7 @@ type Props = {
 
 const CommonMeta: React.FunctionComponent<Props> = ({ title, description }) => {
   const url = "https://fly-your-message.com/";
-  const imgUrl = "https://making-oasis.com/blue-ap/img/opg.jpg";
+  const imgUrl = "https://making-oasis.com/static/img/ogp.jpg";
 
   return (
     <Head>
@@ -20,8 +20,6 @@ const CommonMeta: React.FunctionComponent<Props> = ({ title, description }) => {
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={imgUrl} />
-      <meta property="og:image:width" content={String(150)} />
-      <meta property="og:image:height" content={String(150)} />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );
