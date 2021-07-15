@@ -15,7 +15,14 @@
   margin: auto;
   text-align: center;
 }
-
+@media screen and (max-width: 750px) {
+  .youtubemovie {
+    margin: auto;
+    text-align: center;
+    height: 250px;
+    width: 350px;
+  }
+}
 .youtubep {
   padding: 30px;
   font-size: 15px;
